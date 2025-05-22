@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, ChevronDown, Phone, Mail } from 'lucide-react';
+import { Menu, X, ChevronDown, Mail } from 'lucide-react';
 
 const NAV_ITEMS = [
   { label: 'Home', path: '/' },
@@ -22,7 +22,7 @@ const NAV_ITEMS = [
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [activeDropdown, setActiveDropdown] = useState(null);
+  const [activeDropdown, setActiveDropdown] = useState<number | null>(null);
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20);
@@ -30,11 +30,11 @@ const Header: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleDropdownToggle = (index) => {
+  const handleDropdownToggle = (index: number) => {
     setActiveDropdown(activeDropdown === index ? null : index);
   };
 
-  const handleNavClick = (path) => {
+  const handleNavClick = (path: string) => {
     console.log('Navigate to:', path);
     setMobileMenuOpen(false);
     setActiveDropdown(null);
