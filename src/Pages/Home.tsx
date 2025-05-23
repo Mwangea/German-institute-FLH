@@ -2,6 +2,11 @@ import { ChevronDown } from "lucide-react";
 import { carouselData } from "../Data/carouselData";
 import { useState, useEffect } from "react";
 import ApplyModal from "../Forms/ApplyModal";
+import ProgramsSection from "../Components/ProgramsSection";
+import AboutSection from "../Components/AboutSection";
+import WhyChooseSection from "../Components/WhyChooseSection";
+import TestimonialSection from "../Components/TestimonialSection";
+import FAQSection from "../Components/FAQSection";
 
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -25,6 +30,7 @@ const Home = () => {
   };
 
   return (
+    <>
     <div className="relative h-screen w-full overflow-hidden">
       {/* Carousel */}
       <div className="absolute inset-0">
@@ -91,7 +97,16 @@ const Home = () => {
         isOpen={isApplyModalOpen} 
         onClose={() => setIsApplyModalOpen(false)} 
       />
+      
     </div>
+    <div className="min-h-screen bg-gray-50">
+      <ProgramsSection />
+      <AboutSection />
+      <WhyChooseSection />
+      <TestimonialSection />
+      <FAQSection />
+    </div>
+    </>
   );
 };
 
