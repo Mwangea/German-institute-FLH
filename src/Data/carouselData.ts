@@ -1,22 +1,22 @@
 export const carouselData = [
-    {
-      image: "https://images.pexels.com/photos/256490/pexels-photo-256490.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      title: "",
-      subtitle: "",
-    },
-    {
-      image: "https://images.pexels.com/photos/2982449/pexels-photo-2982449.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      title: "",
-      subtitle: "",
-    },
-    {
-      image: "https://images.pexels.com/photos/1205651/pexels-photo-1205651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      title: " ",
-      subtitle: " ",
-    },
-    {
-      image: "https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      title: " ",
-      subtitle: " ",
-    },
-  ];
+  {
+    image: "/image8.jpeg",
+    title: "Our Proud Students",
+    subtitle: "Meet our diverse student community from the institute, united by ambition and driven by excellence.",
+  },
+  {
+    image: "/image6.jpeg",
+    title: "Future Chef in Training",
+    subtitle: "A proud culinary arts student posing confidently in uniform, embodying professionalism and passion for the kitchen.",
+  },  
+  {
+    image: "/image4.jpeg",
+    title: "Hospitality Excellence",
+    subtitle: "Showcasing a vibrant hospitality meal presentation that reflects our commitment to industry-ready skills.",
+  },
+  {
+    image: "/image3.jpeg",
+    title: "Learning Environment",
+    subtitle: "Students actively engaged in a classroom session, fostering knowledge through dynamic and inclusive education.",
+  },
+];

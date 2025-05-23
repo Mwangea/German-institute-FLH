@@ -91,7 +91,7 @@ const Header: React.FC = () => {
                 <img 
                   src="/photo.png" 
                   alt="IFLHM Logo" 
-                  className="h-12 w-12 md:h-16 md:w-16 lg:h-18 lg:w-18 transition-transform duration-300 group-hover:scale-105" 
+                  className="h-14 w-14 md:h-16 md:w-16 lg:h-18 lg:w-18 transition-transform duration-300 group-hover:scale-105" 
                 />
               </div>
               <div className="ml-2 md:ml-4">
@@ -158,7 +158,7 @@ const Header: React.FC = () => {
               {/* CTA Button */}
               <a
                 href="/apply"
-                className="ml-6 bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
+                className="ml-6 bg-button-50 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
                 onClick={() => handleNavClick('/apply')}
               >
                 Apply Now
