@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, ChevronDown, Mail, Facebook, Instagram, Twitter } from 'lucide-react';
+import { Menu, X, ChevronDown, Mail, Facebook, Instagram, Twitter, User, GraduationCap } from 'lucide-react';
 
 const NAV_ITEMS = [
   { label: 'Home', path: '/' },
@@ -42,33 +42,57 @@ const Header: React.FC = () => {
 
   return (
     <>
-      {/* Top Contact Bar - Hidden on mobile */}
+      {/* Top Contact Bar - Hidden on small screens */}
       <div className="hidden md:block bg-gray-800 text-gray-100 py-2 text-sm">
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0">
             <div className="flex flex-col sm:flex-row items-center space-y-1 sm:space-y-0 sm:space-x-6">
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-primary-400" />
                 <a 
                   href="mailto:info@foreignlanguagesandhospitality.com"
-                  className="hover:text-primary-300 transition-colors duration-200"
+                  className="hover:text-primary-300 transition-colors duration-200 text-xs sm:text-sm"
                 >
                   info@foreignlanguagesandhospitality.com
                 </a>
               </div>
             </div>
+            
             <div className="flex items-center space-x-4">
-              <span className="text-gray-300">Follow Us:</span>
-              <div className="flex space-x-2">
-                <a href="#" className="w-8 h-8 bg-primary-600 rounded-full hover:bg-primary-700 transition-all duration-200 flex items-center justify-center transform hover:scale-110">
-                  <Facebook className="w-4 h-4 text-white" />
+              {/* Login Buttons in Top Bar - Desktop only */}
+              <div className="flex items-center space-x-2">
+                <a
+                  href="/student-login"
+                  className="flex items-center px-3 py-1 text-xs bg-blue-600 hover:bg-blue-700 text-white rounded-md font-medium transition-all duration-300 transform hover:scale-105"
+                  onClick={() => handleNavClick('/student-login')}
+                >
+                  <GraduationCap className="h-3 w-3 mr-1" />
+                  Student Login
                 </a>
-                <a href="#" className="w-8 h-8 bg-primary-600 rounded-full hover:bg-primary-700 transition-all duration-200 flex items-center justify-center transform hover:scale-110">
-                  <Instagram className="w-4 h-4 text-white" />
+                <a
+                  href="/teacher-login"
+                  className="flex items-center px-3 py-1 text-xs bg-green-600 hover:bg-green-700 text-white rounded-md font-medium transition-all duration-300 transform hover:scale-105"
+                  onClick={() => handleNavClick('/teacher-login')}
+                >
+                  <User className="h-3 w-3 mr-1" />
+                  Teacher Login
                 </a>
-                <a href="#" className="w-8 h-8 bg-primary-600 rounded-full hover:bg-primary-700 transition-all duration-200 flex items-center justify-center transform hover:scale-110">
-                  <Twitter className="w-4 h-4 text-white" />
-                </a>
+              </div>
+              
+              {/* Social Media */}
+              <div className="flex items-center space-x-4">
+                <span className="text-gray-300">Follow Us:</span>
+                <div className="flex space-x-2">
+                  <a href="#" className="w-8 h-8 bg-primary-600 rounded-full hover:bg-primary-700 transition-all duration-200 flex items-center justify-center transform hover:scale-110">
+                    <Facebook className="w-4 h-4 text-white" />
+                  </a>
+                  <a href="#" className="w-8 h-8 bg-primary-600 rounded-full hover:bg-primary-700 transition-all duration-200 flex items-center justify-center transform hover:scale-110">
+                    <Instagram className="w-4 h-4 text-white" />
+                  </a>
+                  <a href="#" className="w-8 h-8 bg-primary-600 rounded-full hover:bg-primary-700 transition-all duration-200 flex items-center justify-center transform hover:scale-110">
+                    <Twitter className="w-4 h-4 text-white" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -183,7 +207,27 @@ const Header: React.FC = () => {
               : 'max-h-0 opacity-0 invisible overflow-hidden'
           }`}
         >
-          <div className="px-4 py-14">
+          <div className="px-4 py-6">
+            {/* Login Buttons in Mobile Menu */}
+            <div className="mb-6 flex flex-row space-x-3">
+              <a
+                href="/student-login"
+                className="flex items-center justify-center flex-1 px-4 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold transition-all duration-300 transform hover:scale-105"
+                onClick={() => handleNavClick('/student-login')}
+              >
+                <GraduationCap className="h-5 w-5 mr-2" />
+                Student Login
+              </a>
+              <a
+                href="/teacher-login"
+                className="flex items-center justify-center flex-1 px-4 py-3 bg-green-600 hover:bg-green-700 text-white rounded-lg font-semibold transition-all duration-300 transform hover:scale-105"
+                onClick={() => handleNavClick('/teacher-login')}
+              >
+                <User className="h-5 w-5 mr-2" />
+                Teacher Login
+              </a>
+            </div>
+
             {/* Navigation Items */}
             <div className="space-y-1">
               {NAV_ITEMS.map((item, index) => (
