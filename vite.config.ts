@@ -8,6 +8,11 @@ export default defineConfig({
     exclude: ['lucide-react'],
   },
   build: {
-    outDir: 'build'
-  }
+    outDir: 'build',
+    emptyOutDir: true,
+    // Add this to ensure public files are copied:
+    assetsInlineLimit: 0 // Treat all assets as files
+  },
+  // Add this publicDir configuration:
+  publicDir: 'public'
 });
