@@ -127,7 +127,7 @@ const ApplyPage: React.FC = () => {
   {/* Parallax Background Image */}
   <div className="absolute inset-0 z-0">
     <div 
-      className="w-full h-full bg-[url('https://images.pexels.com/photos/1181395/pexels-photo-1181395.jpeg')] bg-cover bg-center bg-no-repeat"
+      className="w-full h-full bg-[url('student-boardroom.jpeg')] bg-cover bg-center bg-no-repeat"
       style={{
         backgroundAttachment: 'fixed',
         backgroundPosition: 'center',
