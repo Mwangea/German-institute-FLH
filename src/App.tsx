@@ -5,6 +5,8 @@ import Contact from "./Pages/Contact"
 import AboutPage from "./Pages/AboutPage"
 import StudentVoices from "./Pages/StudentVoices"
 import ApplyPage from "./Pages/ApplyPage"
+import GermanExams from "./Pages/GermanExams"
+
 import ScrollToTopButton from "./Components/ScrollToTopActionButton"
 //import InterviewDesign from "./Components/file"
 const App = () => {
@@ -18,6 +20,8 @@ const App = () => {
          <Route path="/about" element={<AboutPage />} />
          <Route path="/student-voices" element={<StudentVoices />} />
           <Route path="/apply" element={<ApplyPage />} />
+          <Route path="/programs/german-exams" element={<GermanExams />} />
+          
          {/* <Route path="/apply" element={<InterviewDesign />} /> */}
 
 
