@@ -10,6 +10,7 @@ import {
   Target,
   ChevronRight,
 } from "lucide-react";
+import CountUp from "react-countup";
 
 interface Instructor {
   id: number;
@@ -195,6 +196,7 @@ const AboutPage: React.FC = () => {
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
       <section className="relative h-[60vh] min-h-[500px] bg-gray-900 overflow-hidden">
+        {/* Video background */}
         <video
           key={currentVideoIndex}
           className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ease-in-out ${
@@ -210,10 +212,15 @@ const AboutPage: React.FC = () => {
             type={videos[currentVideoIndex].type}
           />
         </video>
+
+        {/* Overlay gradient */}
         <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/80 to-gray-900/50" />
-        <div className="relative h-full container mx-auto px-4 flex items-center">
+
+        {/* Content container - added justify-center to center the content block horizontally */}
+        <div className="relative h-full container mx-auto px-4 flex items-center justify-center">
+          {/* Text and buttons container - already has text-center and button flex container has justify-center */}
           <div className="max-w-3xl text-center">
-            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Shaping the Future of Hospitality Education
             </h1>
             <p className="text-xl text-gray-200 mb-8">
@@ -221,6 +228,7 @@ const AboutPage: React.FC = () => {
               partnerships, we're committed to developing the next generation of
               hospitality leaders.
             </p>
+            {/* Buttons container - uses flex and justify-center to center buttons */}
             <div className="flex gap-4 flex-wrap justify-center">
               <button className="inline-flex items-center gap-2 px-4 py-4 sm:px-8 sm:py-4 bg-primary-500 text-white rounded-full hover:bg-primary-600 transition-colors duration-300">
                 <Play className="w-5 h-5" />
@@ -235,36 +243,53 @@ const AboutPage: React.FC = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="text-4xl font-bold text-primary-500 mb-2">
-                25+
-              </div>
-              <div className="text-gray-600">Years of Excellence</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-primary-500 mb-2">
-                50+
-              </div>
-              <div className="text-gray-600">Expert Instructors</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-primary-500 mb-2">
-                10,000+
-              </div>
-              <div className="text-gray-600">Alumni Worldwide</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-primary-500 mb-2">
-                95%
-              </div>
-              <div className="text-gray-600">Employment Rate</div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <section className="py-12 sm:py-16 bg-white">
+  <div className="container mx-auto px-4">
+    {/* Horizontal layout on all screen sizes */}
+    <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-8">
+      {/* Years of Excellence */}
+      <div className="text-center p-2 sm:p-0">
+        <CountUp 
+          end={25} 
+          duration={3} 
+          className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary-500 mb-1 sm:mb-2" 
+        />
+        <div className="text-xs sm:text-sm md:text-base text-gray-600">Years of Excellence</div>
+      </div>
+      
+      {/* Expert Instructors */}
+      <div className="text-center p-2 sm:p-0">
+        <CountUp 
+          end={50} 
+          duration={3} 
+          className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary-500 mb-1 sm:mb-2" 
+        />
+        <div className="text-xs sm:text-sm md:text-base text-gray-600">Expert Instructors</div>
+      </div>
+      
+      {/* Alumni Worldwide */}
+      <div className="text-center p-2 sm:p-0">
+        <CountUp 
+          end={2000} 
+          duration={3} 
+          className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary-500 mb-1 sm:mb-2" 
+        />
+        <div className="text-xs sm:text-sm md:text-base text-gray-600">Alumni Worldwide</div>
+      </div>
+      
+      {/* Employment Rate */}
+      <div className="text-center p-2 sm:p-0">
+        <CountUp 
+          end={95} 
+          duration={3} 
+          suffix="%" 
+          className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary-500 mb-1 sm:mb-2" 
+        />
+        <div className="text-xs sm:text-sm md:text-base text-gray-600">Employment Rate</div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Mission & Vision Section */}
       <section className="py-24 bg-gradient-to-b from-white to-gray-50">

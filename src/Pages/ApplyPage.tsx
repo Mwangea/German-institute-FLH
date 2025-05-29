@@ -1,5 +1,6 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useState } from 'react';
-import { BookOpen, Clock, Calendar, GraduationCap, ChevronRight, Play, Users, Award } from 'lucide-react';
+import {  Clock, Calendar, ChevronRight, Play, } from 'lucide-react';
 
 interface Program {
   id: number;
@@ -113,7 +114,7 @@ const programs: Program[] = [
 
 const ApplyPage: React.FC = () => {
   const [selectedType, setSelectedType] = useState<'all' | 'language' | 'hospitality'>('all');
-  const [selectedProgram, setSelectedProgram] = useState<Program | null>(null);
+  const [, setSelectedProgram] = useState<Program | null>(null);
 
   const filteredPrograms = selectedType === 'all' 
     ? programs 
@@ -122,76 +123,46 @@ const ApplyPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-r from-primary-600 to-primary-800 overflow-hidden">
-        <div className="absolute inset-0">
-          <video
-            className="w-full h-full object-cover opacity-20"
-            autoPlay
-            muted
-            loop
-            playsInline
-          >
-            <source src="https://player.vimeo.com/external/434045526.sd.mp4?s=c27eecc69a27dbc4ff2b87d38afc35f1a9e7c02d&profile_id=164&oauth2_token_id=57447761" type="video/mp4" />
-          </video>
-        </div>
-        
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-3xl">
-            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-              Begin Your Journey to Excellence
-            </h1>
-            <p className="text-xl text-white/90 mb-8">
-              Choose from our wide range of accredited programs in hospitality management 
-              and language studies. Transform your passion into a successful career.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <button className="inline-flex items-center gap-2 px-8 py-4 bg-white text-primary-600 rounded-full hover:bg-gray-100 transition-colors duration-300">
-                <Play className="w-5 h-5" />
-                Watch Campus Tour
-              </button>
-              <button className="inline-flex items-center gap-2 px-8 py-4 bg-primary-700 text-white rounded-full hover:bg-primary-800 transition-colors duration-300">
-                Download Prospectus
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <section className="relative py-16 md:py-20 bg-gradient-to-b from-gray-900 to-gray-800 overflow-hidden">
+  {/* Parallax Background Image */}
+  <div className="absolute inset-0 z-0">
+    <div 
+      className="w-full h-full bg-[url('https://images.pexels.com/photos/1181395/pexels-photo-1181395.jpeg')] bg-cover bg-center bg-no-repeat"
+      style={{
+        backgroundAttachment: 'fixed',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        transform: 'translateZ(0)'
+      }}
+    ></div>
+    <div className="absolute inset-0 bg-gradient-to-b from-gray-900/80 to-gray-800/80"></div>
+  </div>
 
-      {/* Stats Section */}
-      <section className="py-12 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-primary-50">
-                <Users className="w-8 h-8 text-primary-500" />
-              </div>
-              <div className="text-3xl font-bold text-gray-900 mb-2">2000+</div>
-              <div className="text-gray-600">Active Students</div>
-            </div>
-            <div className="text-center">
-              <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-primary-50">
-                <Award className="w-8 h-8 text-primary-500" />
-              </div>
-              <div className="text-3xl font-bold text-gray-900 mb-2">95%</div>
-              <div className="text-gray-600">Employment Rate</div>
-            </div>
-            <div className="text-center">
-              <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-primary-50">
-                <GraduationCap className="w-8 h-8 text-primary-500" />
-              </div>
-              <div className="text-3xl font-bold text-gray-900 mb-2">50+</div>
-              <div className="text-gray-600">Expert Instructors</div>
-            </div>
-            <div className="text-center">
-              <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-primary-50">
-                <BookOpen className="w-8 h-8 text-primary-500" />
-              </div>
-              <div className="text-3xl font-bold text-gray-900 mb-2">9</div>
-              <div className="text-gray-600">Programs Offered</div>
-            </div>
-          </div>
+  {/* Content */}
+  <div className="relative z-10">
+    <div className="container mx-auto px-4">
+      <div className="max-w-3xl mx-auto text-center">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-serif text-white mb-4 md:mb-6">
+          Begin Your Journey to Excellence
+        </h1>
+        <p className="text-base sm:text-lg md:text-xl text-white/90 mb-6 md:mb-8">
+          Choose from our wide range of accredited programs in hospitality management 
+          and language studies. Transform your passion into a successful career.
+        </p>
+        <div className="flex flex-row justify-between gap-4 w-full max-w-md mx-auto">
+          <button className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 sm:px-6 sm:py-3 bg-primary-500 text-white rounded-full hover:bg-primary-600 transition-colors duration-300 text-sm sm:text-base">
+            <Play className="w-4 h-4 sm:w-5 sm:h-5" />
+             Campus Tour
+          </button>
+          <button className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 sm:px-6 sm:py-3 bg-white text-primary-600 rounded-full hover:bg-gray-100 transition-colors duration-300 text-sm sm:text-base">
+            Download Prospectus
+          </button>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Programs Section */}
       <section className="py-24 bg-gray-50">

@@ -10,7 +10,7 @@ const NAV_ITEMS = [
     dropdownItems: [
       { label: 'Language Courses', path: '/programs/languages' },
       { label: 'Hospitality Management', path: '/programs/hospitality' },
-      { label: 'Professional Development', path: '/programs/professional' }
+      { label: 'German Exams', path: '/programs/german-exams' }
     ]
   },
   { label: 'About Us', path: '/about' },
