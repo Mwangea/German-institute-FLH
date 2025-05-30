@@ -5,28 +5,28 @@ import {
   Award,
   BookOpen,
   Users,
-  GraduationCap,
   Globe2,
   Target,
   ChevronRight,
 } from "lucide-react";
 import CountUp from "react-countup";
+import Faculty from "../Components/Facaulty";
 
-interface Instructor {
-  id: number;
-  name: string;
-  role: string;
-  image: string;
-  bio: string;
-  expertise: string[];
-  education: string[];
-  achievements: string[];
-  socialLinks?: {
-    linkedin?: string;
-    twitter?: string;
-    website?: string;
-  };
-}
+// interface Instructor {
+//   id: number;
+//   name: string;
+//   role: string;
+//   image: string;
+//   bio: string;
+//   expertise: string[];
+//   education: string[];
+//   achievements: string[];
+//   socialLinks?: {
+//     linkedin?: string;
+//     twitter?: string;
+//     website?: string;
+//   };
+// }
 
 interface Accreditation {
   id: number;
@@ -79,87 +79,87 @@ const facilities = [
   },
 ];
 
-const instructors: Instructor[] = [
-  {
-    id: 1,
-    name: "Dr. Sarah Anderson",
-    role: "Head of Hospitality Management",
-    image: "https://images.pexels.com/photos/3727464/pexels-photo-3727464.jpeg",
-    bio: "Dr. Anderson brings over 15 years of experience in luxury hotel management and hospitality education. Her research focuses on sustainable tourism and innovative hospitality practices.",
-    expertise: [
-      "Luxury Hotel Management",
-      "Sustainable Tourism",
-      "Strategic Planning",
-    ],
-    education: [
-      "Ph.D. in Hospitality Management, Cornell University",
-      "MBA in International Business, INSEAD",
-      "BS in Hotel Administration, École hôtelière de Lausanne",
-    ],
-    achievements: [
-      "Best Educator Award 2024",
-      "Published author of 'Future of Luxury Hospitality'",
-      "Consultant for leading international hotel chains",
-    ],
-    socialLinks: {
-      linkedin: "https://linkedin.com",
-      twitter: "https://twitter.com",
-      website: "https://example.com",
-    },
-  },
-  {
-    id: 2,
-    name: "Prof. Michael Chen",
-    role: "Director of Culinary Arts",
-    image: "https://images.pexels.com/photos/3814446/pexels-photo-3814446.jpeg",
-    bio: "Prof. Chen is a globally recognized culinary expert with experience in Michelin-starred restaurants. He specializes in fusion cuisine and modern cooking techniques.",
-    expertise: [
-      "Advanced Culinary Techniques",
-      "Restaurant Management",
-      "Menu Development",
-    ],
-    education: [
-      "Master in Culinary Arts, Le Cordon Bleu",
-      "BA in Restaurant Management, CIA",
-      "Advanced Wine Certification, Court of Master Sommeliers",
-    ],
-    achievements: [
-      "Former Executive Chef at 3-Michelin Star Restaurant",
-      "James Beard Award Winner",
-      "Host of 'Modern Cuisine Masterclass' Series",
-    ],
-    socialLinks: {
-      linkedin: "https://linkedin.com",
-      twitter: "https://twitter.com",
-    },
-  },
-  {
-    id: 3,
-    name: "Dr. Emma Rodriguez",
-    role: "Head of Language Department",
-    image: "https://images.pexels.com/photos/5212324/pexels-photo-5212324.jpeg",
-    bio: "Dr. Rodriguez specializes in innovative language teaching methodologies and cross-cultural communication. She has developed several successful language programs for hospitality professionals.",
-    expertise: [
-      "Language Teaching Methodology",
-      "Cross-Cultural Communication",
-      "Curriculum Development",
-    ],
-    education: [
-      "Ph.D. in Applied Linguistics, Stanford University",
-      "MA in TESOL, Columbia University",
-      "BA in Modern Languages, Universidad de Barcelona",
-    ],
-    achievements: [
-      "Developer of 'Hospitality Language Training Program'",
-      "Author of bestselling language textbooks",
-      "International Education Innovation Award 2023",
-    ],
-    socialLinks: {
-      linkedin: "https://linkedin.com",
-      website: "https://example.com",
-    },
-  },
-];
+// const instructors: Instructor[] = [
+//   {
+//     id: 1,
+//     name: "Dr. Sarah Anderson",
+//     role: "Head of Hospitality Management",
+//     image: "https://images.pexels.com/photos/3727464/pexels-photo-3727464.jpeg",
+//     bio: "Dr. Anderson brings over 15 years of experience in luxury hotel management and hospitality education. Her research focuses on sustainable tourism and innovative hospitality practices.",
+//     expertise: [
+//       "Luxury Hotel Management",
+//       "Sustainable Tourism",
+//       "Strategic Planning",
+//     ],
+//     education: [
+//       "Ph.D. in Hospitality Management, Cornell University",
+//       "MBA in International Business, INSEAD",
+//       "BS in Hotel Administration, École hôtelière de Lausanne",
+//     ],
+//     achievements: [
+//       "Best Educator Award 2024",
+//       "Published author of 'Future of Luxury Hospitality'",
+//       "Consultant for leading international hotel chains",
+//     ],
+//     socialLinks: {
+//       linkedin: "https://linkedin.com",
+//       twitter: "https://twitter.com",
+//       website: "https://example.com",
+//     },
+//   },
+//   {
+//     id: 2,
+//     name: "Prof. Michael Chen",
+//     role: "Director of Culinary Arts",
+//     image: "https://images.pexels.com/photos/3814446/pexels-photo-3814446.jpeg",
+//     bio: "Prof. Chen is a globally recognized culinary expert with experience in Michelin-starred restaurants. He specializes in fusion cuisine and modern cooking techniques.",
+//     expertise: [
+//       "Advanced Culinary Techniques",
+//       "Restaurant Management",
+//       "Menu Development",
+//     ],
+//     education: [
+//       "Master in Culinary Arts, Le Cordon Bleu",
+//       "BA in Restaurant Management, CIA",
+//       "Advanced Wine Certification, Court of Master Sommeliers",
+//     ],
+//     achievements: [
+//       "Former Executive Chef at 3-Michelin Star Restaurant",
+//       "James Beard Award Winner",
+//       "Host of 'Modern Cuisine Masterclass' Series",
+//     ],
+//     socialLinks: {
+//       linkedin: "https://linkedin.com",
+//       twitter: "https://twitter.com",
+//     },
+//   },
+//   {
+//     id: 3,
+//     name: "Dr. Emma Rodriguez",
+//     role: "Head of Language Department",
+//     image: "https://images.pexels.com/photos/5212324/pexels-photo-5212324.jpeg",
+//     bio: "Dr. Rodriguez specializes in innovative language teaching methodologies and cross-cultural communication. She has developed several successful language programs for hospitality professionals.",
+//     expertise: [
+//       "Language Teaching Methodology",
+//       "Cross-Cultural Communication",
+//       "Curriculum Development",
+//     ],
+//     education: [
+//       "Ph.D. in Applied Linguistics, Stanford University",
+//       "MA in TESOL, Columbia University",
+//       "BA in Modern Languages, Universidad de Barcelona",
+//     ],
+//     achievements: [
+//       "Developer of 'Hospitality Language Training Program'",
+//       "Author of bestselling language textbooks",
+//       "International Education Innovation Award 2023",
+//     ],
+//     socialLinks: {
+//       linkedin: "https://linkedin.com",
+//       website: "https://example.com",
+//     },
+//   },
+// ];
 
 const videos = [
   {
@@ -220,7 +220,7 @@ const AboutPage: React.FC = () => {
         <div className="relative h-full container mx-auto px-4 flex items-center justify-center">
           {/* Text and buttons container - already has text-center and button flex container has justify-center */}
           <div className="max-w-3xl text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold font-serif text-white mb-6">
               Shaping the Future of Hospitality Education
             </h1>
             <p className="text-xl text-gray-200 mb-8">
@@ -438,123 +438,10 @@ const AboutPage: React.FC = () => {
       </section>
 
       {/* Faculty Section */}
-      <section className="py-24 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              Meet Our Expert Faculty
-            </h2>
-            <p className="text-lg text-gray-700">
-              Learn from industry veterans and academic experts who bring
-              real-world experience to the classroom.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {instructors.map((instructor) => (
-              <div
-                key={instructor.id}
-                className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300"
-              >
-                <div className="aspect-[4/3] relative overflow-hidden">
-                  <img
-                    src={instructor.image}
-                    alt={instructor.name}
-                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                    {instructor.name}
-                  </h3>
-                  <p className="text-primary-500 font-medium mb-4">
-                    {instructor.role}
-                  </p>
-                  <p className="text-gray-700 mb-6">{instructor.bio}</p>
-
-                  <div className="space-y-4">
-                    <div>
-                      <h4 className="text-lg font-semibold text-gray-900 mb-2">
-                        Expertise
-                      </h4>
-                      <div className="flex flex-wrap gap-2">
-                        {instructor.expertise.map((skill, index) => (
-                          <span
-                            key={index}
-                            className="px-3 py-1 bg-primary-50 text-primary-700 rounded-full text-sm"
-                          >
-                            {skill}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-
-                    <div>
-                      <h4 className="text-lg font-semibold text-gray-900 mb-2">
-                        Education
-                      </h4>
-                      <ul className="space-y-1 text-gray-700">
-                        {instructor.education.map((edu, index) => (
-                          <li key={index} className="flex items-start gap-2">
-                            <GraduationCap className="w-5 h-5 text-primary-500 flex-shrink-0 mt-1" />
-                            <span>{edu}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-
-                    <div>
-                      <h4 className="text-lg font-semibold text-gray-900 mb-2">
-                        Key Achievements
-                      </h4>
-                      <ul className="space-y-1 text-gray-700">
-                        {instructor.achievements.map((achievement, index) => (
-                          <li key={index} className="flex items-start gap-2">
-                            <Award className="w-5 h-5 text-primary-500 flex-shrink-0 mt-1" />
-                            <span>{achievement}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-
-                    {instructor.socialLinks && (
-                      <div className="flex gap-4 pt-4 border-t">
-                        {instructor.socialLinks.linkedin && (
-                          <a
-                            href={instructor.socialLinks.linkedin}
-                            className="text-gray-600 hover:text-primary-500"
-                          >
-                            LinkedIn
-                          </a>
-                        )}
-                        {instructor.socialLinks.twitter && (
-                          <a
-                            href={instructor.socialLinks.twitter}
-                            className="text-gray-600 hover:text-primary-500"
-                          >
-                            Twitter
-                          </a>
-                        )}
-                        {instructor.socialLinks.website && (
-                          <a
-                            href={instructor.socialLinks.website}
-                            className="text-gray-600 hover:text-primary-500"
-                          >
-                            Website
-                          </a>
-                        )}
-                      </div>
-                    )}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Faculty />
 
       {/* Accreditations Section */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-24 bg-gradient-to-b from-white to-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">

@@ -20,6 +20,8 @@ import B2AdultsExam from "./Exams/B2AdultsExam"
 import B2YoungExam from "./Exams/B2YoungExam"
 import TestDaF from "./Exams/TestDaF"
 import Goethe from "./Exams/Goethe-TestPRO"
+import ForeignLanguages from "./Programs/ForeignLanguages"
+import HospitalityMgt from "./Programs/HospitalityMgt"
 //import InterviewDesign from "./Components/file"
 const App = () => {
   return (
@@ -32,7 +34,12 @@ const App = () => {
          <Route path="/about" element={<AboutPage />} />
          <Route path="/student-voices" element={<StudentVoices />} />
           <Route path="/apply" element={<ApplyPage />} />
+          {/* PROGRAMS PAGE */}
           <Route path="/programs/german-exams" element={<GermanExams />} />
+          <Route path="/programs/foreign-languages" element={<ForeignLanguages />} />
+          <Route path="/programs/hospitality-management" element={<HospitalityMgt />} />
+
+          {/* EXAMS PAGE */}
           <Route path="/exams/a1/young" element={<A1YoungExam />} />
           <Route path="/exams/a1/adults" element={<A1AdultsExam />} />
           <Route path="/exams/a2/young" element={<A2YoungExam />} />
@@ -45,6 +52,11 @@ const App = () => {
           <Route path="/exams/c2/adults" element={<C2AdultsExam />} />
           <Route path="/exams/testdaf/students" element={<TestDaF />} />
           <Route path="/exams/pro/professionals" element={<Goethe />} />
+            {/* LANGUAGE PAGES */}
+          <Route path="/exams/pro/professionals" element={<Goethe />} />
+          <Route path="/exams/pro/professionals" element={<Goethe />} />
+          <Route path="/exams/pro/professionals" element={<Goethe />} />
+
 
 
 

@@ -27,7 +27,7 @@ const testimonials: Testimonial[] = [
     id: 2,
     name: "Saitoti",
     role: "Dairy Farmer",
-    image: "user1.png",
+    image: "kasaine.jpeg",
     content: "from Narok South working and doing Ausbildung in Dairy farm in Lilienthal Germany Also came through our international institute of foreign languages and hospitality management. Saitoti insist that learning the German language will help you connect and find your way to Germany",
     rating: 5
   },
@@ -57,10 +57,10 @@ const testimonials: Testimonial[] = [
   },
   {
     id: 6,
-    name: "James Wilson",
-    role: "Corporate Events Director",
-    image: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg",
-    content: "The comprehensive event management training I received has been essential in my career. The practical experience and industry networking opportunities opened doors to exciting positions in corporate events.",
+    name: "Zablon Ledama kimong'o.",
+    role: "Professional Chef",
+    image: "zablon.jpeg",
+    content: "From Transmara a chef by professional currently in Germany after learning from International institute of foreign languages and hospitality management.",
     rating: 5
   }
 ];
