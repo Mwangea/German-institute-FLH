@@ -13,33 +13,38 @@ const programsData = [
     modules: [
       { 
         id: 1, 
-        title: "English Language Course", 
-        level: "Beginner to Advanced",
-        link: "/courses/english" 
+        title: "German Language Course", 
+        level: "Beginner to Intermediate",
+        link: "/courses/german",
+        isAvailable: true
       },
       { 
         id: 2, 
-        title: "Spanish Language Course", 
-        level: "Beginner to Intermediate",
-        link: "/courses/spanish" 
+        title: "English Language Course", 
+        level: "Beginner to Advanced",
+        link: "/courses/english",
+        isAvailable: false
       },
       { 
         id: 3, 
-        title: "French Language Course", 
-        level: "Beginner to Advanced",
-        link: "/courses/french" 
+        title: "Spanish Language Course", 
+        level: "Beginner to Intermediate",
+        link: "/courses/spanish",
+        isAvailable: false
       },
       { 
         id: 4, 
-        title: "German Language Course", 
-        level: "Beginner to Intermediate",
-        link: "/courses/german" 
+        title: "French Language Course", 
+        level: "Beginner to Advanced",
+        link: "/courses/french",
+        isAvailable: false
       },
       { 
         id: 5, 
         title: "Mandarin Chinese Course", 
         level: "Beginner",
-        link: "/courses/mandarin" 
+        link: "/courses/mandarin",
+        isAvailable: false
       }
     ]
   },
