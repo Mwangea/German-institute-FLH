@@ -24,6 +24,7 @@ import ForeignLanguages from "./Programs/ForeignLanguages"
 import HospitalityMgt from "./Programs/HospitalityMgt"
 import ComingSoon from "./languages/ComingSoon"
 import GermanLanguage from "./languages/GermanLanguage"
+//import ComingSoonLanguage from "./languages/ComingSoon"
 //import InterviewDesign from "./Components/file"
 const App = () => {
   return (
