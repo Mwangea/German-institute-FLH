@@ -1,5 +1,6 @@
 import { useState, useRef, ChangeEvent } from 'react';
-import { CheckCircle, X, Upload } from 'lucide-react';
+import { CheckCircle, X, Upload, Loader2 } from 'lucide-react';
+import apiClient from '../utils/apiClient';
 
 interface FormData {
   firstName: string;
@@ -26,6 +27,8 @@ const GermanLevelForm = ({ level }: { level: string }) => {
     idPhoto: null
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
@@ -38,21 +41,19 @@ const GermanLevelForm = ({ level }: { level: string }) => {
     if (e.target.files && e.target.files[0]) {
       const file = e.target.files[0];
       
-      // Validate file type (JPEG/PNG)
       if (!file.type.match('image/jpeg') && !file.type.match('image/png')) {
-        alert('Please upload a JPEG or PNG image');
+        setError('Please upload a JPEG or PNG image');
         return;
       }
       
-      // Validate file size (max 2MB)
       if (file.size > 2 * 1024 * 1024) {
-        alert('File size should be less than 2MB');
+        setError('File size should be less than 2MB');
         return;
       }
 
+      setError(null);
       setFormData(prev => ({ ...prev, idPhoto: file }));
       
-      // Create preview
       const reader = new FileReader();
       reader.onloadend = () => {
         setPreviewUrl(reader.result as string);
@@ -83,14 +84,66 @@ const GermanLevelForm = ({ level }: { level: string }) => {
     );
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const resetForm = () => {
+    setFormData({
+      firstName: '',
+      lastName: '',
+      email: '',
+      phone: '',
+      gender: '',
+      age: '',
+      classTime: '',
+      idNumber: '',
+      idPhoto: null
+    });
+    setPreviewUrl(null);
+    if (fileInputRef.current) {
+      fileInputRef.current.value = '';
+    }
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!isFormValid()) return;
-    
-    // Here you would typically send the data to your backend
-    console.log('Form submitted:', formData);
-    setIsSubmitted(true);
+  
+    setIsLoading(true);
+    setError(null);
+  
+    try {
+      const formDataToSend = new FormData();
+      formDataToSend.append('firstName', formData.firstName);
+      formDataToSend.append('lastName', formData.lastName);
+      formDataToSend.append('email', formData.email);
+      formDataToSend.append('phone', formData.phone);
+      formDataToSend.append('gender', formData.gender);
+      formDataToSend.append('age', formData.age);
+      formDataToSend.append('classTime', formData.classTime);
+      formDataToSend.append('idNumber', formData.idNumber);
+      formDataToSend.append('level', level);
+      if (formData.idPhoto) {
+        formDataToSend.append('idPhoto', formData.idPhoto);
+      }
+  
+      const response = await apiClient.post('/apply/german-courses', formDataToSend, {
+        headers: {
+          'Content-Type': 'multipart/form-data'
+        }
+      });
+  
+      if (response.status !== 200) {
+        throw new Error('Upload failed. Try again later.');
+      }
+  
+      setIsSubmitted(true);
+      resetForm();
+    } catch (err) {
+      console.error('Upload error:', err);
+      setError('Upload failed. Try again later.');
+    } finally {
+      setIsLoading(false);
+    }
   };
+  
 
   if (isSubmitted) {
     return (
@@ -103,7 +156,7 @@ const GermanLevelForm = ({ level }: { level: string }) => {
         <p className="text-gray-600">Our team will contact you shortly with further details.</p>
       </div>
     );
-  }
+  };
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
@@ -295,20 +348,27 @@ const GermanLevelForm = ({ level }: { level: string }) => {
       <div className="pt-2">
         <button
           type="submit"
-          disabled={!isFormValid()}
-          className={`w-full py-3 px-4 text-white font-medium rounded-md transition-colors ${
-            isFormValid() 
-              ? 'bg-primary-600 hover:bg-primary-700' 
+          disabled={!isFormValid() || isLoading}
+          className={`w-full py-3 px-4 text-white font-medium rounded-md transition-colors flex items-center justify-center ${
+            isFormValid() && !isLoading
+              ? 'bg-blue-600 hover:bg-blue-700' 
               : 'bg-gray-400 cursor-not-allowed'
           }`}
         >
-          Register for German Level {level}
+          {isLoading ? (
+            <>
+              <Loader2 className="w-5 h-5 mr-2 animate-spin" />
+              Processing...
+            </>
+          ) : (
+            `Register for German Level ${level}`
+          )}
         </button>
       </div>
 
-      {!isFormValid() && (
-        <div className="text-sm text-red-600 mt-2">
-          * Please fill all required fields and upload ID photo
+      {error && (
+        <div className="text-sm text-red-600 mt-2 text-center">
+          {error}
         </div>
       )}
     </form>
