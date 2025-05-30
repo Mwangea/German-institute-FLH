@@ -22,6 +22,8 @@ import TestDaF from "./Exams/TestDaF"
 import Goethe from "./Exams/Goethe-TestPRO"
 import ForeignLanguages from "./Programs/ForeignLanguages"
 import HospitalityMgt from "./Programs/HospitalityMgt"
+import ComingSoon from "./languages/ComingSoon"
+import GermanLanguage from "./languages/GermanLanguage"
 //import InterviewDesign from "./Components/file"
 const App = () => {
   return (
@@ -53,9 +55,15 @@ const App = () => {
           <Route path="/exams/testdaf/students" element={<TestDaF />} />
           <Route path="/exams/pro/professionals" element={<Goethe />} />
             {/* LANGUAGE PAGES */}
-          <Route path="/exams/pro/professionals" element={<Goethe />} />
-          <Route path="/exams/pro/professionals" element={<Goethe />} />
-          <Route path="/exams/pro/professionals" element={<Goethe />} />
+          <Route path="/courses/english" element={<ComingSoon />} />
+          <Route path="/courses/spanish" element={<ComingSoon />} />
+          <Route path="/courses/french" element={<ComingSoon />} />
+          <Route path="/courses/german" element={<GermanLanguage />} />
+          <Route path="/courses/mandarin" element={<ComingSoon />} />
+
+          {/* HOSPITALITY PAGES */}
+
+         
 
 
 
