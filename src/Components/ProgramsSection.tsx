@@ -2,19 +2,45 @@ import React from 'react';
 import ProgramBlock from './ProgramBlock';
 import ShapeBackground from './ShapeBackground';
 
-// Program data
+// Program data with module links
 const programsData = [
   {
     id: 1,
     title: "Foreign Languages",
     description: "Master new languages with our comprehensive foreign language programs, designed for all proficiency levels.",
     icon: "Globe2",
+    link: "/programs/foreign-languages",
     modules: [
-      { id: 1, title: "English Language Course", level: "Beginner to Advanced" },
-      { id: 2, title: "Spanish Language Course", level: "Beginner to Intermediate" },
-      { id: 3, title: "French Language Course", level: "Beginner to Advanced" },
-      { id: 4, title: "German Language Course", level: "Beginner to Intermediate" },
-      { id: 5, title: "Mandarin Chinese Course", level: "Beginner" }
+      { 
+        id: 1, 
+        title: "English Language Course", 
+        level: "Beginner to Advanced",
+        link: "/courses/english" 
+      },
+      { 
+        id: 2, 
+        title: "Spanish Language Course", 
+        level: "Beginner to Intermediate",
+        link: "/courses/spanish" 
+      },
+      { 
+        id: 3, 
+        title: "French Language Course", 
+        level: "Beginner to Advanced",
+        link: "/courses/french" 
+      },
+      { 
+        id: 4, 
+        title: "German Language Course", 
+        level: "Beginner to Intermediate",
+        link: "/courses/german" 
+      },
+      { 
+        id: 5, 
+        title: "Mandarin Chinese Course", 
+        level: "Beginner",
+        link: "/courses/mandarin" 
+      }
     ]
   },
   {
@@ -22,14 +48,50 @@ const programsData = [
     title: "Hospitality Management",
     description: "Develop essential skills for the hospitality industry with our specialized management and operational courses.",
     icon: "Hotel",
+    link: "/programs/hospitality-management",
     modules: [
-      { id: 1, title: "Diploma in Hospitality Management", level: "Advanced" },
-      { id: 2, title: "Diploma in Front Office Operations & Administration", level: "Intermediate" },
-      { id: 3, title: "Diploma in Food & Beverage Management", level: "Advanced" },
-      { id: 4, title: "Diploma in House Keeping & Laundry Operation", level: "Intermediate" },
-      { id: 5, title: "Certificate in Front Office Operations", level: "Beginner" },
-      { id: 6, title: "Certificate in Food and Beverage Service & Sales", level: "Beginner" },
-      { id: 7, title: "Certificate in House Keeping & Laundry", level: "Beginner" }
+      { 
+        id: 1, 
+        title: "Diploma in Hospitality Management", 
+        level: "Advanced",
+        link: "/courses/hospitality-diploma" 
+      },
+      { 
+        id: 2, 
+        title: "Diploma in Front Office Operations & Administration", 
+        level: "Intermediate",
+        link: "/courses/front-office-diploma" 
+      },
+      { 
+        id: 3, 
+        title: "Diploma in Food & Beverage Management", 
+        level: "Advanced",
+        link: "/courses/food-beverage-diploma" 
+      },
+      { 
+        id: 4, 
+        title: "Diploma in House Keeping & Laundry Operation", 
+        level: "Intermediate",
+        link: "/courses/housekeeping-diploma" 
+      },
+      { 
+        id: 5, 
+        title: "Certificate in Front Office Operations", 
+        level: "Beginner",
+        link: "/courses/front-office-cert" 
+      },
+      { 
+        id: 6, 
+        title: "Certificate in Food and Beverage Service & Sales", 
+        level: "Beginner",
+        link: "/courses/food-beverage-cert" 
+      },
+      { 
+        id: 7, 
+        title: "Certificate in House Keeping & Laundry", 
+        level: "Beginner",
+        link: "/courses/housekeeping-cert" 
+      }
     ]
   }
 ];

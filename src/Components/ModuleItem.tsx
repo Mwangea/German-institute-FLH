@@ -12,23 +12,24 @@ interface ModuleItemProps {
 }
 
 const getLevelColor = (level: string) => {
-  switch (level.toLowerCase()) {
-    case 'beginner':
-      return 'bg-green-100 text-green-800';
-    case 'intermediate':
-      return 'bg-blue-100 text-blue-800';
-    case 'advanced':
-      return 'bg-purple-100 text-purple-800';
-    default:
-      return 'bg-gray-100 text-gray-800';
+  const levelLower = level.toLowerCase();
+  if (levelLower.includes('beginner')) {
+    return 'bg-green-100 text-green-800';
   }
+  if (levelLower.includes('intermediate')) {
+    return 'bg-blue-100 text-blue-800';
+  }
+  if (levelLower.includes('advanced')) {
+    return 'bg-purple-100 text-purple-800';
+  }
+  return 'bg-gray-100 text-gray-800';
 };
 
 const ModuleItem: React.FC<ModuleItemProps> = ({ module }) => {
   const levelColorClass = getLevelColor(module.level);
 
   return (
-    <div className="group relative overflow-hidden rounded-xl bg-white border border-gray-100 hover:border-primary-500 transition-all duration-300 p-4">
+    <div className="group relative overflow-hidden rounded-xl bg-white border border-gray-100 hover:border-primary-500 transition-all duration-300 p-4 cursor-pointer">
       <div className="absolute inset-0 bg-gradient-to-r from-primary-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       <div className="relative flex items-center justify-between">
         <div>

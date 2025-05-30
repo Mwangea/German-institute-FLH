@@ -33,7 +33,7 @@ const testimonials: StudentTestimonial[] = [
 
   {
     id: 3,
-    name: "XYZ",
+    name: "Zablon Ledama kimong'o.",
     program:
       "Languages and Culinary Arts through the Institution of Foreign Language and Hospitality Management",
     quote:

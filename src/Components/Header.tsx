@@ -8,8 +8,8 @@ const NAV_ITEMS = [
     path: '/programs',
     hasDropdown: true,
     dropdownItems: [
-      { label: 'Language Courses', path: '/programs/languages' },
-      { label: 'Hospitality Management', path: '/programs/hospitality' },
+      { label: 'Language Courses', path: '/programs/foreign-languages' },
+      { label: 'Hospitality Management', path: '/programs/hospitality-management' },
       { label: 'German Exams', path: '/programs/german-exams' }
     ]
   },
