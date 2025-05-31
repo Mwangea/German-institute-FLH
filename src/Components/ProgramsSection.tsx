@@ -59,43 +59,43 @@ const programsData = [
         id: 1, 
         title: "Diploma in Hospitality Management", 
         level: "Advanced",
-        link: "/courses/hospitality-diploma" 
+        link: "/diploma-hospitality" 
       },
       { 
         id: 2, 
         title: "Diploma in Front Office Operations & Administration", 
         level: "Intermediate",
-        link: "/courses/front-office-diploma" 
+        link: "/diploma-front-office" 
       },
       { 
         id: 3, 
         title: "Diploma in Food & Beverage Management", 
         level: "Advanced",
-        link: "/courses/food-beverage-diploma" 
+        link: "/diploma-food-beverage" 
       },
       { 
         id: 4, 
         title: "Diploma in House Keeping & Laundry Operation", 
         level: "Intermediate",
-        link: "/courses/housekeeping-diploma" 
+        link: "/diploma-housekeeping" 
       },
       { 
         id: 5, 
         title: "Certificate in Front Office Operations", 
         level: "Beginner",
-        link: "/courses/front-office-cert" 
+        link: "/certificate-front-office" 
       },
       { 
         id: 6, 
         title: "Certificate in Food and Beverage Service & Sales", 
         level: "Beginner",
-        link: "/courses/food-beverage-cert" 
+        link: "/certificate-food-beverage" 
       },
       { 
         id: 7, 
         title: "Certificate in House Keeping & Laundry", 
         level: "Beginner",
-        link: "/courses/housekeeping-cert" 
+        link: "/certificate-housekeeping" 
       }
     ]
   }
