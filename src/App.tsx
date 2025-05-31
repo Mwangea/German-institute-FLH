@@ -31,6 +31,13 @@ import GermanLevelB2 from "./languages/B2"
 import GermanLevelC1 from "./languages/C1"
 import GermanLevelC2 from "./languages/C2"
 import { ScrollPreserver } from "./Components/ScrollPresever"
+import DiplomaHospitality from "./Hospitality/DiplomaHospitality"
+import DiplomaFrontOffice from "./Hospitality/DiplomaFrontOffice"
+import DiplomaFoodBeverage from "./Hospitality/DiplomaFoodBeverage"
+import CertificateFrontOffice from "./Hospitality/CertificateFrontOffice"
+import CertificateFoodBeverage from "./Hospitality/CertificateFoodBeverage"
+import DiplomaHouseKeeping from "./Hospitality/DiplomaHouseKeeping"
+import CertificateHouseKeeping from "./Hospitality/CertificateHouseKeeping"
 //import ComingSoonLanguage from "./languages/ComingSoon"
 //import InterviewDesign from "./Components/file"
 const App = () => {
@@ -45,6 +52,7 @@ const App = () => {
          <Route path="/about" element={<AboutPage />} />
          <Route path="/student-voices" element={<StudentVoices />} />
           <Route path="/all-programs" element={<ApplyPage />} />
+
           {/* PROGRAMS PAGE */}
           <Route path="/programs/german-exams" element={<GermanExams />} />
           <Route path="/programs/foreign-languages" element={<ForeignLanguages />} />
@@ -63,6 +71,7 @@ const App = () => {
           <Route path="/exams/c2/adults" element={<C2AdultsExam />} />
           <Route path="/exams/testdaf/students" element={<TestDaF />} />
           <Route path="/exams/pro/professionals" element={<Goethe />} />
+
             {/* LANGUAGE PAGES */}
           <Route path="/courses/english" element={<ComingSoon />} />
           <Route path="/courses/spanish" element={<ComingSoon />} />
@@ -77,6 +86,17 @@ const App = () => {
           <Route path="/german-levels/b2" element={<GermanLevelB2 />} />
           <Route path="/german-levels/c1" element={<GermanLevelC1 />} />
           <Route path="/german-levels/c2" element={<GermanLevelC2 />} />
+
+          {/* HOSPITALITY PAGES */}
+          <Route path="/diploma-hospitality" element={<DiplomaHospitality />} />
+          <Route path="/diploma-front-office" element={<DiplomaFrontOffice />} />
+            <Route path="/diploma-food-beverage" element={<DiplomaFoodBeverage />} />
+            <Route path="/diploma-housekeeping" element={<DiplomaHouseKeeping />} />
+            <Route path="/certificate-front-office" element={<CertificateFrontOffice />} />
+            <Route path="/certificate-food-beverage" element={<CertificateFoodBeverage />} />
+            <Route path="/certificate-housekeeping" element={<CertificateHouseKeeping />} />
+
+
  
          {/* <Route path="/apply" element={<InterviewDesign />} /> */}
 

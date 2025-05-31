@@ -192,8 +192,8 @@ const HospitalityMgt = () => {
           </div>
 
           <div className="mt-8 text-white/80">
-            <p>Upcoming intake: January 15, 2024</p>
-            <p className="mt-2">Early application deadline: December 1, 2023</p>
+            <p>Upcoming intake: June 15, 2025</p>
+            <p className="mt-2">Early application deadline: May 31, 2025</p>
           </div>
         </div>
       </div>

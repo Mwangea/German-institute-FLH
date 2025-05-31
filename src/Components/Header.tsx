@@ -14,7 +14,7 @@ const NAV_ITEMS = [
     ]
   },
   { label: 'About Us', path: '/about' },
-  { label: 'Admissions', path: '/admissions' },
+  // { label: 'Admissions', path: '/admissions' },
   { label: 'Student Voices', path: '/student-voices' },
   { label: 'Contact', path: '/contact' },
 ];
@@ -181,7 +181,7 @@ const Header: React.FC = () => {
               
               {/* CTA Button */}
               <a
-                href="/apply"
+                href="/"
                 className="ml-6 bg-button-50 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
                 onClick={() => handleNavClick('/apply')}
               >
@@ -273,7 +273,7 @@ const Header: React.FC = () => {
             
             {/* CTA Button in Mobile */}
             <a
-              href="/apply"
+              href="/"
               className="block w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white text-center py-4 px-4 rounded-xl font-bold text-lg mt-6 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
               onClick={() => handleNavClick('/apply')}
             >
