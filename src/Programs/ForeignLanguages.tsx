@@ -1,6 +1,6 @@
 import React from 'react';
 import {  Clock, BookOpen, Play } from 'lucide-react';
-import LanguageCard from '../components/LanguageCard';
+import LanguageCard from '../Components/LanguageCard';
 //import PageHeader from '../components/PageHeader';
 
 // Define the language module type
@@ -130,7 +130,7 @@ const ForeignLanguages: React.FC = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {comingSoonCourses.map(course => (
-              <LanguageCard 
+              <LanguageCard
                 key={course.id}
                 title={course.title}
                 level={course.level}
