@@ -33,11 +33,11 @@ import GermanLevelC2 from "./languages/C2"
 import { ScrollPreserver } from "./Components/ScrollPresever"
 import DiplomaHospitality from "./Hospitality/DiplomaHospitality"
 import DiplomaFrontOffice from "./Hospitality/DiplomaFrontOffice"
-import DiplomaFoodBeverage from "./Hospitality/DiplomaFoodBeverage"
+// import DiplomaFoodBeverage from "./Hospitality/DiplomaFoodBeverage"
 import CertificateFrontOffice from "./Hospitality/CertificateFrontOffice"
-import CertificateFoodBeverage from "./Hospitality/CertificateFoodBeverage"
+// import CertificateFoodBeverage from "./Hospitality/CertificateFoodBeverage"
 import DiplomaHouseKeeping from "./Hospitality/DiplomaHouseKeeping"
-import CertificateHouseKeeping from "./Hospitality/CertificateHouseKeeping"
+// import CertificateHouseKeeping from "./Hospitality/CertificateHouseKeeping"
 import WhatsAppButton from "./Components/WhatsAppButton"
 //import ComingSoonLanguage from "./languages/ComingSoon"
 //import InterviewDesign from "./Components/file"
@@ -91,11 +91,11 @@ const App = () => {
           {/* HOSPITALITY PAGES */}
           <Route path="/diploma-hospitality" element={<DiplomaHospitality />} />
           <Route path="/diploma-front-office" element={<DiplomaFrontOffice />} />
-            <Route path="/diploma-food-beverage" element={<DiplomaFoodBeverage />} />
+            {/* <Route path="/diploma-food-beverage" element={<DiplomaFoodBeverage />} /> */}
             <Route path="/diploma-housekeeping" element={<DiplomaHouseKeeping />} />
             <Route path="/certificate-front-office" element={<CertificateFrontOffice />} />
-            <Route path="/certificate-food-beverage" element={<CertificateFoodBeverage />} />
-            <Route path="/certificate-housekeeping" element={<CertificateHouseKeeping />} />
+            {/* <Route path="/certificate-food-beverage" element={<CertificateFoodBeverage />} /> */}
+            {/* <Route path="/certificate-housekeeping" element={<CertificateHouseKeeping />} /> */}
 
 
  
