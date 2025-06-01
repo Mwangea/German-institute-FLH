@@ -1,77 +1,89 @@
-// src/pages/DiplomaHouseKeeping.tsx
-//import HospitalityCourseTemplate from '../components/Hospitality/HospitalityCourseTemplate';
-import { Clock, Award, BookOpen, Users,  MapPin, Calendar } from 'lucide-react';
+import { Clock, Award,  Users, ClipboardList, ShieldCheck, Layers } from 'lucide-react';
 import HospitalityCourseTemplate from './HospitalityCourseTemplate';
 
 const DiplomaHouseKeeping = () => {
   const courseData = {
-    title: "Diploma in Housekeeping Operations",
+    title: "Diploma in House Keeping & Laundry Operation",
     type: 'Diploma' as const,
-    duration: "12 Months (6 months theory + 6 months internship)",
-    price: "KES 40,000",
-    fullDescription: "This comprehensive diploma program prepares students for supervisory and management roles in housekeeping departments of hotels, hospitals, and large facilities. The curriculum covers cleaning techniques, laundry operations, staff supervision, and quality control in housekeeping services.",
+    duration: "2 Years",
+    price: "Contact for pricing",
+    fullDescription: `
+      International Institute of Foreign Languages and Hospitality  Management is committed to sustaining its mandate of training qualified professionals for the hospitality and tourism industry.
+      
+      This is a two-year program that provides students with competencies on supervision, scheduling, inventory control, selection, and maintenance of fabrics, furniture and floor coverings and supervising operations of a laundry plant.
+    `,
     outcomes: [
-      "Master housekeeping operations and management",
-      "Learn advanced cleaning techniques",
-      "Develop supervisory and leadership skills",
-      "Understand inventory and linen management",
-      "Implement quality control systems"
+      "Plan and schedule housekeeping duties effectively",
+      "Organize and manage the housekeeping department",
+      "Supervise laundry operations with expertise",
+      "Maintain high standards of health and safety",
+      "Implement proper cleaning procedures",
+      "Manage inventory control systems",
+      "Adhere to standard operating procedures",
+      "Deliver high standards of service for guest satisfaction"
     ],
-    certification: "Diploma in Housekeeping Operations",
-    targetAudience: "Individuals seeking careers in hotel housekeeping management, facility maintenance, or hospital housekeeping supervision.",
+    goals: [
+      "Develop supervisory skills for housekeeping operations",
+      "Train professionals in fabric and furniture maintenance",
+      "Provide expertise in laundry plant supervision",
+      "Equip students with inventory control competencies"
+    ],
+    certification: "Diploma in House Keeping & Laundry Operation",
+    targetAudience: "Individuals seeking comprehensive training in housekeeping and laundry operations for the hospitality industry",
     keyFeatures: [
       {
         icon: <Clock className="w-8 h-8 text-primary-600" />,
         title: "Duration",
-        description: "12 Months (6 months theory + 6 months internship)"
+        description: "2 years comprehensive training"
       },
       {
         icon: <Award className="w-8 h-8 text-primary-600" />,
         title: "Certification",
-        description: "Diploma in Housekeeping Operations"
+        description: "Diploma in House Keeping & Laundry Operation"
       },
       {
-        icon: <BookOpen className="w-8 h-8 text-primary-600" />,
-        title: "Study Mode",
-        description: "Full-time (Weekdays) or Part-time (Weekends)"
+        icon: <ClipboardList className="w-8 h-8 text-primary-600" />,
+        title: "Skills Focus",
+        description: "Supervision, scheduling, and inventory control"
+      },
+      {
+        icon: <Layers className="w-8 h-8 text-primary-600" />,
+        title: "Material Expertise",
+        description: "Selection and maintenance of fabrics and furniture"
+      },
+      {
+        icon: <ShieldCheck className="w-8 h-8 text-primary-600" />,
+        title: "Operations",
+        description: "Supervising laundry plant operations"
       },
       {
         icon: <Users className="w-8 h-8 text-primary-600" />,
-        title: "Class Size",
-        description: "Limited to 20 students per class"
-      },
-      {
-        icon: <MapPin className="w-8 h-8 text-primary-600" />,
-        title: "Location",
-        description: "Nairobi Campus or Mombasa Campus"
-      },
-      {
-        icon: <Calendar className="w-8 h-8 text-primary-600" />,
-        title: "Intakes",
-        description: "January, May, and September"
+        title: "Career Level",
+        description: "Supervisory positions in hospitality"
       }
     ],
     careerOpportunities: [
-      "Executive Housekeeper",
-      "Housekeeping Supervisor",
-      "Laundry Manager",
-      "Facility Maintenance Manager",
-      "Hospital Housekeeping Manager",
-      "Cruise Ship Housekeeping Officer"
+      "Floor Supervisors",
+      "Housekeeping Desk Coordinators",
+      "Public Area Supervisors",
+      "Linen and Uniform Supervisors",
+      "Laundry Supervisors",
+      "Hospital Housekeeping Managers",
+      "Resort Maintenance Supervisors"
     ],
     modules: [
-      "Principles of Housekeeping",
-      "Cleaning Science and Techniques",
-      "Laundry Operations",
-      "Inventory and Linen Management",
-      "Housekeeping Administration",
-      "Quality Control in Housekeeping",
-      "Staff Training and Supervision",
-      "Safety and Sanitation Standards",
-      "Pest Control Management",
-      "Hospital Housekeeping Specialization"
+      "Housekeeping Department Organization",
+      "Supervision Techniques",
+      "Scheduling and Duty Planning",
+      "Inventory Control Systems",
+      "Fabric and Furniture Maintenance",
+      "Floor Covering Care",
+      "Laundry Plant Operations",
+      "Health and Safety Standards",
+      "Cleaning Procedures and Techniques",
+      "Guest Satisfaction Strategies"
     ],
-    internship: "6-month internship at 4-5 star hotels or large facilities with potential for employment after completion.",
+    internship: "Practical training component included in the 2-year program",
     imageUrl: "https://images.pexels.com/photos/5997993/pexels-photo-5997993.jpeg"
   };
 

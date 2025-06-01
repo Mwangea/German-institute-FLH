@@ -1,75 +1,88 @@
-// src/pages/CertificateFrontOffice.tsx
-//import HospitalityCourseTemplate from '../components/Hospitality/HospitalityCourseTemplate';
-import { Clock, Award, BookOpen, Users, MapPin, Calendar } from 'lucide-react';
+import { Clock, Award, BookOpen,  UserCheck, CreditCard, ArrowUpCircle } from 'lucide-react';
 import HospitalityCourseTemplate from './HospitalityCourseTemplate';
 
 const CertificateFrontOffice = () => {
   const courseData = {
-    title: "Certificate in Front Office Operations",
+    title: "Certificate in Front Office Operations & Administration",
     type: 'Certificate' as const,
-    duration: "6 Months (3 months theory + 3 months internship)",
-    price: "KES 25,000",
-    fullDescription: "This certificate program provides foundational skills for entry-level positions in hotel front offices. Students learn essential guest service techniques, reservation systems, and front office procedures used in the hospitality industry.",
+    duration: "ONE YEAR",
+    price: "Contact for pricing",
+    fullDescription: `
+      International Institute of Foreign Languages and Hospitality  Management is committed to sustaining its mandate of training qualified professionals for the hospitality and tourism industry.
+      
+      This one-year programme provides students with professional skills on how to operate at the front office in various types of hotels. It entails both practical and theoretical training coupled with three months' industrial attachment in hotels.
+      
+      The driving philosophy behind this programme is to supply the labour market with a well-grounded employee who will enter the market at operational level and be able to rise through promotional ranks to the level of a supervisor at section level. Certificate training will also enable the graduate to advance in studies through diploma and eventually degree level.
+    `,
     outcomes: [
-      "Understand front office operations",
-      "Develop basic guest service skills",
-      "Learn reservation and check-in procedures",
-      "Handle telephone and email inquiries professionally",
-      "Process payments and billing accurately"
+      "Work independently as Front Desk Agents, Cashiers, and Receptionists",
+      "Perform effectively as Reservation Clerks and food and beverage control clerks",
+      "Handle front office operations in various hotel types",
+      "Apply both theoretical knowledge and practical skills",
+      "Progress to supervisory roles with experience",
+      "Continue studies at diploma and degree levels"
     ],
-    certification: "Certificate in Front Office Operations",
-    targetAudience: "Beginners seeking entry-level positions in hotels, resorts, or guest service environments.",
+    goals: [
+      "To train competent young men and women to develop their career in the Hospitality industry"
+    ],
+    certification: "Certificate in Front Office Operations & Administration",
+    targetAudience: "Individuals seeking professional front office skills for immediate employment in the hospitality industry",
     keyFeatures: [
       {
         icon: <Clock className="w-8 h-8 text-primary-600" />,
         title: "Duration",
-        description: "6 Months (3 months theory + 3 months internship)"
+        description: "One year (including 3 months industrial attachment)"
       },
       {
         icon: <Award className="w-8 h-8 text-primary-600" />,
         title: "Certification",
-        description: "Certificate in Front Office Operations"
+        description: "Certificate in Front Office Operations & Administration"
       },
       {
         icon: <BookOpen className="w-8 h-8 text-primary-600" />,
-        title: "Study Mode",
-        description: "Full-time (Weekdays) or Part-time (Weekends)"
+        title: "Training Approach",
+        description: "Combination of classroom and practical training"
       },
       {
-        icon: <Users className="w-8 h-8 text-primary-600" />,
-        title: "Class Size",
-        description: "Limited to 25 students per class"
+        icon: <UserCheck className="w-8 h-8 text-primary-600" />,
+        title: "Career Entry",
+        description: "Operational level with potential for promotion"
       },
       {
-        icon: <MapPin className="w-8 h-8 text-primary-600" />,
-        title: "Location",
-        description: "Nairobi Campus or Online"
+        icon: <CreditCard className="w-8 h-8 text-primary-600" />,
+        title: "Practical Training",
+        description: "At Campus Training Reception Room and Utalii Hotel"
       },
       {
-        icon: <Calendar className="w-8 h-8 text-primary-600" />,
-        title: "Intakes",
-        description: "Monthly intakes available"
+        icon: <ArrowUpCircle className="w-8 h-8 text-primary-600" />,
+        title: "Progression",
+        description: "Pathway to diploma and degree-level studies"
       }
     ],
     careerOpportunities: [
-      "Front Desk Agent",
-      "Reservations Agent",
-      "Guest Service Representative",
-      "Telephone Operator",
-      "Night Auditor Trainee"
+      "Front Desk Agents",
+      "Cashiers",
+      "Receptionists",
+      "Reservation Clerks",
+      "Food and Beverage Control Clerks",
+      "Front Office Assistants",
+      "Guest Service Agents",
+      "Hotel Administrative Assistants"
     ],
     modules: [
-      "Introduction to Front Office",
-      "Guest Service Basics",
+      "Front Office Operations Fundamentals",
+      "Guest Registration Procedures",
       "Reservation Systems",
-      "Check-in/Check-out Procedures",
-      "Telephone Etiquette",
-      "Basic Accounting Procedures",
+      "Cash Handling and Accounting",
+      "Telephone Operations",
+      "Guest Service Standards",
+      "Property Management Systems",
       "Communication Skills",
-      "Safety and Security Awareness"
+      "Industry Software Applications",
+      "Front Office Administration"
     ],
-    internship: "3-month internship at partner hotels with job placement assistance upon completion.",
-    imageUrl: "https://images.pexels.com/photos/237272/pexels-photo-237272.jpeg"
+    internship: "Three months' industrial attachment in partner hotels",
+    imageUrl: "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg"
   };
 
   return <HospitalityCourseTemplate courseData={courseData} />;

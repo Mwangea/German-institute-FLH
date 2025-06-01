@@ -1,77 +1,88 @@
-// src/pages/DiplomaFrontOffice.tsx
-//import HospitalityCourseTemplate from '../components/Hospitality/HospitalityCourseTemplate';
-import { Clock, Award, BookOpen, Users, MapPin, Calendar } from 'lucide-react';
+import { Clock, Award, BookOpen, UserCheck, CreditCard, Bell } from 'lucide-react';
 import HospitalityCourseTemplate from './HospitalityCourseTemplate';
 
 const DiplomaFrontOffice = () => {
   const courseData = {
-    title: "Diploma in Front Office Operations",
+    title: "Diploma in Front Office Operations & Administration",
     type: 'Diploma' as const,
-    duration: "12 Months (6 months theory + 6 months internship)",
-    price: "KES 45,000",
-    fullDescription: "Our Diploma in Front Office Operations provides comprehensive training in all aspects of front office management in the hospitality industry. Students will gain practical skills in guest services, reservations, billing systems, and front office technology used in hotels and resorts worldwide.",
+    duration: "TWO YEARS",
+    price: "Contact for pricing",
+    fullDescription: `
+      International Institute of Foreign Languages and Hospitality  Management is committed to sustaining its mandate of training qualified professionals for the hospitality and tourism industry.
+      
+      This two years' programme provides students with professional skills on how to operate at the front office in various types of hotels. It entails both practical and theoretical training coupled with six months' external industrial attachment in hotels. 
+      
+      The driving philosophy behind this programme is to supply the labour market with a well-grounded employee who will enter the market at operational level and be able to rise through promotional ranks to the level of a supervisor at section level. The diploma training will also enable the graduate to advance in studies through to degree level.
+    `,
     outcomes: [
-      "Master front office operations and management",
-      "Develop exceptional guest service skills",
-      "Learn property management systems (PMS)",
-      "Understand revenue management principles",
-      "Handle guest complaints and special requests professionally"
+      "Work independently as Front Desk Agents, Cashiers, and Receptionists",
+      "Perform effectively as Reservation Clerks and food and beverage control clerks",
+      "With experience, work as Front office supervisors",
+      "Handle roles as Revenue controllers and night auditors",
+      "Serve as Guests relation officers and credit controllers"
     ],
-    certification: "Diploma in Front Office Operations",
-    targetAudience: "Individuals seeking careers in hotel front office, guest services, or reservations. Suitable for both beginners and those with some hospitality experience.",
+    goals: [
+      "To train competent young men and women to develop their career in the Hospitality industry"
+    ],
+    certification: "Diploma in Front Office Operations & Administration",
+    targetAudience: "Individuals seeking professional skills for front office operations in various types of hotels",
     keyFeatures: [
       {
         icon: <Clock className="w-8 h-8 text-primary-600" />,
         title: "Duration",
-        description: "12 Months (6 months theory + 6 months internship)"
+        description: "Two years (including 6 months industrial attachment)"
       },
       {
         icon: <Award className="w-8 h-8 text-primary-600" />,
         title: "Certification",
-        description: "Diploma in Front Office Operations"
+        description: "Diploma in Front Office Operations & Administration"
       },
       {
         icon: <BookOpen className="w-8 h-8 text-primary-600" />,
-        title: "Study Mode",
-        description: "Full-time (Weekdays) or Part-time (Weekends)"
+        title: "Training Approach",
+        description: "Combination of practical and theoretical training"
       },
       {
-        icon: <Users className="w-8 h-8 text-primary-600" />,
-        title: "Class Size",
-        description: "Limited to 20 students per class"
+        icon: <UserCheck className="w-8 h-8 text-primary-600" />,
+        title: "Career Entry",
+        description: "Operational level with potential to supervisory roles"
       },
       {
-        icon: <MapPin className="w-8 h-8 text-primary-600" />,
-        title: "Location",
-        description: "Nairobi Campus or Mombasa Campus"
+        icon: <CreditCard className="w-8 h-8 text-primary-600" />,
+        title: "Practical Training",
+        description: "At Utalii Hotel facilities"
       },
       {
-        icon: <Calendar className="w-8 h-8 text-primary-600" />,
-        title: "Intakes",
-        description: "January, May, and September"
+        icon: <Bell className="w-8 h-8 text-primary-600" />,
+        title: "Progression",
+        description: "Pathway to degree-level studies"
       }
     ],
     careerOpportunities: [
-      "Front Office Manager",
-      "Guest Service Agent",
-      "Reservations Supervisor",
-      "Concierge",
-      "Night Auditor",
-      "Revenue Manager"
+      "Front Desk Agents",
+      "Cashiers",
+      "Receptionists",
+      "Reservation Clerks",
+      "Food and Beverage Control Clerks",
+      "Front Office Supervisors",
+      "Revenue Controllers",
+      "Night Auditors",
+      "Guest Relation Officers",
+      "Credit Controllers"
     ],
     modules: [
-      "Introduction to Hospitality Industry",
-      "Front Office Operations",
+      "Front Office Operations Fundamentals",
+      "Guest Service Procedures",
+      "Reservation Systems Management",
+      "Revenue Control Techniques",
+      "Night Audit Procedures",
+      "Guest Relations Management",
+      "Credit Control Systems",
       "Property Management Systems",
-      "Guest Service Excellence",
-      "Reservation Techniques",
-      "Revenue Management",
-      "Housekeeping Coordination",
-      "Communication Skills",
       "Hospitality Accounting",
-      "Safety and Security Procedures"
+      "Communication Skills for Front Office"
     ],
-    internship: "6-month guaranteed internship at leading hotels and resorts with potential for employment after completion.",
+    internship: "Six months' external industrial attachment in hotels",
     imageUrl: "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg"
   };
 
