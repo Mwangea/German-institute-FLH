@@ -56,16 +56,16 @@ const Footer: React.FC = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-3 text-primary-500 flex-shrink-0 mt-0.5" />
-                <span className="text-gray-400">123 Education Ave, Knowledge City, ST 12345</span>
+                <span className="text-gray-400">Newline Building, Narok, Kenya</span>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-3 text-primary-500 flex-shrink-0" />
-                <span className="text-gray-400">(123) 456-7890</span>
+                <span className="text-gray-400">+254723104680</span>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 mr-3 text-primary-500 flex-shrink-0" />
-                <a href="mailto:info@eduexcel.edu" className="text-gray-400 hover:text-white transition-colors duration-200">
-                  info@eduexcel.edu
+                <a href="mailto:info@foreignlanguagesandhospitality.com" className="text-gray-400 hover:text-white transition-colors duration-200">
+                info@foreignlanguagesandhospitality.com 
                 </a>
               </li>
             </ul>

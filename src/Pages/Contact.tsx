@@ -117,16 +117,16 @@ const ContactSection: React.FC = () => {
                         Call Us
                       </h3>
                       <a
-                        href="tel:+15551234567"
+                        href="tel:+254723104680"
                         className="text-sm sm:text-base text-gray-600 hover:text-primary-500 hover:underline block mb-1"
                       >
-                        +1 (555) 123-4567
+                        +254723104680
                       </a>
                       <a
-                        href="tel:+15559876543"
+                        href="tel:+49 15781271260"
                         className="text-sm sm:text-base text-gray-600 hover:text-primary-500 hover:underline block"
                       >
-                        +1 (555) 987-6543
+                        +49 15781271260
                       </a>
                     </div>
                   </div>
@@ -141,11 +141,11 @@ const ContactSection: React.FC = () => {
                         Visit Us
                       </h3>
                       <p className="text-sm sm:text-base text-gray-600">
-                        123 Education Street
+                        Newline Building
                         <br />
-                        New York, NY 10001
+                        Narok, Kenya
                         <br />
-                        United States
+                        Kenya
                       </p>
                     </div>
                   </div>

@@ -38,6 +38,7 @@ import CertificateFrontOffice from "./Hospitality/CertificateFrontOffice"
 import CertificateFoodBeverage from "./Hospitality/CertificateFoodBeverage"
 import DiplomaHouseKeeping from "./Hospitality/DiplomaHouseKeeping"
 import CertificateHouseKeeping from "./Hospitality/CertificateHouseKeeping"
+import WhatsAppButton from "./Components/WhatsAppButton"
 //import ComingSoonLanguage from "./languages/ComingSoon"
 //import InterviewDesign from "./Components/file"
 const App = () => {
@@ -105,6 +106,7 @@ const App = () => {
       </ScrollPreserver>
     </BrowserRouter>
     <ScrollToTopButton />
+    <WhatsAppButton />
     </>
     
     

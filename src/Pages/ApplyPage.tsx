@@ -54,8 +54,8 @@ const programs: Program[] = [
     id: 4,
     title: "Diploma in Hospitality Management",
     type: "hospitality",
-    duration: "12 months",
-    price: 150000,
+    duration: "3 months",
+    price: 20000,
     description: "Comprehensive program covering all aspects of hospitality management, including operations, leadership, and customer service.",
     startDates: ["January", "June", "September"],
     prerequisites: ["High school diploma or equivalent", "Basic English proficiency"]
@@ -64,8 +64,8 @@ const programs: Program[] = [
     id: 5,
     title: "Diploma in Front Office Operations & Administration",
     type: "hospitality",
-    duration: "6 months",
-    price: 80000,
+    duration: "3 months",
+    price: 20000,
     description: "Specialized training in front office operations, guest relations, and administrative procedures.",
     startDates: ["February", "July", "November"],
     prerequisites: ["High school diploma or equivalent"]
@@ -74,8 +74,8 @@ const programs: Program[] = [
     id: 6,
     title: "Diploma in Food & Beverage Management",
     type: "hospitality",
-    duration: "9 months",
-    price: 100000,
+    duration: "3 months",
+    price: 20000,
     description: "Master the art of food and beverage service, restaurant management, and culinary operations.",
     startDates: ["March", "August", "December"],
     prerequisites: ["High school diploma or equivalent"]
@@ -84,8 +84,8 @@ const programs: Program[] = [
     id: 7,
     title: "Diploma in House Keeping & Laundry Operation",
     type: "hospitality",
-    duration: "6 months",
-    price: 75000,
+    duration: "3 months",
+    price: 20000,
     description: "Professional training in housekeeping management, laundry operations, and facility maintenance.",
     startDates: ["January", "June", "September"],
     prerequisites: ["High school diploma or equivalent"]
@@ -95,7 +95,7 @@ const programs: Program[] = [
     title: "Certificate in Front Office Operations",
     type: "hospitality",
     duration: "3 months",
-    price: 45000,
+    price: 20000,
     description: "Essential skills for front office operations and guest service excellence.",
     startDates: ["Monthly intake"],
     prerequisites: ["Basic English communication skills"]
@@ -105,7 +105,7 @@ const programs: Program[] = [
     title: "Certificate in Food and Beverage Service",
     type: "hospitality",
     duration: "3 months",
-    price: 45000,
+    price: 20000,
     description: "Practical training in food and beverage service, including customer service and operational procedures.",
     startDates: ["Monthly intake"],
     prerequisites: ["Basic English communication skills"]

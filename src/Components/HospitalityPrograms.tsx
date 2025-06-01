@@ -6,7 +6,7 @@ const programs = [
       title: "Diploma in Hospitality Management",
       path: "/diploma-hospitality",
       image: "https://images.pexels.com/photos/2373201/pexels-photo-2373201.jpeg",
-      duration: "18 months",
+      duration: "3 months",
       level: "Diploma",
       description:
         "Comprehensive program covering all aspects of hotel operations, management principles, and hospitality services.",
@@ -25,7 +25,7 @@ const programs = [
       title: "Diploma in Front Office Operations & Administration",
       path: "/diploma-front-office",
       image: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg",
-      duration: "12 months",
+      duration: "3 months",
       level: "Diploma",
       description:
         "Specialized training in front office management, guest relations, and hotel administration systems.",
@@ -44,7 +44,7 @@ const programs = [
       title: "Diploma in Food & Beverage Management",
       path: "/diploma-food-beverage",
       image: "https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg",
-      duration: "12 months",
+      duration: "3 months",
       level: "Diploma",
       description:
         "Professional training in restaurant operations, bar management, and culinary supervision.",
@@ -63,7 +63,7 @@ const programs = [
       title: "Diploma in House Keeping & Laundry Operation",
       path: "/diploma-housekeeping",
       image: "https://images.pexels.com/photos/4107112/pexels-photo-4107112.jpeg",
-      duration: "12 months",
+      duration: "3 months",
       level: "Diploma",
       description:
         "Advanced training in professional housekeeping, laundry operations, and facilities maintenance.",
@@ -82,7 +82,7 @@ const programs = [
       title: "Certificate in Front Office Operations",
       path: "/certificate-front-office",
       image: "https://images.pexels.com/photos/1571458/pexels-photo-1571458.jpeg",
-      duration: "6 months",
+      duration: "3 months",
       level: "Certificate",
       description:
         "Fundamental training in front desk operations, guest services, and basic reservation systems.",
@@ -101,7 +101,7 @@ const programs = [
       title: "Certificate in Food and Beverage Service & Sales",
       path: "/certificate-food-beverage",
       image: "https://images.pexels.com/photos/3434523/pexels-photo-3434523.jpeg",
-      duration: "6 months",
+      duration: "3 months",
       level: "Certificate",
       description:
         "Practical training in food service techniques, beverage knowledge, and upselling strategies.",
@@ -120,7 +120,7 @@ const programs = [
       title: "Certificate in House Keeping & Laundry",
       path: "/certificate-housekeeping",
       image: "https://images.pexels.com/photos/3771110/pexels-photo-3771110.jpeg",
-      duration: "6 months",
+      duration: "3 months",
       level: "Certificate",
       description:
         "Entry-level training in professional cleaning, room preparation, and basic laundry operations.",

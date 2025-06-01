@@ -18,90 +18,90 @@ const examDates: ExamDate[] = [
     date: "25.07. - 26.07.2025", 
     location: "Mombasa", 
     registrationPeriod: "23.06.2025 - 27.06.2025", 
-    price: "KES 25.000,00", 
-    discountedPrice: "KES 19.000,00", 
+    price: "KES 5.000,00", 
+    discountedPrice: "KES 5.000,00", 
     bookableFrom: "23.06.2025",
-    singleModulePrice: "KES 6.250,00",
-    discountedSingleModule: "KES 4.750,00"
+    singleModulePrice: "KES 5.000,00",
+    discountedSingleModule: "KES 5.000,00"
   },
   { 
     date: "31.07.2025", 
     location: "Nairobi", 
     registrationPeriod: "27.06.2025 - 03.07.2025", 
-    price: "KES 25.000,00", 
-    discountedPrice: "KES 19.000,00", 
+    price: "KES 5.000,00", 
+    discountedPrice: "KES 5.000,00", 
     bookableFrom: "27.06.2025",
-    singleModulePrice: "KES 6.250,00",
-    discountedSingleModule: "KES 4.750,00"
+    singleModulePrice: "KES 5.000,00",
+    discountedSingleModule: "KES 5.000,00"
   },
   { 
     date: "01.08.2025", 
     location: "Nairobi", 
     registrationPeriod: "27.06.2025 - 03.07.2025", 
-    price: "KES 25.000,00", 
-    discountedPrice: "KES 19.000,00", 
+    price: "KES 5.000,00", 
+    discountedPrice: "KES 5.000,00", 
     bookableFrom: "27.06.2025",
-    singleModulePrice: "KES 6.250,00",
-    discountedSingleModule: "KES 4.750,00"
+    singleModulePrice: "KES 5.000,00",
+    discountedSingleModule: "KES 5.000,00"
   },
   { 
     date: "20.08.2025", 
     location: "Nairobi", 
     registrationPeriod: "16.07.2025 - 23.07.2025", 
-    price: "KES 25.000,00", 
-    discountedPrice: "KES 19.000,00", 
+    price: "KES 5.000,00", 
+    discountedPrice: "KES 5.000,00", 
     bookableFrom: "16.07.2025",
-    singleModulePrice: "KES 6.250,00",
+    singleModulePrice: "KES 5.000,00",
     discountedSingleModule: "KES 4.750,00"
   },
   { 
     date: "21.08.2025", 
     location: "Nairobi", 
     registrationPeriod: "16.07.2025 - 23.07.2025", 
-    price: "KES 25.000,00", 
-    discountedPrice: "KES 19.000,00", 
+    price: "KES 5.000,00", 
+    discountedPrice: "KES 5.000,00", 
     bookableFrom: "16.07.2025",
-    singleModulePrice: "KES 6.250,00",
-    discountedSingleModule: "KES 4.750,00"
+    singleModulePrice: "KES 5.000,00",
+    discountedSingleModule: "KES 5.000,00"
   },
   { 
     date: "03.10.2025", 
     location: "Nairobi", 
     registrationPeriod: "08.09.2025 - 12.09.2025", 
-    price: "KES 25.000,00", 
-    discountedPrice: "KES 19.000,00", 
+    price: "KES 5.000,00", 
+    discountedPrice: "KES 5.000,00", 
     bookableFrom: "08.09.2025",
-    singleModulePrice: "KES 6.250,00",
-    discountedSingleModule: "KES 4.750,00"
+    singleModulePrice: "KES 5.000,00",
+    discountedSingleModule: "KES 5.000,00"
   },
   { 
     date: "04.10.2025", 
     location: "Nairobi", 
     registrationPeriod: "08.09.2025 - 12.09.2025", 
-    price: "KES 25.000,00", 
-    discountedPrice: "KES 19.000,00", 
+    price: "KES 5.000,00", 
+    discountedPrice: "KES 5.000,00", 
     bookableFrom: "08.09.2025",
-    singleModulePrice: "KES 6.250,00",
-    discountedSingleModule: "KES 4.750,00"
+    singleModulePrice: "KES 5.000,00",
+    discountedSingleModule: "KES 5.000,00"
   },
   { 
     date: "21.11. - 22.11.2025", 
     location: "Mombasa", 
     registrationPeriod: "20.10.2025 - 24.10.2025", 
-    price: "KES 25.000,00", 
-    discountedPrice: "KES 19.000,00", 
+    price: "KES 5.000,00", 
+    discountedPrice: "KES 5.000,00", 
     bookableFrom: "20.10.2025",
-    singleModulePrice: "KES 6.250,00",
-    discountedSingleModule: "KES 4.750,00"
+    singleModulePrice: "KES 5.000,00",
+    discountedSingleModule: "KES 5.000,00"
   },
   { 
     date: "27.11. - 28.11.2025", 
     location: "Nairobi", 
     registrationPeriod: "24.10.2025 - 30.10.2025", 
-    price: "KES 25.000,00", 
-    discountedPrice: "KES 19.000,00", 
+    price: "KES 5.000,00", 
+    discountedPrice: "KES 5.000,00", 
     bookableFrom: "24.10.2025",
-    singleModulePrice: "KES 6.250,00",
+    singleModulePrice: "KES 5.000,00",
     discountedSingleModule: "KES 4.750,00"
   }
 ];
