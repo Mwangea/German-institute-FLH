@@ -1,5 +1,6 @@
 import React, { useState, useRef, ChangeEvent } from 'react';
 import { CheckCircle, X, Upload, Loader2 } from 'lucide-react';
+import apiClient from '../utils/apiClient';
 
 interface EnrollmentFormProps {
   courseName: string;
@@ -124,23 +125,38 @@ const HospitalityForm: React.FC<EnrollmentFormProps> = ({ courseName }) => {
     setError(null);
 
     try {
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1500));
+      const formDataToSend = new FormData();
       
-      // In a real app, you would submit to your API here
-      // const formDataToSend = new FormData();
-      // Object.entries(formData).forEach(([key, value]) => {
-      //   if (value !== null && key !== 'idPreview') {
-      //     formDataToSend.append(key, value);
-      //   }
-      // });
-      // await apiClient.post('/apply/hospitality', formDataToSend);
+      // Append all form data
+      formDataToSend.append('firstName', formData.firstName);
+      formDataToSend.append('lastName', formData.lastName);
+      formDataToSend.append('email', formData.email);
+      formDataToSend.append('phone', formData.phone);
+      formDataToSend.append('gender', formData.gender);
+      formDataToSend.append('age', formData.age);
+      formDataToSend.append('classTime', formData.classTime);
+      formDataToSend.append('studyMode', formData.studyMode);
+      formDataToSend.append('idNumber', formData.idNumber);
+      if (formData.idDocument) {
+        formDataToSend.append('idDocument', formData.idDocument);
+      }
+      formDataToSend.append('courseName', courseName);
 
-      setIsSubmitted(true);
-      resetForm();
-      
-      // Reset submission status after 5 seconds
-      setTimeout(() => setIsSubmitted(false), 5000);
+      const response = await apiClient.post('/apply/hospitality', formDataToSend, {
+        headers: {
+          'Content-Type': 'multipart/form-data'
+        }
+      });
+
+      if (response.data.success) {
+        setIsSubmitted(true);
+        resetForm();
+        
+        // Reset submission status after 5 seconds
+        setTimeout(() => setIsSubmitted(false), 5000);
+      } else {
+        throw new Error(response.data.message || 'Submission failed');
+      }
     } catch (err) {
       console.error('Submission error:', err);
       setError('Submission failed. Please try again.');

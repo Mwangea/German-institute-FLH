@@ -16,15 +16,15 @@ const examDates: ExamDate[] = [
     date: "19.07.2025",
     location: "Nairobi",
     registrationPeriod: "16.06.2025 - 20.06.2025",
-    price: "KES 18.000,00",
-    discountedPrice: "KES 14.000,00",
+    price: "KES 5.000,00",
+    discountedPrice: "KES 5.000,00",
     bookableFrom: "16.06.2025"
   },
   {
     date: "21.07.2025",
     location: "Mombasa",
     registrationPeriod: "23.06.2025 - 27.06.2025",
-    price: "KES 18.000,00",
+    price: "KES 5.000,00",
     discountedPrice: "KES 14.000,00",
     bookableFrom: "23.06.2025"
   },
@@ -32,7 +32,7 @@ const examDates: ExamDate[] = [
     date: "20.09.2025",
     location: "Nairobi",
     registrationPeriod: "18.08.2025 - 22.08.2025",
-    price: "KES 18.000,00",
+    price: "KES 5.000,00",
     discountedPrice: "KES 14.000,00",
     bookableFrom: "18.08.2025"
   },
@@ -41,23 +41,23 @@ const examDates: ExamDate[] = [
     location: "Nairobi",
     registrationPeriod: "15.09.2025 - 19.09.2025",
     price: "KES 18.000,00",
-    discountedPrice: "KES 14.000,00",
+    discountedPrice: "KES 5.000,00",
     bookableFrom: "15.09.2025"
   },
   {
     date: "17.11.2025",
     location: "Mombasa",
     registrationPeriod: "20.10.2025 - 24.10.2025",
-    price: "KES 18.000,00",
-    discountedPrice: "KES 14.000,00",
+    price: "KES 5.000,00",
+    discountedPrice: "KES 5.000,00",
     bookableFrom: "20.10.2025"
   },
   {
     date: "29.11.2025",
     location: "Nairobi",
     registrationPeriod: "27.10.2025 - 31.10.2025",
-    price: "KES 18.000,00",
-    discountedPrice: "KES 14.000,00",
+    price: "KES 5.000,00",
+    discountedPrice: "KES 5.000,00",
     bookableFrom: "27.10.2025"
   }
 ];

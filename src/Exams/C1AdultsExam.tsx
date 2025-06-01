@@ -18,20 +18,20 @@ const examDates: ExamDate[] = [
     date: "22.08.2025", 
     location: "Nairobi", 
     registrationPeriod: "16.07.2025 - 23.07.2025", 
-    price: "KES 26.000,00", 
-    discountedPrice: "KES 20.000,00", 
+    price: "KES 5.000,00", 
+    discountedPrice: "KES 5.000,00", 
     bookableFrom: "16.07.2025",
-    singleModulePrice: "KES 6.500,00",
+    singleModulePrice: "KES 5.000,00",
     discountedSingleModule: "KES 5.000,00"
   },
   { 
     date: "27.11. - 28.11.2025", 
     location: "Nairobi", 
     registrationPeriod: "27.10.2025 - 31.10.2025", 
-    price: "KES 26.000,00", 
-    discountedPrice: "KES 20.000,00", 
+    price: "KES 5.000,00", 
+    discountedPrice: "KES 5.000,00", 
     bookableFrom: "27.10.2025",
-    singleModulePrice: "KES 6.500,00",
+    singleModulePrice: "KES 5.000,00",
     discountedSingleModule: "KES 5.000,00"
   }
 ];
