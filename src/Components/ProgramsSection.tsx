@@ -67,12 +67,12 @@ const programsData = [
         level: "Intermediate",
         link: "/diploma-front-office" 
       },
-      { 
-        id: 3, 
-        title: "Diploma in Food & Beverage Management", 
-        level: "Advanced",
-        link: "/diploma-food-beverage" 
-      },
+      // { 
+      //   id: 3, 
+      //   title: "Diploma in Food & Beverage Management", 
+      //   level: "Advanced",
+      //   link: "/diploma-food-beverage" 
+      // },
       { 
         id: 4, 
         title: "Diploma in House Keeping & Laundry Operation", 
@@ -85,18 +85,18 @@ const programsData = [
         level: "Beginner",
         link: "/certificate-front-office" 
       },
-      { 
-        id: 6, 
-        title: "Certificate in Food and Beverage Service & Sales", 
-        level: "Beginner",
-        link: "/certificate-food-beverage" 
-      },
-      { 
-        id: 7, 
-        title: "Certificate in House Keeping & Laundry", 
-        level: "Beginner",
-        link: "/certificate-housekeeping" 
-      }
+      // { 
+      //   id: 6, 
+      //   title: "Certificate in Food and Beverage Service & Sales", 
+      //   level: "Beginner",
+      //   link: "/certificate-food-beverage" 
+      // },
+      // { 
+      //   id: 7, 
+      //   title: "Certificate in House Keeping & Laundry", 
+      //   level: "Beginner",
+      //   link: "/certificate-housekeeping" 
+      // }
     ]
   }
 ];
