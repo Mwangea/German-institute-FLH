@@ -39,8 +39,13 @@ import CertificateFrontOffice from "./Hospitality/CertificateFrontOffice"
 import DiplomaHouseKeeping from "./Hospitality/DiplomaHouseKeeping"
 // import CertificateHouseKeeping from "./Hospitality/CertificateHouseKeeping"
 import WhatsAppButton from "./Components/WhatsAppButton"
+import CareerOpp from "./Pages/CareerOpp"
 //import ComingSoonLanguage from "./languages/ComingSoon"
 //import InterviewDesign from "./Components/file"
+import Apprenticeships from "./Pages/Apprenticeships"
+import UndergraduatePrograms from "./Pages/DegreeProgrammes"
+import MasterProgrammes from "./Pages/MasterProgrammes"
+
 const App = () => {
   return (
     <>
@@ -53,6 +58,10 @@ const App = () => {
          <Route path="/about" element={<AboutPage />} />
          <Route path="/student-voices" element={<StudentVoices />} />
           <Route path="/all-programs" element={<ApplyPage />} />
+          <Route path="/career-opportunities" element={<CareerOpp />} />
+          <Route path="/apprenticeships" element={<Apprenticeships />} />
+          <Route path="/undergraduate" element={<UndergraduatePrograms />} />
+          <Route path="/master-programs" element={<MasterProgrammes />} />
 
           {/* PROGRAMS PAGE */}
           <Route path="/programs/german-exams" element={<GermanExams />} />

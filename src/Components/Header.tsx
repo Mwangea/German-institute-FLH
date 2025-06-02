@@ -15,6 +15,7 @@ const NAV_ITEMS = [
   },
   { label: 'About Us', path: '/about' },
   // { label: 'Admissions', path: '/admissions' },
+  { label: 'Career Opportunities', path: '/career-opportunities' },
   { label: 'Student Voices', path: '/student-voices' },
   { label: 'Contact', path: '/contact' },
 ];
