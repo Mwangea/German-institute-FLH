@@ -1,30 +1,15 @@
 import { ArrowLeft } from "lucide-react";
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import MasterEnrollmentForm from "../Forms/masterProgrammes";
+//import EnrollmentForm from "../Forms/undergraduateProgrammes";
 
 const UndergraduatePrograms: React.FC = () => {
+    const [showEnrollmentModal, setShowEnrollmentModal] = useState(false);
   return (
     <div className="font-sans text-gray-800 bg-white">
       {/* Hero Section */}
-      {/* <section className="relative py-20 bg-gradient-to-b from-gray-800 to-gray-900">
-        <div className="container mx-auto px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <span className="inline-block px-4 py-2 bg-white/10 text-white rounded-full text-sm font-semibold mb-6">
-              Undergraduate Studies
-            </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-              Study <span className="text-yellow-400">Undergraduate</span> Programs in Germany
-            </h1>
-            <p className="text-xl text-gray-200 mb-10 max-w-3xl mx-auto">
-              Requirements and Guidance for Kenyan Students
-            </p>
-            <div className="bg-yellow-500 text-blue-900 font-bold px-6 py-3 rounded-lg inline-block">
-               World-class education with low tuition costs
-            </div>
-          </div>
-        </div>
-        <div className="absolute bottom-0 left-0 right-0 h-16 bg-white transform skew-y-1 origin-bottom-left"></div>
-      </section> */}
+     
 
       <section className="relative py-20 md:py-28 bg-gradient-to-b from-gray-900 to-gray-800 overflow-hidden">
         {/* Parallax Background Image */}
@@ -371,13 +356,13 @@ const UndergraduatePrograms: React.FC = () => {
             </div>
 
             <div className="text-center">
-              <Link
-                to="/"
-                className="inline-block px-8 py-4 bg-primary-600 hover:bg-primary-700 text-white font-medium rounded-lg transition-all duration-300 text-lg"
-              >
-                👉 Book Your Career Consultation Here
-              </Link>
-            </div>
+        <button
+          onClick={() => setShowEnrollmentModal(true)}
+          className="inline-block px-8 py-4 bg-primary-600 hover:bg-primary-700 text-white font-medium rounded-lg transition-all duration-300 text-lg"
+        >
+          👉 Book Your Career Consultation Here
+        </button>
+      </div>
           </div>
         </section>
 
@@ -393,6 +378,20 @@ const UndergraduatePrograms: React.FC = () => {
           </div>
         </section>
       </div>
+      {/* Enrollment Modal */}
+      {showEnrollmentModal && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
+          <div className="bg-white rounded-lg p-6 max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+            <button 
+              onClick={() => setShowEnrollmentModal(false)}
+              className="float-right text-gray-500 hover:text-gray-700"
+            >
+              ×
+            </button>
+            <MasterEnrollmentForm />
+          </div>
+        </div>
+      )}
     </div>
   );
 };

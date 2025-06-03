@@ -3,7 +3,7 @@ import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin } from 'luc
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-900 text-white pt-16 pb-8">
+    <footer className="bg-black text-white pt-16 pb-8">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           <div >
@@ -55,15 +55,15 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <ul className="space-y-3">
               <li className="flex items-start">
-                <MapPin className="h-5 w-5 mr-3 text-primary-500 flex-shrink-0 mt-0.5" />
+                <MapPin className="h-5 w-5 mr-3 text-accent-500 flex-shrink-0 mt-0.5" />
                 <span className="text-gray-400">Newline Building, Narok, Kenya</span>
               </li>
               <li className="flex items-center">
-                <Phone className="h-5 w-5 mr-3 text-primary-500 flex-shrink-0" />
+                <Phone className="h-5 w-5 mr-3 text-accent-500 flex-shrink-0" />
                 <span className="text-gray-400">+254723104680</span>
               </li>
               <li className="flex items-center">
-                <Mail className="h-5 w-5 mr-3 text-primary-500 flex-shrink-0" />
+                <Mail className="h-5 w-5 mr-3 text-accent-500 flex-shrink-0" />
                 <a href="mailto:info@foreignlanguagesandhospitality.com" className="text-gray-400 hover:text-white transition-colors duration-200">
                 info@foreignlanguagesandhospitality.com 
                 </a>
@@ -87,7 +87,7 @@ const Footer: React.FC = () => {
               </div>
               <button 
                 type="submit" 
-                className="w-full bg-primary-500 hover:bg-primary-600 text-white font-medium py-2 px-4 rounded-md transition-colors duration-200"
+                className="w-full bg-button-50 hover:bg-orange-600 text-white font-medium py-2 px-4 rounded-md transition-colors duration-200"
               >
                 Subscribe
               </button>

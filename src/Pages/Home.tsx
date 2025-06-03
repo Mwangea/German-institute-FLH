@@ -71,7 +71,7 @@ const Home = () => {
             <a className="w-[90%] sm:w-auto">
               <button 
               onClick={() => setIsApplyModalOpen(true)}
-              className="w-full bg-primary-500 hover:bg-orange-600 text-white px-6 py-3 sm:px-10 lg:px-12 sm:py-3.5 rounded-lg font-semibold font-serif transition-all duration-300 text-sm sm:text-lg transform hover:scale-105 shadow-md whitespace-nowrap">
+              className="w-full bg-button-50  text-white hover:bg-button-orange px-6 py-3 sm:px-10 lg:px-12 sm:py-3.5 rounded-lg font-semibold font-serif transition-all duration-300 text-sm sm:text-lg transform hover:scale-105 shadow-md whitespace-nowrap">
                 Apply Now
               </button>
             </a>

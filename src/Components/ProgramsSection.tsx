@@ -1,6 +1,6 @@
 import React from 'react';
 import ProgramBlock from './ProgramBlock';
-import ShapeBackground from './ShapeBackground';
+//import ShapeBackground from './ShapeBackground';
 
 // Program data with module links
 const programsData = [
@@ -67,12 +67,12 @@ const programsData = [
         level: "Intermediate",
         link: "/diploma-front-office" 
       },
-      // { 
-      //   id: 3, 
-      //   title: "Diploma in Food & Beverage Management", 
-      //   level: "Advanced",
-      //   link: "/diploma-food-beverage" 
-      // },
+      { 
+        id: 3, 
+        title: "Diploma in Food & Beverage Management", 
+        level: "Advanced",
+        link: "/diploma-food-beverage" 
+      },
       { 
         id: 4, 
         title: "Diploma in House Keeping & Laundry Operation", 
@@ -104,13 +104,12 @@ const programsData = [
 const ProgramsSection: React.FC = () => {
   return (
     <section className="relative py-20 overflow-hidden" id='features'>
-      <ShapeBackground />
+      
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-            Our <span className="text-primary-500">Programs</span>
-          </h2>
+        <div className="text-center mb-20">
+        <h2 className="text-4xl font-bold text-gray-900 mb-2">Our Programmes</h2>
+        <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div>
           <p className="text-lg text-gray-700 max-w-2xl mx-auto">
             Discover our comprehensive range of professional programs designed to help you excel in your career.
           </p>

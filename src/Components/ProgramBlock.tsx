@@ -49,7 +49,7 @@ const ProgramBlock: React.FC<ProgramBlockProps> = ({ program, isReversed = false
             <div className="flex flex-wrap gap-4">
               <Link 
                 to={program.link}
-                className="px-6 py-3 bg-primary-500 text-white rounded-lg hover:bg-primary-600 transition-colors duration-200"
+                className="px-6 py-3 bg-button-50 text-white rounded-lg hover:bg-primary-600 transition-colors duration-200"
               >
                 Program Details
               </Link>
