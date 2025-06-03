@@ -5,9 +5,9 @@ const DiplomaHospitalityManagement = () => {
     const courseData = {
         title: "Diploma in Hospitality Management",
         type: 'Diploma' as const,
-        duration: "3 years",
-        price: "Contact for pricing",
-        fullDescription: "This is a three year programme designed to prepare learners for the role of departmental managers by equipping them with various operational and managerial skills. In addition, the learner will be exposed to at least one foreign language to enable them operate in the global hospitality industry which is multilingual.",
+        duration: "2 years (8 semesters)",
+        price: "KES 30,000 per semester",
+        fullDescription: "This two-year program prepares learners for departmental manager roles by equipping them with operational and managerial skills. The curriculum includes foreign language training to prepare students for the global hospitality industry. The program consists of 8 semesters (3 months each) with practical training components.",
         outcomes: [
             "To describe the hospitality industry and nature of hospitality product",
             "To distinguish the management reports used in hospitality operations",
@@ -36,7 +36,7 @@ const DiplomaHospitalityManagement = () => {
             {
                 icon: <Clock className="w-8 h-8 text-primary-600" />,
                 title: "Duration",
-                description: "3 years"
+                description: "2 years (8 semesters)"
             },
             {
                 icon: <Award className="w-8 h-8 text-primary-600" />,
@@ -60,8 +60,8 @@ const DiplomaHospitalityManagement = () => {
             },
             {
                 icon: <Calendar className="w-8 h-8 text-primary-600" />,
-                title: "Focus",
-                description: "Operational and managerial skills"
+                title: "Program Structure",
+                description: "8 semesters (3 months each)"
             }
         ],
         careerOpportunities: [
@@ -82,7 +82,7 @@ const DiplomaHospitalityManagement = () => {
             "Human Resource Management",
             "Hotel Information Systems"
         ],
-        internship: "Practical training component included in the 3-year program",
+        internship: "Practical training component included throughout the program",
         imageUrl: "https://images.pexels.com/photos/237272/pexels-photo-237272.jpeg"
     };
 

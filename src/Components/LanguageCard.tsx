@@ -57,7 +57,7 @@ const LanguageCard: React.FC<LanguageCardProps> = ({
         {isAvailable ? (
           <Link 
             to={link}
-            className="block w-full text-center py-2 px-4 rounded bg-primary-500 text-white font-medium hover:bg-primary-600 transition-colors duration-300"
+            className="block w-full text-center py-2 px-4 rounded bg-button-50 text-white font-medium hover:bg-orange-600 transition-colors duration-300"
           >
             Enroll Now
           </Link>

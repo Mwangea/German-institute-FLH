@@ -37,7 +37,7 @@ const HealthcareApprenticeships: React.FC = () => {
             <p className="text-xl text-gray-200 mb-10 max-w-3xl mx-auto">
               Empowering Kenyan Youth for Global Healthcare Careers
             </p>
-            <div className="bg-yellow-500 text-blue-900 font-bold px-6 py-3 rounded-lg inline-block mb-8">
+            <div className="bg-button-50 text-white font-bold px-6 py-3 rounded-lg inline-block mb-8">
             Application for the next intake will open soon
 
             </div>
@@ -156,7 +156,7 @@ const HealthcareApprenticeships: React.FC = () => {
         </section>
 
         {/* Partnership Section */}
-        <section className="mb-20 bg-gray-50 rounded-xl p-8 md:p-12">
+        {/* <section className="mb-20 bg-gray-50 rounded-xl p-8 md:p-12">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-8">Our International Partnership</h2>
             <div className="grid md:grid-cols-2 gap-8">
@@ -190,7 +190,7 @@ const HealthcareApprenticeships: React.FC = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Eligibility Section */}
         <section className="mb-20">
@@ -353,7 +353,7 @@ const HealthcareApprenticeships: React.FC = () => {
 </section>
 
         {/* Final CTA */}
-        <section className="py-16 bg-primary-800 rounded-xl">
+        <section className="py-16 bg-primary-500 rounded-xl">
           <div className="max-w-4xl mx-auto text-center px-6">
             <h2 className="text-3xl font-bold text-white mb-6">Start Your Healthcare Journey Today</h2>
             <p className="text-xl text-primary-100 mb-8">
@@ -364,7 +364,7 @@ const HealthcareApprenticeships: React.FC = () => {
             </div>
             <Link 
               to="/" 
-              className="inline-block px-8 py-3 bg-yellow-500 hover:bg-yellow-600 text-blue-900 font-medium rounded-lg transition-all duration-300"
+              className="inline-block px-8 py-3 bg-button-50 hover:bg-yellow-600 text-white font-medium rounded-lg transition-all duration-300"
             >
              Application for the next intake will open soon
 

@@ -5,11 +5,11 @@ const programs = [
   {
     title: "Diploma in Hospitality Management",
     path: "/diploma-hospitality",
-    image: "https://images.pexels.com/photos/2373201/pexels-photo-2373201.jpeg",
-    duration: "3 years",
+    image: "/hospitality1.jpg",
+    duration: "2 years",
     level: "Diploma",
     description:
-      "Three-year program preparing learners for departmental manager roles with operational and managerial skills, plus foreign language training for the global hospitality industry.",
+      "Two-year program preparing learners for departmental manager roles with operational and managerial skills, plus foreign language training for the global hospitality industry.",
     modules: [
       "Hospitality Industry Overview",
       "Management Reporting",
@@ -18,12 +18,12 @@ const programs = [
       "Human Resource Management",
       "Hotel Information Systems",
     ],
-    fee: "Contact for pricing",
+    fee: "KES 30,000 per semester (8 semesters total)",
   },
   {
     title: "Diploma in Front Office Operations & Administration",
     path: "/diploma-front-office",
-    image: "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg",
+    image: "/front1.jpg",
     duration: "2 years",
     level: "Diploma",
     description:
@@ -36,12 +36,12 @@ const programs = [
       "Night Audit Procedures",
       "Guest Relations",
     ],
-    fee: "Contact for pricing",
+    fee: "KES 30,000 per semester (8 semesters total)",
   },
   {
     title: "Diploma in House Keeping & Laundry Operation",
     path: "/diploma-housekeeping",
-    image: "https://images.pexels.com/photos/5997993/pexels-photo-5997993.jpeg",
+    image: "/house1.jpg",
     duration: "2 years",
     level: "Diploma",
     description:
@@ -54,12 +54,12 @@ const programs = [
       "Laundry Plant Operations",
       "Health and Safety Standards",
     ],
-    fee: "Contact for pricing",
+    fee: "KES 30,000 per semester (8 semesters total)",
   },
   {
     title: "Certificate in Front Office Operations & Administration",
     path: "/certificate-front-office",
-    image: "https://images.pexels.com/photos/1571458/pexels-photo-1571458.jpeg",
+    image: "/certOffice1.jpg",
     duration: "1 year",
     level: "Certificate",
     description:
@@ -72,7 +72,7 @@ const programs = [
       "Property Management Systems",
       "Communication Skills",
     ],
-    fee: "Contact for pricing",
+    fee: "KES 30,000 per semester (4 semesters total)",
   },
 ];
 
@@ -84,6 +84,8 @@ const HospitalityPrograms = () => {
           <h2 className="text-4xl font-bold text-primary-500 mb-4">
             Hospitality Programs
           </h2>
+        <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div>
+
           <p className="text-xl text-gray-600">
             Professional training for hospitality industry careers
           </p>
@@ -93,27 +95,27 @@ const HospitalityPrograms = () => {
           const programImages = {
             "Diploma in Hospitality Management": [
               program.image,
-              "https://images.pexels.com/photos/237272/pexels-photo-237272.jpeg",
-              "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg",
-              "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg",
+              "/hospitality2.jpg",
+              "/hospitality3.jpg",
+              "/hospitality4.jpg",
             ],
             "Diploma in Front Office Operations & Administration": [
               program.image,
-              "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg",
-              "https://images.pexels.com/photos/1571459/pexels-photo-1571459.jpeg",
-              "https://images.pexels.com/photos/1571457/pexels-photo-1571457.jpeg",
+              "/front2.jpg",
+              "/front3.jpg",
+              "/front4.jpg",
             ],
             "Diploma in House Keeping & Laundry Operation": [
               program.image,
-              "https://images.pexels.com/photos/4107112/pexels-photo-4107112.jpeg",
-              "https://images.pexels.com/photos/3771110/pexels-photo-3771110.jpeg",
-              "https://images.pexels.com/photos/4107113/pexels-photo-4107113.jpeg",
+              "/house2.jpg",
+              "/house3.jpg",
+              "/house4.jpg",
             ],
             "Certificate in Front Office Operations & Administration": [
               program.image,
-              "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg",
-              "https://images.pexels.com/photos/1571459/pexels-photo-1571459.jpeg",
-              "https://images.pexels.com/photos/1571461/pexels-photo-1571461.jpeg",
+              "/certOffice2.jpg",
+              "/certOffice3.jpg",
+              "/certOffice4.jpg",
             ],
           };
           return (
@@ -216,7 +218,7 @@ const ProgramCard = ({ program, index, images }: ProgramCardProps) => {
           <div className="grid grid-cols-2 gap-2">
             {program.modules.slice(0, 4).map((module, i) => (
               <div key={i} className="flex items-center">
-                <span className="w-2 h-2 bg-primary-500 rounded-full mr-2"></span>
+                <span className="w-2 h-2 bg-accent-500 rounded-full mr-2"></span>
                 <span className="text-gray-700">{module}</span>
               </div>
             ))}
@@ -229,7 +231,7 @@ const ProgramCard = ({ program, index, images }: ProgramCardProps) => {
           </span>
           <Link
             to={program.path}
-            className="bg-primary-500 hover:bg-primary-600 text-white px-6 py-2 rounded-full transition-colors flex items-center"
+            className="bg-button-50 hover:bg-orange-600 text-white px-6 py-2 rounded-full transition-colors flex items-center"
           >
             Explore Program <span className="ml-2">→</span>
           </Link>

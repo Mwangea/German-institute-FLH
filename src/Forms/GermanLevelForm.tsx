@@ -351,7 +351,7 @@ const GermanLevelForm = ({ level }: { level: string }) => {
           disabled={!isFormValid() || isLoading}
           className={`w-full py-3 px-4 text-white font-medium rounded-md transition-colors flex items-center justify-center ${
             isFormValid() && !isLoading
-              ? 'bg-blue-600 hover:bg-blue-700' 
+              ? 'bg-button-50 hover:bg-orange-700' 
               : 'bg-gray-400 cursor-not-allowed'
           }`}
         >

@@ -1,18 +1,16 @@
-import { Clock, Award, BookOpen, UserCheck, CreditCard, Bell } from 'lucide-react';
+import { Clock, Award, BookOpen, UserCheck, Bell, Calendar } from 'lucide-react';
 import HospitalityCourseTemplate from './HospitalityCourseTemplate';
 
 const DiplomaFrontOffice = () => {
   const courseData = {
     title: "Diploma in Front Office Operations & Administration",
     type: 'Diploma' as const,
-    duration: "TWO YEARS",
-    price: "Contact for pricing",
+    duration: "2 years (8 semesters)",
+    price: "KES 30,000 per semester",
     fullDescription: `
-      International Institute of Foreign Languages and Hospitality  Management is committed to sustaining its mandate of training qualified professionals for the hospitality and tourism industry.
+      This comprehensive two-year program (8 semesters of 3 months each) provides students with professional skills for front office operations in various types of hotels. The curriculum combines practical and theoretical training with industry attachments.
       
-      This two years' programme provides students with professional skills on how to operate at the front office in various types of hotels. It entails both practical and theoretical training coupled with six months' external industrial attachment in hotels. 
-      
-      The driving philosophy behind this programme is to supply the labour market with a well-grounded employee who will enter the market at operational level and be able to rise through promotional ranks to the level of a supervisor at section level. The diploma training will also enable the graduate to advance in studies through to degree level.
+      The program is designed to supply the labor market with well-trained professionals who can enter at operational levels and progress to supervisory positions. Graduates will be equipped with the skills to work in diverse front office roles and have a pathway for further studies to degree level.
     `,
     outcomes: [
       "Work independently as Front Desk Agents, Cashiers, and Receptionists",
@@ -22,7 +20,9 @@ const DiplomaFrontOffice = () => {
       "Serve as Guests relation officers and credit controllers"
     ],
     goals: [
-      "To train competent young men and women to develop their career in the Hospitality industry"
+      "To train competent professionals for front office careers in the hospitality industry",
+      "To provide hands-on experience through practical training components",
+      "To prepare students for immediate employment and career advancement"
     ],
     certification: "Diploma in Front Office Operations & Administration",
     targetAudience: "Individuals seeking professional skills for front office operations in various types of hotels",
@@ -30,32 +30,32 @@ const DiplomaFrontOffice = () => {
       {
         icon: <Clock className="w-8 h-8 text-primary-600" />,
         title: "Duration",
-        description: "Two years (including 6 months industrial attachment)"
+        description: "2 years (8 semesters)"
       },
       {
         icon: <Award className="w-8 h-8 text-primary-600" />,
         title: "Certification",
-        description: "Diploma in Front Office Operations & Administration"
+        description: "Diploma in Front Office"
       },
       {
         icon: <BookOpen className="w-8 h-8 text-primary-600" />,
-        title: "Training Approach",
-        description: "Combination of practical and theoretical training"
+        title: "Study Mode",
+        description: "Semester-based (3 months per semester)"
       },
       {
         icon: <UserCheck className="w-8 h-8 text-primary-600" />,
         title: "Career Entry",
-        description: "Operational level with potential to supervisory roles"
+        description: "Operational to supervisory roles"
       },
       {
-        icon: <CreditCard className="w-8 h-8 text-primary-600" />,
+        icon: <Calendar className="w-8 h-8 text-primary-600" />,
         title: "Practical Training",
-        description: "At Utalii Hotel facilities"
+        description: "Integrated throughout program"
       },
       {
         icon: <Bell className="w-8 h-8 text-primary-600" />,
-        title: "Progression",
-        description: "Pathway to degree-level studies"
+        title: "Tuition",
+        description: "KES 30,000 per semester"
       }
     ],
     careerOpportunities: [
@@ -82,7 +82,7 @@ const DiplomaFrontOffice = () => {
       "Hospitality Accounting",
       "Communication Skills for Front Office"
     ],
-    internship: "Six months' external industrial attachment in hotels",
+    internship: "Industry attachments integrated throughout the 2-year program",
     imageUrl: "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg"
   };
 

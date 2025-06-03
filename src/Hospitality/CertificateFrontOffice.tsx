@@ -1,87 +1,88 @@
-import { Clock, Award, BookOpen,  UserCheck, CreditCard, ArrowUpCircle } from 'lucide-react';
+import { Clock, Award,CreditCard, ArrowUpCircle, Calendar, DollarSign } from 'lucide-react';
 import HospitalityCourseTemplate from './HospitalityCourseTemplate';
 
 const CertificateFrontOffice = () => {
   const courseData = {
     title: "Certificate in Front Office Operations & Administration",
     type: 'Certificate' as const,
-    duration: "ONE YEAR",
-    price: "Contact for pricing",
+    duration: "1 year (4 semesters)",
+    price: "KES 30,000 per semester",
     fullDescription: `
-      International Institute of Foreign Languages and Hospitality  Management is committed to sustaining its mandate of training qualified professionals for the hospitality and tourism industry.
+      This intensive one-year certificate program (4 semesters of 3 months each) provides essential skills for front office operations in various hospitality establishments. The curriculum combines classroom instruction with hands-on training, preparing students for immediate employment in the industry.
       
-      This one-year programme provides students with professional skills on how to operate at the front office in various types of hotels. It entails both practical and theoretical training coupled with three months' industrial attachment in hotels.
-      
-      The driving philosophy behind this programme is to supply the labour market with a well-grounded employee who will enter the market at operational level and be able to rise through promotional ranks to the level of a supervisor at section level. Certificate training will also enable the graduate to advance in studies through diploma and eventually degree level.
+      Students will gain practical experience through our campus training facilities and industry attachments, developing the competencies needed to excel in front office roles with potential for career advancement to supervisory positions.
     `,
     outcomes: [
-      "Work independently as Front Desk Agents, Cashiers, and Receptionists",
-      "Perform effectively as Reservation Clerks and food and beverage control clerks",
-      "Handle front office operations in various hotel types",
-      "Apply both theoretical knowledge and practical skills",
-      "Progress to supervisory roles with experience",
-      "Continue studies at diploma and degree levels"
+      "Perform all front office operations competently",
+      "Handle guest registration and reservations professionally",
+      "Manage cash transactions and basic accounting",
+      "Operate property management systems effectively",
+      "Deliver exceptional guest service",
+      "Progress to higher qualifications in hospitality management"
     ],
     goals: [
-      "To train competent young men and women to develop their career in the Hospitality industry"
+      "Provide foundational front office skills for immediate employment",
+      "Develop professional competencies for guest service roles",
+      "Prepare students for career progression in hospitality",
+      "Offer a pathway to advanced diploma studies"
     ],
     certification: "Certificate in Front Office Operations & Administration",
-    targetAudience: "Individuals seeking professional front office skills for immediate employment in the hospitality industry",
+    targetAudience: "Individuals seeking entry-level front office skills for the hospitality industry",
     keyFeatures: [
       {
         icon: <Clock className="w-8 h-8 text-primary-600" />,
         title: "Duration",
-        description: "One year (including 3 months industrial attachment)"
+        description: "1 year (4 semesters)"
+      },
+      {
+        icon: <Calendar className="w-8 h-8 text-primary-600" />,
+        title: "Program Structure",
+        description: "3-month semesters"
+      },
+      {
+        icon: <DollarSign className="w-8 h-8 text-primary-600" />,
+        title: "Tuition",
+        description: "KES 30,000/semester"
       },
       {
         icon: <Award className="w-8 h-8 text-primary-600" />,
         title: "Certification",
-        description: "Certificate in Front Office Operations & Administration"
-      },
-      {
-        icon: <BookOpen className="w-8 h-8 text-primary-600" />,
-        title: "Training Approach",
-        description: "Combination of classroom and practical training"
-      },
-      {
-        icon: <UserCheck className="w-8 h-8 text-primary-600" />,
-        title: "Career Entry",
-        description: "Operational level with potential for promotion"
+        description: "Professional Certificate"
       },
       {
         icon: <CreditCard className="w-8 h-8 text-primary-600" />,
         title: "Practical Training",
-        description: "At Campus Training Reception Room and Utalii Hotel"
+        description: "Campus facilities & industry attachment"
       },
       {
         icon: <ArrowUpCircle className="w-8 h-8 text-primary-600" />,
         title: "Progression",
-        description: "Pathway to diploma and degree-level studies"
+        description: "Pathway to diploma programs"
       }
     ],
     careerOpportunities: [
       "Front Desk Agents",
-      "Cashiers",
-      "Receptionists",
-      "Reservation Clerks",
-      "Food and Beverage Control Clerks",
+      "Hotel Receptionists",
+      "Reservation Agents",
+      "Guest Service Representatives",
       "Front Office Assistants",
-      "Guest Service Agents",
-      "Hotel Administrative Assistants"
+      "Night Auditors",
+      "Telephone Operators",
+      "Hospitality Administrative Staff"
     ],
     modules: [
-      "Front Office Operations Fundamentals",
-      "Guest Registration Procedures",
-      "Reservation Systems",
-      "Cash Handling and Accounting",
-      "Telephone Operations",
-      "Guest Service Standards",
-      "Property Management Systems",
+      "Introduction to Hospitality Industry",
+      "Front Office Procedures",
+      "Guest Relations Management",
+      "Reservation Systems Operation",
+      "Cashiering and Basic Accounting",
+      "Property Management Software",
+      "Telephone Etiquette",
       "Communication Skills",
-      "Industry Software Applications",
-      "Front Office Administration"
+      "Customer Service Excellence",
+      "Industry Software Applications"
     ],
-    internship: "Three months' industrial attachment in partner hotels",
+    internship: "Industry attachment integrated in final semester",
     imageUrl: "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg"
   };
 

@@ -92,7 +92,7 @@ const StudentVoicesPage: React.FC = () => {
                 their careers in the hospitality industry.
               </p>
               <div className="flex flex-row justify-between gap-4 w-full max-w-md mx-auto">
-                <button className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 sm:px-6 sm:py-3 bg-primary-500 text-white rounded-full hover:bg-primary-600 transition-colors duration-300 text-sm sm:text-base">
+                <button className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 sm:px-6 sm:py-3 bg-button-50 text-white rounded-full hover:bg-orange-600 transition-colors duration-300 text-sm sm:text-base">
                   <Play className="w-4 h-4 sm:w-5 sm:h-5" />
                   Watch Stories
                 </button>
@@ -112,6 +112,8 @@ const StudentVoicesPage: React.FC = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
               Voices of Success
             </h2>
+            <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div>
+
             <p className="text-lg text-gray-700">
               Our students come from diverse backgrounds and pursue various
               paths in hospitality. Each story is unique, yet they all share a
@@ -215,7 +217,7 @@ const StudentVoicesPage: React.FC = () => {
                 Apply Now
                 <ChevronRight className="w-5 h-5" />
               </button>
-              <button className="inline-flex items-center gap-2 px-8 py-4 bg-primary-600 text-white rounded-full hover:bg-primary-700 transition-colors duration-300">
+              <button className="inline-flex items-center gap-2 px-8 py-4 bg-button-50 text-white rounded-full hover:bg-orange-700 transition-colors duration-300">
                 Request Information
                 <ChevronRight className="w-5 h-5" />
               </button>

@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { GraduationCap, FileUp, X, FileText, CheckCircle } from 'lucide-react';
+import apiClient from '../utils/apiClient';
 
 // Types
 interface FormData {
@@ -147,6 +148,7 @@ const FileUpload: React.FC<FileUploadProps> = ({
               type="button"
               onClick={removeFile}
               className="p-1 rounded-full hover:bg-gray-200 transition-colors"
+              aria-label="Remove file"
             >
               <X className="w-10 h-10 text-gray-600" />
             </button>
@@ -248,6 +250,7 @@ const SuccessModal: React.FC<SuccessModalProps> = ({ isOpen, onClose }) => {
               type="button"
               onClick={onClose}
               className="bg-white rounded-md text-gray-400 hover:text-gray-500 focus:outline-none"
+              aria-label="Close modal"
             >
               <X className="h-6 w-6" />
             </button>
@@ -260,11 +263,11 @@ const SuccessModal: React.FC<SuccessModalProps> = ({ isOpen, onClose }) => {
               </div>
               <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
                 <h3 className="text-lg leading-6 font-medium text-gray-900 mt-2">
-                  MasterEnrollmentFormlication Submitted Successfully
+                  MasterEnrollmentForm Submitted Successfully
                 </h3>
                 <div className="mt-2">
                   <p className="text-sm text-gray-500">
-                    Thank you for your interest in studying in Germany! We have received your MasterEnrollmentFormlication and will review it shortly.
+                    Thank you for your interest in studying in Germany! We have received your Master Enrollment Form Application and will review it shortly.
                   </p>
                   <p className="text-sm text-gray-500 mt-2">
                     Our team will contact you via email with further instructions. Please check your inbox regularly.
@@ -297,10 +300,11 @@ const EnrollmentForm: React.FC<EnrollmentFormProps> = ({ onSuccess }) => {
   const [currentStep, setCurrentStep] = useState(1);
   const [formData, setFormData] = useState<FormData>(initialFormData);
   const [errors, setErrors] = useState<Record<string, string>>({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const totalSteps = 3;
   
-  const updateFormData = (field: keyof FormData, value: any) => {
+  const updateFormData = (field: keyof FormData, value: FormData[keyof FormData]) => {
     setFormData(prev => ({ ...prev, [field]: value }));
     
     if (errors[field]) {
@@ -353,12 +357,46 @@ const EnrollmentForm: React.FC<EnrollmentFormProps> = ({ onSuccess }) => {
     setCurrentStep(prev => Math.max(prev - 1, 1));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     if (validateStep(currentStep)) {
-      console.log('Form submitted:', formData);
-      onSuccess();
+      try {
+        setIsSubmitting(true);
+        
+        // Create FormData object for file uploads
+        const submitData = new FormData();
+        
+        // Append all text fields
+        Object.entries(formData).forEach(([key, value]) => {
+          if (value instanceof File) {
+            submitData.append(key, value);
+          } else if (value !== null) {
+            submitData.append(key, value.toString());
+          }
+        });
+
+        // Send the form data to the backend
+        const response = await apiClient.post("/apply/masters", submitData, {
+          headers: {
+            'Content-Type': 'multipart/form-data',
+          },
+        });
+
+        if (response.status === 200 || response.status === 201) {
+          onSuccess();
+        } else {
+          throw new Error('Failed to submit application');
+        }
+      } catch (error) {
+        console.error('Error submitting form:', error);
+        setErrors(prev => ({
+          ...prev,
+          submit: 'Failed to submit application. Please try again.'
+        }));
+      } finally {
+        setIsSubmitting(false);
+      }
     }
   };
 
@@ -670,9 +708,7 @@ const EnrollmentForm: React.FC<EnrollmentFormProps> = ({ onSuccess }) => {
       <div className="pt-6 border-t border-gray-200">
         <h4 className="text-base font-medium text-gray-800 mb-4">Consultation</h4>
         <p className="text-sm text-gray-600 mb-6">
-          Please note that, depending on your qualifications, a consultation fee may be 
-          MasterEnrollmentFormlicable to address your needs. This will be communicated to you after we review 
-          your MasterEnrollmentFormlication. For certain opportunities, no consultation fee is required.
+        Please note that, depending on your qualifications, a consultation fee may be applicable to address your needs. This will be communicated to you after we review your application. For certain opportunities, no consultation fee is required.
         </p>
         
         <div>
@@ -733,9 +769,14 @@ const EnrollmentForm: React.FC<EnrollmentFormProps> = ({ onSuccess }) => {
           ) : (
             <button
               type="submit"
-              className="ml-auto px-6 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 transition-colors duration-200"
+              disabled={isSubmitting}
+              className={`ml-auto px-6 py-2 ${
+                isSubmitting 
+                  ? 'bg-gray-400 cursor-not-allowed' 
+                  : 'bg-green-600 hover:bg-green-700'
+              } text-white rounded-md transition-colors duration-200`}
             >
-              Submit MasterEnrollmentFormlication
+              {isSubmitting ? 'Submitting...' : 'Submit Application'}
             </button>
           )}
         </div>
