@@ -1,16 +1,16 @@
-import { Clock, Award,  Users, ClipboardList, ShieldCheck, Layers } from 'lucide-react';
+import { Clock, Award, Users, ClipboardList, Calendar, DollarSign } from 'lucide-react';
 import HospitalityCourseTemplate from './HospitalityCourseTemplate';
 
 const DiplomaHouseKeeping = () => {
   const courseData = {
     title: "Diploma in House Keeping & Laundry Operation",
     type: 'Diploma' as const,
-    duration: "2 Years",
-    price: "Contact for pricing",
+    duration: "2 years (8 semesters)",
+    price: "KES 30,000 per semester",
     fullDescription: `
-      International Institute of Foreign Languages and Hospitality  Management is committed to sustaining its mandate of training qualified professionals for the hospitality and tourism industry.
+      This two-year diploma program (8 semesters of 3 months each) provides comprehensive training in housekeeping and laundry operations for the hospitality industry. The curriculum combines theoretical knowledge with practical skills in supervision, scheduling, inventory control, and maintenance of fabrics and furniture.
       
-      This is a two-year program that provides students with competencies on supervision, scheduling, inventory control, selection, and maintenance of fabrics, furniture and floor coverings and supervising operations of a laundry plant.
+      Students will gain hands-on experience in managing housekeeping departments and supervising laundry plant operations, preparing them for supervisory roles in various hospitality establishments.
     `,
     outcomes: [
       "Plan and schedule housekeeping duties effectively",
@@ -26,7 +26,8 @@ const DiplomaHouseKeeping = () => {
       "Develop supervisory skills for housekeeping operations",
       "Train professionals in fabric and furniture maintenance",
       "Provide expertise in laundry plant supervision",
-      "Equip students with inventory control competencies"
+      "Equip students with inventory control competencies",
+      "Prepare graduates for immediate employment in the hospitality industry"
     ],
     certification: "Diploma in House Keeping & Laundry Operation",
     targetAudience: "Individuals seeking comprehensive training in housekeeping and laundry operations for the hospitality industry",
@@ -34,32 +35,32 @@ const DiplomaHouseKeeping = () => {
       {
         icon: <Clock className="w-8 h-8 text-primary-600" />,
         title: "Duration",
-        description: "2 years comprehensive training"
+        description: "2 years (8 semesters)"
       },
       {
         icon: <Award className="w-8 h-8 text-primary-600" />,
         title: "Certification",
-        description: "Diploma in House Keeping & Laundry Operation"
+        description: "Professional Diploma"
+      },
+      {
+        icon: <Calendar className="w-8 h-8 text-primary-600" />,
+        title: "Program Structure",
+        description: "3-month semesters"
+      },
+      {
+        icon: <DollarSign className="w-8 h-8 text-primary-600" />,
+        title: "Tuition",
+        description: "KES 30,000/semester"
       },
       {
         icon: <ClipboardList className="w-8 h-8 text-primary-600" />,
-        title: "Skills Focus",
-        description: "Supervision, scheduling, and inventory control"
-      },
-      {
-        icon: <Layers className="w-8 h-8 text-primary-600" />,
-        title: "Material Expertise",
-        description: "Selection and maintenance of fabrics and furniture"
-      },
-      {
-        icon: <ShieldCheck className="w-8 h-8 text-primary-600" />,
-        title: "Operations",
-        description: "Supervising laundry plant operations"
+        title: "Practical Training",
+        description: "Integrated throughout program"
       },
       {
         icon: <Users className="w-8 h-8 text-primary-600" />,
         title: "Career Level",
-        description: "Supervisory positions in hospitality"
+        description: "Supervisory positions"
       }
     ],
     careerOpportunities: [
@@ -69,7 +70,9 @@ const DiplomaHouseKeeping = () => {
       "Linen and Uniform Supervisors",
       "Laundry Supervisors",
       "Hospital Housekeeping Managers",
-      "Resort Maintenance Supervisors"
+      "Resort Maintenance Supervisors",
+      "Executive Housekeepers",
+      "Facility Maintenance Supervisors"
     ],
     modules: [
       "Housekeeping Department Organization",
@@ -81,9 +84,11 @@ const DiplomaHouseKeeping = () => {
       "Laundry Plant Operations",
       "Health and Safety Standards",
       "Cleaning Procedures and Techniques",
-      "Guest Satisfaction Strategies"
+      "Guest Satisfaction Strategies",
+      "Staff Training Methods",
+      "Quality Assurance in Housekeeping"
     ],
-    internship: "Practical training component included in the 2-year program",
+    internship: "Practical training integrated throughout the 8-semester program",
     imageUrl: "https://images.pexels.com/photos/5997993/pexels-photo-5997993.jpeg"
   };
 

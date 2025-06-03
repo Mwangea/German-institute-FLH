@@ -270,7 +270,7 @@ const ContactSection: React.FC = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-primary-500 text-white font-medium rounded-lg hover:bg-primary-600 transition-colors duration-300 disabled:bg-primary-300 disabled:cursor-not-allowed text-sm sm:text-base"
+                  className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-button-50 text-white font-medium rounded-lg hover:bg-orange-600 transition-colors duration-300 disabled:bg-primary-300 disabled:cursor-not-allowed text-sm sm:text-base"
                 >
                   {isSubmitting ? (
                     "Sending..."

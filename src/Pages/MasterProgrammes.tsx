@@ -280,7 +280,7 @@ const MastersPrograms: React.FC = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="mb-20 bg-gradient-to-r from-primary-700 to-primary-600 rounded-xl p-12 text-center">
+        <section className="mb-20 bg-gradient-to-r from-primary-500 to-primary-600 rounded-xl p-12 text-center">
           <h2 className="text-3xl font-bold text-white mb-6">Ready to Take the Next Step?</h2>
           <p className="text-xl text-indigo-100 mb-8 max-w-2xl mx-auto">
             Book a one-on-one consultation to begin your master's degree journey in Germany.
@@ -288,7 +288,7 @@ const MastersPrograms: React.FC = () => {
           <div className="text-center">
         <button
           onClick={() => setShowEnrollmentModal(true)}
-          className="inline-block px-8 py-4 bg-primary-600 hover:bg-primary-700 text-white font-medium rounded-lg transition-all duration-300 text-lg"
+          className="inline-block px-8 py-4 bg-button-50 hover:bg-orange-700 text-white font-medium rounded-lg transition-all duration-300 text-lg"
         >
           👉 Book Your Career Consultation Here
         </button>

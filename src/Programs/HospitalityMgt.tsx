@@ -38,7 +38,7 @@ const HospitalityMgt = () => {
                 hospitality industry.
               </p>
               <div className="flex flex-row justify-between gap-4 w-full max-w-md mx-auto">
-                <button className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 sm:px-6 sm:py-3 bg-primary-500 text-white rounded-full hover:bg-primary-600 transition-colors duration-300 text-sm sm:text-base">
+                <button className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 sm:px-6 sm:py-3 bg-button-50 text-white rounded-full hover:bg-orange-600 transition-colors duration-300 text-sm sm:text-base">
                   <Play className="w-4 h-4 sm:w-5 sm:h-5" />
                   Virtual Tour
                 </button>
@@ -61,6 +61,8 @@ const HospitalityMgt = () => {
             <h2 className="text-4xl font-bold text-primary-500 mb-4">
               Why Choose Our Programs?
             </h2>
+        <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div>
+
             <p className="text-xl text-gray-600">
               Industry-recognized training with practical experience
             </p>
@@ -69,7 +71,7 @@ const HospitalityMgt = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
               <div className="flex items-center mb-4">
-                <Briefcase className="w-8 h-8 text-primary-500 mr-3" />
+                <Briefcase className="w-8 h-8 text-accent-500 mr-3" />
                 <h3 className="text-xl font-semibold">Industry Partnerships</h3>
               </div>
               <p className="text-gray-600">
@@ -80,7 +82,7 @@ const HospitalityMgt = () => {
 
             <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
               <div className="flex items-center mb-4">
-                <Users className="w-8 h-8 text-primary-500 mr-3" />
+                <Users className="w-8 h-8 text-accent-500 mr-3" />
                 <h3 className="text-xl font-semibold">Practical Training</h3>
               </div>
               <p className="text-gray-600">
@@ -91,7 +93,7 @@ const HospitalityMgt = () => {
 
             <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
               <div className="flex items-center mb-4">
-                <Globe className="w-8 h-8 text-primary-500 mr-3" />
+                <Globe className="w-8 h-8 text-accent-500 mr-3" />
                 <h3 className="text-xl font-semibold">Global Curriculum</h3>
               </div>
               <p className="text-gray-600">
@@ -102,7 +104,7 @@ const HospitalityMgt = () => {
 
             <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
               <div className="flex items-center mb-4">
-                <Award className="w-8 h-8 text-primary-500 mr-3" />
+                <Award className="w-8 h-8 text-accent-500 mr-3" />
                 <h3 className="text-xl font-semibold">Dual Certification</h3>
               </div>
               <p className="text-gray-600">
@@ -120,20 +122,22 @@ const HospitalityMgt = () => {
       {/* Industry Partners Section */}
 
       {/* Logo Marquee Container */}
-      <div className="py-20 bg-white overflow-hidden">
+      {/* <div className="py-20 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-primary-500 mb-4">
               Industry Partners
             </h2>
+        <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div>
+
             <p className="text-xl text-gray-600">
               Our graduates work with leading hospitality brands worldwide
             </p>
           </div>
 
-          {/* Logo Marquee Container */}
+          
           <div className="relative w-full overflow-hidden h-32">
-            {/* First Marquee */}
+         
             <div className="absolute flex items-center h-full animate-marquee whitespace-nowrap">
               {[
                 "/Marriott_International.png",
@@ -164,7 +168,7 @@ const HospitalityMgt = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Admissions CTA */}
       <div className="bg-primary-500 py-20">
@@ -179,7 +183,7 @@ const HospitalityMgt = () => {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link
               to="/apply"
-              className="inline-flex items-center justify-center bg-white text-primary-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all"
+              className="inline-flex items-center justify-center bg-button-50 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-orange-500 transition-all"
             >
               Apply Online
             </Link>

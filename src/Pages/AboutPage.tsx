@@ -28,33 +28,33 @@ import Faculty from "../Components/Facaulty";
 //   };
 // }
 
-interface Accreditation {
-  id: number;
-  name: string;
-  logo: string;
-  description: string;
-}
+// interface Accreditation {
+//   id: number;
+//   name: string;
+//   logo: string;
+//   description: string;
+// }
 
-const accreditations: Accreditation[] = [
-  {
-    id: 1,
-    name: "International Hospitality Council",
-    logo: "https://images.pexels.com/photos/327540/pexels-photo-327540.jpeg",
-    description: "Recognized for excellence in hospitality education worldwide",
-  },
-  {
-    id: 2,
-    name: "World Tourism Organization",
-    logo: "https://images.pexels.com/photos/327541/pexels-photo-327541.jpeg",
-    description: "Certified provider of tourism and hospitality education",
-  },
-  {
-    id: 3,
-    name: "Global Education Standards Board",
-    logo: "https://images.pexels.com/photos/327542/pexels-photo-327542.jpeg",
-    description: "Meeting highest standards in educational excellence",
-  },
-];
+// const accreditations: Accreditation[] = [
+//   {
+//     id: 1,
+//     name: "International Hospitality Council",
+//     logo: "https://images.pexels.com/photos/327540/pexels-photo-327540.jpeg",
+//     description: "Recognized for excellence in hospitality education worldwide",
+//   },
+//   {
+//     id: 2,
+//     name: "World Tourism Organization",
+//     logo: "https://images.pexels.com/photos/327541/pexels-photo-327541.jpeg",
+//     description: "Certified provider of tourism and hospitality education",
+//   },
+//   {
+//     id: 3,
+//     name: "Global Education Standards Board",
+//     logo: "https://images.pexels.com/photos/327542/pexels-photo-327542.jpeg",
+//     description: "Meeting highest standards in educational excellence",
+//   },
+// ];
 
 const facilities = [
   {
@@ -230,7 +230,7 @@ const AboutPage: React.FC = () => {
             </p>
             {/* Buttons container - uses flex and justify-center to center buttons */}
             <div className="flex gap-4 flex-wrap justify-center">
-              <button className="inline-flex items-center gap-2 px-4 py-4 sm:px-8 sm:py-4 bg-primary-500 text-white rounded-full hover:bg-primary-600 transition-colors duration-300">
+              <button className="inline-flex items-center gap-2 px-4 py-4 sm:px-8 sm:py-4 bg-button-50 text-white rounded-full hover:bg-orange-600 transition-colors duration-300">
                 <Play className="w-5 h-5" />
                 Watch Our Story
               </button>
@@ -298,8 +298,8 @@ const AboutPage: React.FC = () => {
             <div className="space-y-8">
               <div className="bg-white p-8 rounded-xl shadow-sm">
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-12 h-12 rounded-full bg-primary-100 flex items-center justify-center">
-                    <Target className="w-6 h-6 text-primary-500" />
+                  <div className="w-12 h-12 rounded-full bg-primary-500 flex items-center justify-center">
+                    <Target className="w-6 h-6 text-accent-500" />
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900">
                     Our Mission
@@ -315,8 +315,8 @@ const AboutPage: React.FC = () => {
 
               <div className="bg-white p-8 rounded-xl shadow-sm">
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-12 h-12 rounded-full bg-primary-100 flex items-center justify-center">
-                    <Globe2 className="w-6 h-6 text-primary-500" />
+                  <div className="w-12 h-12 rounded-full bg-primary-500 flex items-center justify-center">
+                    <Globe2 className="w-6 h-6 text-accent-500" />
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900">
                     Our Vision
@@ -350,6 +350,8 @@ const AboutPage: React.FC = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
               Our Core Values
             </h2>
+            <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div>
+
             <p className="text-lg text-gray-700">
               These principles guide everything we do, from curriculum
               development to student support.
@@ -405,6 +407,8 @@ const AboutPage: React.FC = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
               World-Class Facilities
             </h2>
+            <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div>
+
             <p className="text-lg text-gray-700">
               Our campus features modern facilities designed to provide hands-on
               learning experiences.
@@ -441,7 +445,7 @@ const AboutPage: React.FC = () => {
       <Faculty />
 
       {/* Accreditations Section */}
-      <section className="py-24 bg-gradient-to-b from-white to-gray-50">
+      {/* <section className="py-24 bg-gradient-to-b from-white to-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
@@ -472,7 +476,7 @@ const AboutPage: React.FC = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-24 bg-primary-500">
@@ -490,7 +494,7 @@ const AboutPage: React.FC = () => {
                 Apply Now
                 <ChevronRight className="w-5 h-5" />
               </button>
-              <button className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary-600 text-white rounded-full hover:bg-primary-700 transition-colors duration-300">
+              <button className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-button-50 text-white rounded-full hover:bg-orange-700 transition-colors duration-300">
                 Download Brochure
                 <ChevronRight className="w-5 h-5" />
               </button>

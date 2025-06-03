@@ -45,7 +45,7 @@ const Header: React.FC = () => {
   return (
     <>
       {/* Top Contact Bar - Hidden on small screens */}
-      <div className="hidden md:block bg-gray-800 text-gray-100 py-2 text-sm">
+      <div className="hidden md:block bg-primary-500 text-gray-100 py-2 text-sm">
         <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0">
             <div className="flex flex-col sm:flex-row items-center space-y-1 sm:space-y-0 sm:space-x-6">

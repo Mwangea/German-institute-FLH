@@ -44,6 +44,8 @@ function Faculty() {
             <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
               Our Expert Faculty
             </h2>
+            <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div>
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Institute Administrator */}
               <div className="bg-white rounded-xl overflow-hidden shadow-lg transform hover:scale-[1.02] transition-transform duration-300">

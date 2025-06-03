@@ -45,6 +45,7 @@ import CareerOpp from "./Pages/CareerOpp"
 import Apprenticeships from "./Pages/Apprenticeships"
 import UndergraduatePrograms from "./Pages/DegreeProgrammes"
 import MasterProgrammes from "./Pages/MasterProgrammes"
+import KiswahiliLanguage from "./languages/KiswahiliLanguage"
 
 const App = () => {
   return (
@@ -87,6 +88,9 @@ const App = () => {
           <Route path="/courses/spanish" element={<ComingSoon />} />
           <Route path="/courses/french" element={<ComingSoon />} />
           <Route path="/courses/german" element={<GermanLanguage />} />
+          <Route path="/courses/kiswahili" element={<KiswahiliLanguage />} />
+
+
           <Route path="/courses/mandarin" element={<ComingSoon />} />
 
           {/* GERMAN PAGES */}

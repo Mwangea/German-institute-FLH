@@ -1,7 +1,8 @@
 import { ArrowLeft } from "lucide-react";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import MasterEnrollmentForm from "../Forms/masterProgrammes";
+//import MasterEnrollmentForm from "../Forms/masterProgrammes";
+import UndergraduateFormModal from "../Forms/undergraduateProgrammes";
 //import EnrollmentForm from "../Forms/undergraduateProgrammes";
 
 const UndergraduatePrograms: React.FC = () => {
@@ -42,7 +43,7 @@ const UndergraduatePrograms: React.FC = () => {
               <p className="text-xl text-gray-200 mb-10 max-w-3xl mx-auto">
                 Requirements and Guidance for Kenyan Students
               </p>
-              <div className="bg-yellow-500 text-blue-900 font-bold px-6 py-3 rounded-lg inline-block">
+              <div className="bg-button-50 text-white font-bold px-6 py-3 rounded-lg inline-block">
                 World-class education with low tuition costs
               </div>
             </div>
@@ -358,7 +359,7 @@ const UndergraduatePrograms: React.FC = () => {
             <div className="text-center">
         <button
           onClick={() => setShowEnrollmentModal(true)}
-          className="inline-block px-8 py-4 bg-primary-600 hover:bg-primary-700 text-white font-medium rounded-lg transition-all duration-300 text-lg"
+          className="inline-block px-8 py-4 bg-button-50 hover:bg-primary-700 text-white font-medium rounded-lg transition-all duration-300 text-lg"
         >
           👉 Book Your Career Consultation Here
         </button>
@@ -367,7 +368,7 @@ const UndergraduatePrograms: React.FC = () => {
         </section>
 
         {/* Final CTA */}
-        <section className="py-16 bg-primary-800 rounded-xl">
+        <section className="py-16 bg-primary-500 rounded-xl">
           <div className="max-w-2xl mx-auto text-center px-6">
             <h2 className="text-3xl font-bold text-white mb-6">
               Study in Germany. Invest in your future.
@@ -388,7 +389,7 @@ const UndergraduatePrograms: React.FC = () => {
             >
               ×
             </button>
-            <MasterEnrollmentForm />
+            <UndergraduateFormModal />
           </div>
         </div>
       )}

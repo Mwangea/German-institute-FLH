@@ -63,15 +63,17 @@ const GermanLevelB2 = () => {
             {/* Course Details */}
             <div className="lg:col-span-2 space-y-8">
               <div className="bg-white rounded-xl shadow-md p-8">
-                <h2 className="text-3xl font-bold text-gray-900 mb-6">Course Description</h2>
+                <h2 className="text-3xl font-bold text-center justify-center text-gray-900 mb-6">Course Description</h2>
+                <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div>
+
                 <p className="text-gray-700 mb-6 text-lg leading-relaxed">{levelData.fullDescription}</p>
                 
-                <div className="bg-primary-50 rounded-lg p-6 mb-8">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
-                    <Users className="w-6 h-6 text-primary-600 mr-2" />
+                <div className="bg-primary-500 rounded-lg p-6 mb-8">
+                  <h3 className="text-xl font-semibold text-black mb-4 flex items-center">
+                    <Users className="w-6 h-6 text-accent-600 mr-2" />
                     Who is this course for?
                   </h3>
-                  <p className="text-gray-700">{levelData.targetAudience}</p>
+                  <p className="text-white">{levelData.targetAudience}</p>
                 </div>
 
                 <h3 className="text-2xl font-semibold text-gray-900 mb-4">Learning Outcomes</h3>

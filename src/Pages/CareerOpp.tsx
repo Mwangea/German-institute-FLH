@@ -1,4 +1,5 @@
 
+import { ArrowLeft } from 'lucide-react';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -38,7 +39,7 @@ const OpportunityHub: React.FC = () => {
               For High School Graduates, College Students, and Alumni
             </p>
               <div className="flex flex-row justify-between gap-4 w-full max-w-md mx-auto">
-                <Link to="/apprenticeships" className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 sm:px-6 sm:py-3 bg-primary-500 text-white rounded-full hover:bg-primary-600 transition-colors duration-300 text-sm sm:text-base">
+                <Link to="/apprenticeships" className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 sm:px-6 sm:py-3 bg-button-50 text-white rounded-full hover:bg-orange-600 transition-colors duration-300 text-sm sm:text-base">
                 
                 Explore Programs
                 </Link>
@@ -51,6 +52,16 @@ const OpportunityHub: React.FC = () => {
           </div>
         </div>
       </section>
+
+      <div className="mb-3 mt-3">
+            <Link 
+              to="/" 
+              className="inline-flex items-center text-black hover:text-primary-200 transition-colors"
+            >
+              <ArrowLeft className="w-5 h-5 mr-2" />
+              Home
+            </Link>
+          </div>
 
       {/* Main Content */}
       <div className="container mx-auto px-6 lg:px-8 py-16 md:py-24">
@@ -292,7 +303,7 @@ const OpportunityHub: React.FC = () => {
             </p>
             <Link 
               to="/consultation" 
-              className="inline-block px-8 py-3 bg-primary-600 hover:bg-primary-700 text-white font-medium rounded-lg transition-all duration-300"
+              className="inline-block px-8 py-3 bg-button-50 hover:bg-orange-700 text-white font-medium rounded-lg transition-all duration-300"
             >
               Schedule Your Consultation
             </Link>
