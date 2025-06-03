@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown, Mail, Facebook, Instagram, Twitter, User, GraduationCap } from 'lucide-react';
+//import path from 'path';
 
 const NAV_ITEMS = [
   { label: 'Home', path: '/' },
@@ -15,7 +16,7 @@ const NAV_ITEMS = [
   },
   { label: 'About Us', path: '/about' },
   // { label: 'Admissions', path: '/admissions' },
-  { label: 'Career Opportunities', path: '/career-opportunities' },
+  { label: 'Career Opportunities', path:'/career-opportunities'},
   { label: 'Student Voices', path: '/student-voices' },
   { label: 'Contact', path: '/contact' },
 ];

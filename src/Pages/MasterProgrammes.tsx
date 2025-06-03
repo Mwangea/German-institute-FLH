@@ -1,8 +1,11 @@
 import { ArrowLeft } from 'lucide-react';
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import MasterEnrollmentForm from '../Forms/masterProgrammes';
 
 const MastersPrograms: React.FC = () => {
+    const [showEnrollmentModal, setShowEnrollmentModal] = useState(false);
+
   return (
     <div className="font-sans text-gray-800 bg-white">
       {/* Hero Section */}
@@ -282,12 +285,14 @@ const MastersPrograms: React.FC = () => {
           <p className="text-xl text-indigo-100 mb-8 max-w-2xl mx-auto">
             Book a one-on-one consultation to begin your master's degree journey in Germany.
           </p>
-          <Link 
-            to="/" 
-            className="inline-block px-8 py-4 bg-teal-400 hover:bg-teal-300 text-indigo-900 font-medium rounded-lg transition-all duration-300 text-lg"
-          >
-            👉 Book Your Individual Consultation Here
-          </Link>
+          <div className="text-center">
+        <button
+          onClick={() => setShowEnrollmentModal(true)}
+          className="inline-block px-8 py-4 bg-primary-600 hover:bg-primary-700 text-white font-medium rounded-lg transition-all duration-300 text-lg"
+        >
+          👉 Book Your Career Consultation Here
+        </button>
+      </div>
         </section>
 
         {/* Final Message */}
@@ -296,6 +301,20 @@ const MastersPrograms: React.FC = () => {
           <p className="text-lg text-gray-700">Let IIFLHM be your bridge to success.</p>
         </section>
       </div>
+      {/* Enrollment Modal */}
+      {showEnrollmentModal && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
+          <div className="bg-white rounded-lg p-6 max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+            <button 
+              onClick={() => setShowEnrollmentModal(false)}
+              className="float-right text-gray-500 hover:text-gray-700"
+            >
+              ×
+            </button>
+            <MasterEnrollmentForm />
+          </div>
+        </div>
+      )}
     </div>
   );
 };

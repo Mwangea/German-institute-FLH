@@ -73,6 +73,8 @@ const TestimonialSection: React.FC = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-6">
             Success Stories from Our Alumni
           </h2>
+        <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div>
+
           <p className="text-lg text-gray-700">
             Discover how our programs have helped shape successful careers in the hospitality industry worldwide.
           </p>
@@ -139,7 +141,7 @@ const TestimonialSection: React.FC = () => {
           <p className="text-lg text-gray-700 mb-8">
             Join our community of successful graduates and start your journey towards a rewarding career in hospitality.
           </p>
-          <button className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium text-white bg-primary-500 rounded-full hover:bg-primary-600 transition-colors duration-300">
+          <button className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium text-white bg-button-50 rounded-full hover:bg-orange-600 transition-colors duration-300">
             Begin Your Success Story
           </button>
         </div>

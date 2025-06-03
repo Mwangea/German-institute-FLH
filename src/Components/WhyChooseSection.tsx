@@ -36,16 +36,18 @@ const WhyChooseSection: React.FC = () => {
   ];
 
   return (
-    <section className="relative py-24 bg-blue-50">
+    <section className="relative py-24 bg-accent-100">
       <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">
+        <div className="max-w-3xl mx-auto  mb-16">
+          <h2 className="text-4xl font-bold text-center text-gray-900 mb-6">
             Why Choose Our Institution?
           </h2>
-          <p className="text-lg text-gray-700 mb-8">
+        <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div>
+
+          <p className="text-lg text-left text-gray-700 mb-8">
             With over two decades of excellence in hospitality and language education, we've established ourselves as a leading institution that transforms passionate learners into industry-ready professionals. Our comprehensive approach combines academic excellence with practical experience, preparing you for a successful global career.
           </p>
-          <p className="text-lg text-gray-700">
+          <p className="text-lg text-left text-gray-700">
             We pride ourselves on maintaining a perfect balance between traditional educational values and modern industry requirements, ensuring our graduates are well-equipped to meet the challenges of the evolving hospitality sector.
           </p>
         </div>
@@ -68,7 +70,7 @@ const WhyChooseSection: React.FC = () => {
         </div>
 
         <div className="text-center">
-          <button className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium text-white bg-primary-500 rounded-full hover:bg-primary-600 transition-colors duration-300">
+          <button className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium text-white bg-button-50 rounded-full hover:bg-orange-600 transition-colors duration-300">
             Enroll Now and Transform Your Future
           </button>
         </div>

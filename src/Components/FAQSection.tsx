@@ -60,13 +60,15 @@ const FAQSection: React.FC = () => {
     : faqs.filter(faq => faq.category === activeCategory);
 
   return (
-    <section className="py-24 bg-blue-50/50">
+    <section className="py-24 bg-gray-900/100">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl font-bold text-black-900 mb-6">
             Frequently Asked Questions
           </h2>
-          <p className="text-lg text-gray-700">
+        <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div>
+
+          <p className="text-lg text-black-700">
             Find answers to common questions about our programs, admissions process, and student life.
           </p>
         </div>
@@ -126,10 +128,10 @@ const FAQSection: React.FC = () => {
 
           {/* Contact CTA */}
           <div className="mt-16 text-center">
-            <p className="text-lg text-gray-700 mb-8">
+            <p className="text-lg text-black-700 mb-8">
               Can't find what you're looking for? We're here to help!
             </p>
-            <button className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium text-white bg-primary-500 rounded-full hover:bg-primary-600 transition-colors duration-300">
+            <button className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium text-white bg-button-50 rounded-full hover:bg-orange-600 transition-colors duration-300">
               Contact Our Support Team
             </button>
           </div>
