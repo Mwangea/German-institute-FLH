@@ -108,7 +108,7 @@ const HealthcareApprenticeships: React.FC = () => {
         </section>
 
         {/* Pathways Section */}
-        <section className="mb-20">
+        {/* <section className="mb-20">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-8">Pathways for Kenyan Graduates</h2>
             
@@ -153,7 +153,7 @@ const HealthcareApprenticeships: React.FC = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Partnership Section */}
         {/* <section className="mb-20 bg-gray-50 rounded-xl p-8 md:p-12">
