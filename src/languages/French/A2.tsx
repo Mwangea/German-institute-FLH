@@ -102,7 +102,7 @@ const FrenchLevelA2 = () => {
     duration: "1-6 months (flexible)",
     certification: "French A2 Proficiency Certificate",
     focusAreas: "Enhanced Communication • Daily Life • Travel • Social Skills",
-    price: "Kes 25,000",
+    price: "Kes 20,000",
     ctaText: "Take your French skills to the next level. Build confidence in everyday communication and prepare for more advanced language learning.",
   };
 

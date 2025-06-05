@@ -102,7 +102,7 @@ const FrenchLevelB1 = () => {
     duration: "1-6 months (flexible)",
     certification: "French B1 Proficiency Certificate",
     focusAreas: "Professional Skills • Cultural Understanding • Academic French",
-    price: "Kes 30,000",
+    price: "Kes 20,000",
     ctaText: "Advance your French skills for professional and academic success. Develop the confidence to express yourself fluently in any situation.",
   };
 

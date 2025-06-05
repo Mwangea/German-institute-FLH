@@ -102,7 +102,7 @@ const FrenchLevelC1 = () => {
     duration: "1-6 months (flexible)",
     certification: "French C1 Proficiency Certificate",
     focusAreas: "Academic Excellence • Professional Mastery • Cultural Expertise",
-    price: "Kes 40,000",
+    price: "Kes 20,000",
     ctaText: "Achieve near-native French proficiency. Master advanced language skills for academic research, professional leadership, and cultural expertise.",
   };
 

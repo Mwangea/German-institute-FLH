@@ -102,7 +102,7 @@ const FrenchLevelC2 = () => {
     duration: "1-6 months (flexible)",
     certification: "French C2 Mastery Certificate",
     focusAreas: "Native-like Proficiency • Cultural Mastery • Professional Excellence",
-    price: "Kes 45,000",
+    price: "Kes 20,000",
     ctaText: "Achieve the highest level of French proficiency. Master the language with native-like precision and cultural expertise.",
   };
 

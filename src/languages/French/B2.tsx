@@ -102,7 +102,7 @@ const FrenchLevelB2 = () => {
     duration: "1-6 months (flexible)",
     certification: "French B2 Proficiency Certificate",
     focusAreas: "Professional Excellence • Academic French • Cultural Mastery",
-    price: "Kes 35,000",
+    price: "Kes 20,000",
     ctaText: "Achieve professional-level French proficiency. Master sophisticated language skills for career advancement and academic success.",
   };
 
