@@ -216,11 +216,11 @@ const DutchLevelTemplate = ({ levelData }: DutchLevelTemplateProps) => {
             {/* Sidebar */}
             <div className="space-y-8">
               {/* Course Info */}
-              <div className="bg-white rounded-xl shadow-md p-8">
+              {/* <div className="bg-white rounded-xl shadow-md p-8">
                 <h3 className="text-2xl font-semibold text-gray-900 mb-6">Course Information</h3>
                 <div className="space-y-4">
-                  <div className="flex items-center">
-                    <Users className="w-5 h-5 text-gray-500 mr-3" />
+                  <div className="flex items-center bg-emerald-100 p-3 rounded-xl">
+                    <Users className="w-5 h-5  text-emerald-600 mr-3" />
                     <div>
                       <p className="text-sm text-gray-500">Target Audience</p>
                       <p className="font-medium">{levelData.targetAudience}</p>
@@ -248,7 +248,55 @@ const DutchLevelTemplate = ({ levelData }: DutchLevelTemplateProps) => {
                     </div>
                   </div>
                 </div>
+              </div> */}
+              <div className="space-y-8">
+              {/* Key Details */}
+              <div className="bg-white rounded-xl shadow-md p-8">
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                  Course Information
+                </h3>
+                <div className="space-y-6">
+                  <div className="flex items-start">
+                    <div className="bg-emerald-100 p-3 rounded-xl mr-4">
+                      <Calendar className="w-6 h-6 text-emerald-600" />
+                    </div>
+                    <div>
+                      <h4 className="font-medium text-gray-900">Duration</h4>
+                      <p className="text-gray-600">{levelData.duration}</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="bg-emerald-100 p-3 rounded-xl mr-4">
+                      <Mic className="w-6 h-6 text-emerald-600" />
+                    </div>
+                    <div>
+                      <h4 className="font-medium text-gray-900">Focus Areas</h4>
+                      <p className="text-gray-600">{levelData.focusAreas}</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start">
+                    <div className="bg-emerald-100 p-3 rounded-xl mr-4">
+                      <Award className="w-6 h-6 text-emerald-600" />
+                    </div>
+                    <div>
+                      <h4 className="font-medium text-gray-900">Certification</h4>
+                      <p className="text-gray-600">{levelData.certification}</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start">
+                    <div className="bg-emerald-100 p-3 rounded-xl mr-4">
+                      <Users className="w-6 h-6 text-emerald-600" />
+                    </div>
+                    <div>
+                      <h4 className="font-medium text-gray-900">Target Audience</h4>
+                      <p className="text-gray-600">{levelData.targetAudience}</p>
+                    </div>
+                  </div>
+                </div>
               </div>
+            </div>
 
               {/* Enrollment Form */}
               <div className="bg-white rounded-xl shadow-md p-8 text-black">
