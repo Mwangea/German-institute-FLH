@@ -88,6 +88,13 @@ import DutchLevelC1 from "./languages/Dutch/C1"
 import DutchLevelA2 from "./languages/Dutch/A2"
 import DutchLevelC2 from "./languages/Dutch/C2"
 import DutchLevelB1 from "./languages/Dutch/B1"
+import ItalianLevelA1 from "./languages/Italian/A1"
+import ItalianLevelB1 from "./languages/Italian/B1"
+import ItalianLevelB2 from "./languages/Italian/B2"
+import ItalianLevelC1 from "./languages/Italian/C1"
+import ItalianLevelA2 from "./languages/Italian/A2"
+import ItalianLevelC2 from "./languages/Italian/C2"
+import ItalyLanguage from "./languages/Italian/ItalyLanguage"
 
 const App = () => {
   return (
@@ -134,9 +141,15 @@ const App = () => {
           <Route path="/courses/kiswahili" element={<KiswahiliLanguage />} />
           <Route path="/courses/mandarin" element={<MandarinLanguage />} />
           <Route path="/courses/dutch" element={<DutchLanguage />} />
+          <Route path="/courses/italian" element={<ItalyLanguage />} />
+          <Route path="/courses/mandarin" element={<MandarinLanguage />} />
+          {/* <Route path="/courses/mandarin" element={<MandarinLanguage />} />
           <Route path="/courses/mandarin" element={<MandarinLanguage />} />
           <Route path="/courses/mandarin" element={<MandarinLanguage />} />
           <Route path="/courses/mandarin" element={<MandarinLanguage />} />
+          <Route path="/courses/mandarin" element={<MandarinLanguage />} />
+          <Route path="/courses/mandarin" element={<MandarinLanguage />} /> */}
+
 
 
           {/* GERMAN PAGES */}
@@ -195,6 +208,14 @@ const App = () => {
           <Route path="/dutch-levels/c1" element={<DutchLevelC1 />} />
           <Route path="/dutch-levels/a2" element={<DutchLevelA2 />} />
           <Route path="/dutch-levels/c2" element={<DutchLevelC2 />} />
+
+          {/* ITALY LANGUAGE */}
+          <Route path="italian-levels/a1" element={<ItalianLevelA1 />} />
+          <Route path="/italian-levels/b2" element={<ItalianLevelB1 />} />
+          <Route path="/italian-levels/b1" element={<ItalianLevelB2 />} />
+          <Route path="/italian-levels/c1" element={<ItalianLevelC1 />} />
+          <Route path="/italian-levels/a2" element={<ItalianLevelA2 />} />
+          <Route path="/italian-levels/c2" element={<ItalianLevelC2 />} />
           
            
 
