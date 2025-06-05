@@ -46,6 +46,34 @@ import Apprenticeships from "./Pages/Apprenticeships"
 import UndergraduatePrograms from "./Pages/DegreeProgrammes"
 import MasterProgrammes from "./Pages/MasterProgrammes"
 import KiswahiliLanguage from "./languages/KiswahiliLanguage"
+import SpanishLanguage from "./languages/SpanishLanguage"
+import EnglishLanguage from "./languages/EnglishLanguage"
+import ArabicLanguage from "./languages/Arabic/ArabicLanguage"
+import ArabicLevelA1 from "./languages/Arabic/A1"
+import ArabicLevelA2 from "./languages/Arabic/A2"
+import ArabicLevelB1 from "./languages/Arabic/B1"
+import ArabicLevelB2 from "./languages/Arabic/B2"
+import ArabicLevelC1 from "./languages/Arabic/C1"
+import ArabicLevelC2 from "./languages/Arabic/C2"
+import EnglishLevelA1 from "./languages/English/A1"
+import EnglishLevelA2 from "./languages/English/A2"
+import EnglishLevelB1 from "./languages/English/B1"
+import EnglishLevelB2 from "./languages/English/B2"
+import EnglishLevelC1 from "./languages/English/C1"
+import EnglishLevelC2 from "./languages/English/C2"
+import MandarinLanguage from "./languages/Mandarin/MandarinLanguage"
+import MandarinLevelHSK1 from "./languages/Mandarin/HSK1"
+import MandarinLevelHSK2 from "./languages/Mandarin/HSK2"
+import MandarinLevelHSK3 from "./languages/Mandarin/HSK3"
+import MandarinLevelHSK4 from "./languages/Mandarin/HSK4"
+import MandarinLevelHSK5 from "./languages/Mandarin/HSK5"
+import MandarinLevelHSK6 from "./languages/Mandarin/HSK6"
+import SpanishLevelA1 from "./languages/Spanish/A1"
+import SpanishLevelA2 from "./languages/Spanish/A2"
+import SpanishLevelB2 from "./languages/Spanish/B2"
+import SpanishLevelB1 from "./languages/Spanish/B1"
+import SpanishLevelC1 from "./languages/Spanish/C1"
+import SpanishLevelC2 from "./languages/Spanish/C2"
 
 const App = () => {
   return (
@@ -84,14 +112,13 @@ const App = () => {
           <Route path="/exams/pro/professionals" element={<Goethe />} />
 
             {/* LANGUAGE PAGES */}
-          <Route path="/courses/english" element={<ComingSoon />} />
-          <Route path="/courses/spanish" element={<ComingSoon />} />
+          <Route path="/courses/english" element={<EnglishLanguage />} />
+          <Route path="/courses/spanish" element={<SpanishLanguage />} />
           <Route path="/courses/french" element={<ComingSoon />} />
           <Route path="/courses/german" element={<GermanLanguage />} />
+          <Route path="/courses/arabic" element={<ArabicLanguage />} />
           <Route path="/courses/kiswahili" element={<KiswahiliLanguage />} />
-
-
-          <Route path="/courses/mandarin" element={<ComingSoon />} />
+          <Route path="/courses/mandarin" element={<MandarinLanguage />} />
 
           {/* GERMAN PAGES */}
           <Route path="/german-levels/a1" element={<GermanLevelA1 />} />
@@ -100,6 +127,43 @@ const App = () => {
           <Route path="/german-levels/b2" element={<GermanLevelB2 />} />
           <Route path="/german-levels/c1" element={<GermanLevelC1 />} />
           <Route path="/german-levels/c2" element={<GermanLevelC2 />} />
+
+          {/* ARABIC PAGES */}
+          <Route path="/arabic-levels/a1" element={<ArabicLevelA1 />} />
+          <Route path="/arabic-levels/a2" element={<ArabicLevelA2 />} />
+          <Route path="/arabic-levels/b1" element={<ArabicLevelB1 />} />
+          <Route path="/arabic-levels/b2" element={<ArabicLevelB2 />} />
+          <Route path="/arabic-levels/c1" element={<ArabicLevelC1 />} />
+          <Route path="/arabic-levels/c2" element={<ArabicLevelC2 />} />
+
+         {/* ENGLISH PAGES */}
+          <Route path="/english-levels/a1" element={<EnglishLevelA1 />} />
+          <Route path="/english-levels/a2" element={<EnglishLevelA2 />} />
+          <Route path="/english-levels/b1" element={<EnglishLevelB1 />} />
+          <Route path="/english-levels/b2" element={<EnglishLevelB2 />} />
+          <Route path="/english-levels/c1" element={<EnglishLevelC1 />} />
+          <Route path="/english-levels/c2" element={<EnglishLevelC2 />} />
+
+          {/* MANDARIN PAGES */}
+          <Route path="mandarin-levels/hsk1" element={<MandarinLevelHSK1 />} />
+          <Route path="mandarin-levels/hsk2" element={<MandarinLevelHSK2 />} />
+          <Route path="mandarin-levels/hsk3" element={<MandarinLevelHSK3 />} />
+          <Route path="mandarin-levels/hsk4" element={<MandarinLevelHSK4 />} />
+          <Route path="mandarin-levels/hsk5" element={<MandarinLevelHSK5 />} />
+          <Route path="mandarin-levels/hsk6" element={<MandarinLevelHSK6 />} />
+
+
+          {/* SPANISH LANGUAGES */}
+          <Route path="/spanish-levels/a1" element={<SpanishLevelA1 />} />
+          <Route path="/spanish-levels/a2" element={<SpanishLevelA2 />} />
+          <Route path="/spanish-levels/b1" element={<SpanishLevelB1 />} />
+          <Route path="/spanish-levels/b2" element={<SpanishLevelB2 />} />
+          <Route path="/spanish-levels/c1" element={<SpanishLevelC1 />} />
+          <Route path="/spanish-levels/c2" element={<SpanishLevelC2 />} />
+          
+           
+
+
 
           {/* HOSPITALITY PAGES */}
           <Route path="/diploma-hospitality" element={<DiplomaHospitality />} />

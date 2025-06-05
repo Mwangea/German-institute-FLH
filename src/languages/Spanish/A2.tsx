@@ -1,0 +1,90 @@
+import SpanishLevelTemplate from "./SpanishLevelTemplate";
+
+const SpanishLevelA2 = () => {
+  const levelData = {
+    level: "A2",
+    title: "Spanish Course: A2 Level (Elementary)",
+    tagline: "Expand your basic Spanish skills for everyday communication",
+    duration: {
+      regular: "6 months (1 hour per day)",
+      intensive: "3 months (2 hours per day)",
+      superIntensive: "2 months (3 hours per day)",
+      accelerated: "1 month (6 hours per day)"
+    },
+    price: "Kes 20,000",
+    overview: "The Spanish A2 course builds upon the foundation established in A1, focusing on expanding vocabulary and grammar for more complex everyday situations. Students will develop greater confidence in using Spanish for routine tasks and social interactions, while preparing for the DELE A2 examination.",
+    format: "Interactive lessons combining theory and practice. Emphasis on expanding vocabulary, more complex grammar structures, and practical communication scenarios. Regular practice sessions and personalized feedback to ensure steady progress.",
+    objectives: [
+      "Expand vocabulary for daily communication",
+      "Master more complex grammatical structures",
+      "Improve reading and writing skills",
+      "Enhance listening and speaking abilities",
+      "Prepare for the DELE A2 examination"
+    ],
+    outcomes: [
+      "Communicate effectively in daily life situations",
+      "Understand and use common expressions for daily needs",
+      "Read and write more complex Spanish texts",
+      "Participate in conversations about familiar topics",
+      "Handle most travel situations in Spanish-speaking countries"
+    ],
+    targetAudience: "Students who have completed A1 or have basic Spanish knowledge",
+    certification: "DELE A2 Certificate",
+    focusAreas: {
+      speaking: [
+        "Describing daily routines and activities",
+        "Expressing opinions and preferences",
+        "Making simple plans and arrangements",
+        "Handling basic social situations",
+        "Discussing past experiences"
+      ],
+      listening: [
+        "Understanding main points in clear standard speech",
+        "Following short narratives and descriptions",
+        "Comprehending simple announcements and instructions",
+        "Recognizing key information in conversations",
+        "Understanding basic media content"
+      ],
+      reading: [
+        "Understanding short texts on familiar topics",
+        "Reading and understanding simple personal letters",
+        "Finding specific information in everyday materials",
+        "Following simple written instructions",
+        "Understanding basic news articles"
+      ],
+      writing: [
+        "Writing short notes and messages",
+        "Describing experiences and events",
+        "Writing simple personal letters",
+        "Composing short paragraphs about familiar topics",
+        "Filling out forms and applications"
+      ]
+    },
+    courseMaterials: {
+      coursebook: "Aula Internacional 2",
+      supplementary: [
+        "Grammar practice workbooks",
+        "Vocabulary expansion materials",
+        "Audio materials for listening practice",
+        "Online exercises and practice materials",
+        "DELE A2 mock tests and preparation materials"
+      ]
+    },
+    assessment: {
+      continuous: "Regular progress tests, speaking assessments, and writing assignments",
+      final: "Mock DELE A2 examination covering all language skills"
+    },
+    teachingMethods: [
+      "Task-based learning activities",
+      "Pair and group work exercises",
+      "Role-play and simulation tasks",
+      "Interactive multimedia resources",
+      "Cultural immersion activities"
+    ],
+    ctaText: "Take your Spanish skills to the next level and communicate with confidence in everyday situations."
+  };
+
+  return <SpanishLevelTemplate levelData={levelData} />;
+};
+
+export default SpanishLevelA2;
