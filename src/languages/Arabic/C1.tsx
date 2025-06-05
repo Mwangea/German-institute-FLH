@@ -29,7 +29,7 @@ const ArabicLevelC1 = () => {
     duration: "3-6 months",
     certification: "Level C1 Arabic Language Certificate",
     focusAreas: "Academic Arabic • Journalism • Diplomatic Language",
-    price: "Kes 35,000",
+    price: "Kes 20,000",
     ctaText: "Excel in high-level Arabic for media, diplomacy, or academia."
   };
 

@@ -27,7 +27,7 @@ const ArabicLevelB1 = () => {
     duration: "3-6 months",
     certification: "Arabic Language Level B1 Certificate",
     focusAreas: "Debates • Current Events • Formal Writing",
-    price: "Kes 25,000",
+    price: "Kes 20,000",
     ctaText: "Advance your fluency for academic, work, or personal goals with sophisticated conversation skills."
   };
 

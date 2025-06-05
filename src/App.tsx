@@ -81,6 +81,13 @@ import FrenchLevelB1 from "./languages/French/B1"
 import FrenchLevelC1 from "./languages/French/C1"
 import FrenchLevelA2 from "./languages/French/A2"
 import FrenchLevelC2 from "./languages/French/C2"
+import DutchLanguage from "./languages/Dutch/DutchLanguage"
+import DutchLevelA1 from "./languages/Dutch/A1"
+import DutchLevelB2 from "./languages/Dutch/B2"
+import DutchLevelC1 from "./languages/Dutch/C1"
+import DutchLevelA2 from "./languages/Dutch/A2"
+import DutchLevelC2 from "./languages/Dutch/C2"
+import DutchLevelB1 from "./languages/Dutch/B1"
 
 const App = () => {
   return (
@@ -126,6 +133,11 @@ const App = () => {
           <Route path="/courses/arabic" element={<ArabicLanguage />} />
           <Route path="/courses/kiswahili" element={<KiswahiliLanguage />} />
           <Route path="/courses/mandarin" element={<MandarinLanguage />} />
+          <Route path="/courses/dutch" element={<DutchLanguage />} />
+          <Route path="/courses/mandarin" element={<MandarinLanguage />} />
+          <Route path="/courses/mandarin" element={<MandarinLanguage />} />
+          <Route path="/courses/mandarin" element={<MandarinLanguage />} />
+
 
           {/* GERMAN PAGES */}
           <Route path="/german-levels/a1" element={<GermanLevelA1 />} />
@@ -175,6 +187,14 @@ const App = () => {
           <Route path="/french-levels/c1" element={<FrenchLevelC1 />} />
           <Route path="/french-levels/a2" element={<FrenchLevelA2 />} />
           <Route path="/french-levels/c2" element={<FrenchLevelC2 />} />
+
+          {/* DUTCH LANGUAGE */}
+          <Route path="dutch-levels/a1" element={<DutchLevelA1 />} />
+          <Route path="/dutch-levels/b2" element={<DutchLevelB2 />} />
+          <Route path="/dutch-levels/b1" element={<DutchLevelB1 />} />
+          <Route path="/dutch-levels/c1" element={<DutchLevelC1 />} />
+          <Route path="/dutch-levels/a2" element={<DutchLevelA2 />} />
+          <Route path="/dutch-levels/c2" element={<DutchLevelC2 />} />
           
            
 
