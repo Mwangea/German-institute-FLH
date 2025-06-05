@@ -22,7 +22,7 @@ import TestDaF from "./Exams/TestDaF"
 import Goethe from "./Exams/Goethe-TestPRO"
 import ForeignLanguages from "./Programs/ForeignLanguages"
 import HospitalityMgt from "./Programs/HospitalityMgt"
-import ComingSoon from "./languages/ComingSoon"
+//import ComingSoon from "./languages/ComingSoon"
 import GermanLanguage from "./languages/GermanLanguage"
 import GermanLevelA1 from "./languages/A1"
 import GermanLevelA2 from "./languages/A2"
@@ -74,6 +74,13 @@ import SpanishLevelB2 from "./languages/Spanish/B2"
 import SpanishLevelB1 from "./languages/Spanish/B1"
 import SpanishLevelC1 from "./languages/Spanish/C1"
 import SpanishLevelC2 from "./languages/Spanish/C2"
+import FrenchLevelA1 from "./languages/French/A1"
+import FrenchLanguage from "./languages/French/FrenchLanguage"
+import FrenchLevelB2 from "./languages/French/B2"
+import FrenchLevelB1 from "./languages/French/B1"
+import FrenchLevelC1 from "./languages/French/C1"
+import FrenchLevelA2 from "./languages/French/A2"
+import FrenchLevelC2 from "./languages/French/C2"
 
 const App = () => {
   return (
@@ -114,7 +121,7 @@ const App = () => {
             {/* LANGUAGE PAGES */}
           <Route path="/courses/english" element={<EnglishLanguage />} />
           <Route path="/courses/spanish" element={<SpanishLanguage />} />
-          <Route path="/courses/french" element={<ComingSoon />} />
+          <Route path="/courses/french" element={<FrenchLanguage />} />
           <Route path="/courses/german" element={<GermanLanguage />} />
           <Route path="/courses/arabic" element={<ArabicLanguage />} />
           <Route path="/courses/kiswahili" element={<KiswahiliLanguage />} />
@@ -160,6 +167,14 @@ const App = () => {
           <Route path="/spanish-levels/b2" element={<SpanishLevelB2 />} />
           <Route path="/spanish-levels/c1" element={<SpanishLevelC1 />} />
           <Route path="/spanish-levels/c2" element={<SpanishLevelC2 />} />
+
+          {/* FRENCH LANGUAGE */}
+          <Route path="/french-levels/a1" element={<FrenchLevelA1 />} />
+          <Route path="/french-levels/b2" element={<FrenchLevelB2 />} />
+          <Route path="/french-levels/b1" element={<FrenchLevelB1 />} />
+          <Route path="/french-levels/c1" element={<FrenchLevelC1 />} />
+          <Route path="/french-levels/a2" element={<FrenchLevelA2 />} />
+          <Route path="/french-levels/c2" element={<FrenchLevelC2 />} />
           
            
 
