@@ -20,27 +20,34 @@ const programsData = [
       },
       { 
         id: 2, 
-        title: "English Language Course", 
+        title: "Kiswahili Language Course", 
         level: "Beginner to Advanced",
-        link: "/courses/english",
-        isAvailable: false
+        link: "/courses/kiswahili",
+        isAvailable: true
       },
       { 
         id: 3, 
-        title: "Spanish Language Course", 
-        level: "Beginner to Intermediate",
-        link: "/courses/spanish",
-        isAvailable: false
+        title: "English Language Course", 
+        level: "Beginner to Advanced",
+        link: "/courses/english",
+        isAvailable: true
       },
       { 
         id: 4, 
+        title: "Spanish Language Course", 
+        level: "Beginner to Intermediate",
+        link: "/courses/spanish",
+        isAvailable: true
+      },
+      { 
+        id: 5, 
         title: "French Language Course", 
         level: "Beginner to Advanced",
         link: "/courses/french",
         isAvailable: false
       },
       { 
-        id: 5, 
+        id: 6, 
         title: "Mandarin Chinese Course", 
         level: "Beginner",
         link: "/courses/mandarin",
