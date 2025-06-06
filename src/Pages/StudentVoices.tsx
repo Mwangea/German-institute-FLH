@@ -155,11 +155,11 @@ const StudentVoicesPage: React.FC = () => {
                   <div className="bg-gray-50 p-8 rounded-xl relative">
                     <Quote className="absolute top-4 left-4 w-8 h-8 text-primary-200" />
                     <div className="ml-8">
-                      <p className="text-xl text-gray-700 italic mb-6">
+                      <p className="text-base text-gray-700 italic mb-6">
                         "{testimonial.quote}"
                       </p>
                       <div>
-                        <h3 className="text-2xl font-semibold text-gray-900 mb-2">
+                        <h3 className="text-xl font-semibold text-gray-900 mb-2">
                           {testimonial.name}
                         </h3>
                         <p className="text-primary-600">
