@@ -117,7 +117,7 @@ const Header: React.FC = () => {
                 <img 
                   src="/photo.png" 
                   alt="IFLHM Logo" 
-                  className="h-14 w-14 md:h-16 md:w-16 lg:h-20 lg:w-20 transition-transform duration-300 group-hover:scale-105" 
+                  className="h-16 w-16 md:h-18 md:w-18 lg:h-20 lg:w-20 transition-transform duration-300 group-hover:scale-105" 
                 />
               </div>
               <div className="ml-2 md:ml-4">
