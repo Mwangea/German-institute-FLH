@@ -59,9 +59,9 @@ const HealthcareApprenticeships: React.FC = () => {
       {/* Main Content */}
       <div className="container mx-auto px-6 lg:px-8 py-16 md:py-24">
         {/* Last Updated */}
-        <div className="max-w-4xl mx-auto text-left mb-12">
+        {/* <div className="max-w-4xl mx-auto text-left mb-12">
           <p className="text-sm text-gray-500">Last Updated: 15 April 2025</p>
-        </div>
+        </div> */}
 
         {/* Introduction */}
         <section className="mb-20 max-w-4xl mx-auto">

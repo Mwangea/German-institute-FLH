@@ -67,7 +67,7 @@ const OpportunityHub: React.FC = () => {
       <div className="container mx-auto px-6 lg:px-8 py-16 md:py-24">
         {/* Introduction */}
         <section className="mb-20 max-w-4xl mx-auto">
-          <p className="text-sm text-gray-500 mb-6">Last Updated: 30 May 2025</p>
+          {/* <p className="text-sm text-gray-500 mb-6">Last Updated: 30 May 2025</p> */}
           <p className="text-lg text-gray-700 mb-8">
             Are you a recent high school graduate eager to kickstart your international career? Or a university graduate looking to enhance your skills and access training opportunities abroad? The International Institute for Foreign Languages and Hospitality Management proudly introduces our Opportunity Hub  a specialized platform that connects aspiring Kenyans with education and career pathways in Germany.
           </p>
@@ -136,7 +136,7 @@ const OpportunityHub: React.FC = () => {
               <div className="flex flex-col md:flex-row gap-8 items-start">
                 <div className="w-full md:w-1/4">
                   <h3 className="text-xl font-bold text-primary-700 mb-2">Apprenticeship Programs</h3>
-                  <div className="w-16 h-1 bg-button-50 mb-4"></div>
+                  <div className="w-full h-1 bg-button-50 mb-4"></div>
                 </div>
                 <div className="w-full md:w-3/4 bg-gray-50 p-6 rounded-lg">
                   <p className="text-gray-700 mb-4">
@@ -163,7 +163,7 @@ const OpportunityHub: React.FC = () => {
               <div className="flex flex-col md:flex-row gap-8 items-start">
                 <div className="w-full md:w-1/4">
                   <h3 className="text-xl font-bold text-primary-700 mb-2">Undergraduate Degrees</h3>
-                  <div className="w-16 h-1 bg-button-50 mb-4"></div>
+                  <div className="w-full h-1 bg-button-50 mb-4"></div>
                 </div>
                 <div className="w-full md:w-3/4 bg-gray-50 p-6 rounded-lg">
                   <p className="text-gray-700 mb-4">
@@ -190,7 +190,7 @@ const OpportunityHub: React.FC = () => {
               <div className="flex flex-col md:flex-row gap-8 items-start">
                 <div className="w-full md:w-1/4">
                   <h3 className="text-xl font-bold text-primary-700 mb-2">Master's Degrees</h3>
-                  <div className="w-16 h-1 bg-button-50 mb-4"></div>
+                  <div className="w-full h-1 bg-button-50 mb-4"></div>
                 </div>
                 <div className="w-full md:w-3/4 bg-gray-50 p-6 rounded-lg">
                   <p className="text-gray-700 mb-4">
@@ -217,7 +217,7 @@ const OpportunityHub: React.FC = () => {
               <div className="flex flex-col md:flex-row gap-8 items-start">
                 <div className="w-full md:w-1/4">
                   <h3 className="text-xl font-bold text-primary-700 mb-2">Job Market Access</h3>
-                  <div className="w-16 h-1 bg-button-50 mb-4"></div>
+                  <div className="w-full h-1 bg-button-50 mb-4"></div>
                 </div>
                 <div className="w-full md:w-3/4 bg-gray-50 p-6 rounded-lg">
                   <p className="text-gray-700 mb-4">

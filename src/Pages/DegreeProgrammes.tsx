@@ -64,9 +64,9 @@ const UndergraduatePrograms: React.FC = () => {
       {/* Main Content */}
       <div className="container mx-auto px-6 lg:px-8 py-16 md:py-24">
         {/* Last Updated */}
-        <div className="max-w-4xl mx-auto text-left mb-12">
+        {/* <div className="max-w-4xl mx-auto text-left mb-12">
           <p className="text-sm text-gray-500">Last Updated: 08 April 2025</p>
-        </div>
+        </div> */}
 
         {/* Introduction */}
         <section className="mb-20 max-w-4xl mx-auto">
@@ -263,7 +263,7 @@ const UndergraduatePrograms: React.FC = () => {
             </p>
 
             <div className="grid md:grid-cols-2 gap-8">
-              <div>
+              {/* <div>
                 <h3 className="text-xl font-semibold text-gray-800 mb-4">
                   Our Track Record
                 </h3>
@@ -283,7 +283,7 @@ const UndergraduatePrograms: React.FC = () => {
                     </span>
                   </li>
                 </ul>
-              </div>
+              </div> */}
               <div>
                 <h3 className="text-xl font-semibold text-gray-800 mb-4">
                   How We Can Help You
