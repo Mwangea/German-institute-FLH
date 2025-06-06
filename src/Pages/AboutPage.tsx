@@ -306,10 +306,9 @@ const AboutPage: React.FC = () => {
                   </h3>
                 </div>
                 <p className="text-gray-700">
-                  To equip individuals with practical language skills and and
-                  Hospitality Expertise that empower them to thrive in global
+                  To equip individuals with practical language skills and hospitality expertise that empower them to thrive in global
                   environments, foster cultural understanding, and enhance
-                  career opportunities in the international job market
+                  career opportunities in the international job market.
                 </p>
               </div>
 

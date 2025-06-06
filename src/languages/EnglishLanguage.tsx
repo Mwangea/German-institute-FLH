@@ -172,7 +172,7 @@ const EnglishLanguage = () => {
               {
                 icon: DollarSign,
                 title: 'Affordable Pricing',
-                desc: 'Cost-effective and installment options to ensure quality English education for all.'
+                desc: 'Cost-effective courses with installment options to ensure quality English education for all.'
               },
               {
                 icon: CheckCircle,

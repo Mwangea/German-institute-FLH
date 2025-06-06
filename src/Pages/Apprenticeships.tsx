@@ -29,18 +29,17 @@ const HealthcareApprenticeships: React.FC = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-serif text-white mb-4 md:mb-6">
-              Healthcare Apprenticeships
+                Healthcare Apprenticeships
               </h1>
               <h1 className="text-xl md:text-3xl lg:text-4xl font-bold text-white mb-6">
-              Nursing & Medical Radiology <span className="text-accent-400">Apprenticeships</span> in Germany
-            </h1>
-            <p className="text-xl text-gray-200 mb-10 max-w-3xl mx-auto">
-              Empowering Kenyan Youth for Global Healthcare Careers
-            </p>
-            <div className="bg-button-50 text-white font-bold px-6 py-3 rounded-lg inline-block mb-8">
-            Application for the next intake will open soon
-
-            </div>
+                Nursing & Medical Radiology <span className="text-accent-400">Apprenticeships</span> in Germany
+              </h1>
+              <p className="text-xl text-gray-200 mb-10 max-w-3xl mx-auto">
+                Empowering Kenyan Youth for Global Healthcare Careers
+              </p>
+              <div className="bg-button-50 text-white font-bold px-6 py-3 rounded-lg inline-block mb-8">
+                Applications for the next intake will open soon
+              </div>
               
             </div>
           </div>

@@ -1,4 +1,3 @@
-
 import { ArrowLeft } from 'lucide-react';
 import React from 'react';
 import { Link } from 'react-router-dom';
@@ -315,7 +314,7 @@ const OpportunityHub: React.FC = () => {
           <p className="text-lg text-gray-700 mb-6">
             At the International Institute for Foreign Languages and Hospitality Management, we are committed to empowering young minds to succeed globally.
           </p>
-          <p className="text-2xl font-bold text-primary-700">Your Future. Our Mission.</p>
+          <p className="text-2xl font-bold text-primary-700">Your Future, Our Mission.</p>
         </section>
       </div>
     </div>
