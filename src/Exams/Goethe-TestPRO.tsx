@@ -86,13 +86,13 @@ const GoetheTestProExam: React.FC = () => {
             {/* Description */}
             <div className="bg-white rounded-xl shadow-sm p-8 mb-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">
-                The Goethe-Test Pro – Clarity In Only 60 Minutes
+                The Goethe-Test PRO – Clarity in Only 60 Minutes
               </h2>
               <p className="text-gray-700 mb-6 leading-relaxed">
-                Whether for your own professional career or company competitiveness: Success is based on trust. And trust is engendered when everyone speaks the same language. The question is: How good is your German? What language skills do your current or future employees possess?
+                Whether for your own professional career or company competitiveness: Success is based on trust. Trust is engendered when everyone speaks the same language. The question is: How good is your German? What language skills do your current or future employees possess?
               </p>
               <p className="text-gray-700 leading-relaxed">
-                Goethe-Test PRO: German for professionals provides an answer to this question. Our computer-based test evaluates listening and reading competence quickly and reliably in the workplace.
+                Goethe-Test PRO: German for Professionals provides an answer to this question. Our computer-based test evaluates listening and reading competence quickly and reliably in the workplace.
               </p>
             </div>
 
