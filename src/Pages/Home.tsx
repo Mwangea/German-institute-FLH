@@ -7,7 +7,7 @@ import AboutSection from "../Components/AboutSection";
 import WhyChooseSection from "../Components/WhyChooseSection";
 import TestimonialSection from "../Components/TestimonialSection";
 import FAQSection from "../Components/FAQSection";
-import  { ExpandingBanner } from "../Components/LocationsSection";
+//import  { ExpandingBanner } from "../Components/LocationsSection";
 
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -105,7 +105,7 @@ const Home = () => {
       <AboutSection />
       <WhyChooseSection />
       <TestimonialSection />
-      <ExpandingBanner />
+      
       <FAQSection />
     </div>
     </>
