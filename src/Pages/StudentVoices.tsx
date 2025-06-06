@@ -25,7 +25,7 @@ const testimonials: StudentTestimonial[] = [
   {
     id: 2,
     name: "Daniel",
-    program: "Student Studying in German",
+    program: "Student Studying in Germany",
     quote:
       "Studying in Germany has been an incredible journey. I strongly encourage others to learn languages through the Institution of Foreign Language and Hospitality Management—it has helped me immensely in adapting, communicating, and thriving in a new environment.",
     videoUrl: "Daniel.mp4",
