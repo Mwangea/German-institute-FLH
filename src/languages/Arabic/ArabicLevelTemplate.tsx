@@ -1,5 +1,5 @@
 import {
-  BookOpen,
+
   Clock,
   ChevronRight,
   CheckCircle,

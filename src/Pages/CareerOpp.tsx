@@ -1,6 +1,7 @@
 import { ArrowLeft } from 'lucide-react';
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SectionTitle from '../Components/SectionTitle';
 
 const OpportunityHub: React.FC = () => {
   return (
@@ -121,8 +122,9 @@ const OpportunityHub: React.FC = () => {
         {/* What We Offer - Redesigned without cards */}
         <section className="mb-20">
           <div className="max-w-4xl mx-auto text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-2">What We Offer</h2>
-            <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div>
+            {/* <h2 className="text-3xl font-bold text-gray-900 mb-2">What We Offer</h2>
+            <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div> */}
+            <SectionTitle title='What We Offer' />
             <p className="text-lg text-gray-700">
               We provide personalized career consultancy services tailored for Kenyan high school leavers, university students, and alumni with ambitions to study, train, or work in Germany.
             </p>
@@ -244,8 +246,9 @@ const OpportunityHub: React.FC = () => {
         {/* Get Started Section */}
         <section className="mb-20">
           <div className="max-w-4xl mx-auto text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-2">Begin Your Journey</h2>
-            <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div>
+            {/* <h2 className="text-3xl font-bold text-gray-900 mb-2">Begin Your Journey</h2>
+            <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div> */}
+            <SectionTitle title='Begin Your Journey' />
             <p className="text-lg text-gray-700">
               Select your path below to explore the opportunities available to you and take the first step toward your international career.
             </p>

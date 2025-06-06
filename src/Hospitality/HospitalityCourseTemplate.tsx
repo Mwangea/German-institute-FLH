@@ -6,6 +6,7 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import HospitalityForm from "../Forms/HospitalityForm";
+import SectionTitle from "../Components/SectionTitle";
 
 interface HospitalityCourseData {
   title: string;
@@ -70,10 +71,11 @@ const HospitalityCourseTemplate = ({ courseData }: { courseData: HospitalityCour
                       {/* Course Details */}
                       <div className="lg:col-span-2 space-y-8">
                           <div className="bg-white rounded-xl shadow-md p-8">
-                              <h2 className="text-3xl text-center font-bold text-gray-900 mb-6">
+                              {/* <h2 className="text-3xl text-center font-bold text-gray-900 mb-6">
                                   COURSE DESCRIPTION
                               </h2>
-                              <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div>
+                              <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div> */}
+                              <SectionTitle title="COURSE DESCRIPTION" />
 
                               <p className="text-gray-700 mb-6 text-lg leading-relaxed">
                                   {courseData.fullDescription}
@@ -90,7 +92,7 @@ const HospitalityCourseTemplate = ({ courseData }: { courseData: HospitalityCour
                               <h3 className="text-2xl text-center font-semibold text-gray-900 mb-4">
                                   LEARNING OUTCOMES
                               </h3>
-                              <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div>
+                              
 
                               <ul className="space-y-4">
                                   {courseData.outcomes.map((outcome, index) => (
@@ -106,7 +108,7 @@ const HospitalityCourseTemplate = ({ courseData }: { courseData: HospitalityCour
                               <h2 className="text-3xl font-bold  text-center text-gray-900 mb-6">
                                   GOALS
                               </h2>
-                              <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div>
+                              {/* <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div> */}
 
                               <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
                                   {courseData.goals.map((goal, index) => (
@@ -122,7 +124,7 @@ const HospitalityCourseTemplate = ({ courseData }: { courseData: HospitalityCour
                               <h2 className="text-3xl text-center font-bold text-gray-900 mb-6">
                                   Program Details
                               </h2>
-                              <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div>
+                              {/* <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div> */}
 
                               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                                   {courseData.keyFeatures.map((feature, index) => (
@@ -145,7 +147,7 @@ const HospitalityCourseTemplate = ({ courseData }: { courseData: HospitalityCour
                               <h2 className="text-3xl text-center font-bold text-gray-900 mb-6">
                                   Curriculum
                               </h2>
-                              <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div>
+                              {/* <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div> */}
 
                               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                   {courseData.modules.map((module, index) => (
@@ -169,7 +171,7 @@ const HospitalityCourseTemplate = ({ courseData }: { courseData: HospitalityCour
                               <h2 className="text-3xl text-center font-bold text-gray-900 mb-6">
                                   Career Opportunities
                               </h2>
-                              <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div>
+                              {/* <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div> */}
 
                               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                   {courseData.careerOpportunities.map((career, index) => (

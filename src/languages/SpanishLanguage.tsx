@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { ArrowLeft, BookOpen, Clock, DollarSign, CheckCircle, ChevronRight } from 'lucide-react';
+import SectionTitle from '../Components/SectionTitle';
 
 const languageLevels = [
   {
@@ -103,8 +104,7 @@ const SpanishLanguage = () => {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Course Levels A1–C2</h2>
-          <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div>
+        <SectionTitle title='Course Levels A1-C2' />
           <p className="text-lg text-gray-700">
             Structured Spanish courses aligned with CEFR standards (Common European Framework of Reference for Languages).
           </p>

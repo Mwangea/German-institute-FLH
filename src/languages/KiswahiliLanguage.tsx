@@ -2,6 +2,7 @@ import { useState } from "react";
 import KiswahiliForm from "../Forms/KiswahiliForm";
 import { Link } from "react-router-dom";
 import { ArrowLeft, CheckCircle } from "lucide-react";
+import SectionTitle from "../Components/SectionTitle";
 //import FormModal from "./FormModal";
 
 const CoursesPage = () => {
@@ -97,10 +98,12 @@ const CoursesPage = () => {
 
   {/* Section Header */}
   <div className="text-center mb-16">
-    <h2 className="text-4xl font-bold text-gray-900 mb-4">
+    {/* <h2 className="text-4xl font-bold text-gray-900 mb-4">
       Available Kiswahili Courses
     </h2>
-    <div className="w-20 h-1 bg-button-50 mx-auto mb-6 rounded-full"></div>
+    <div className="w-20 h-1 bg-button-50 mx-auto mb-6 rounded-full"></div> */}
+            <SectionTitle title='Available Kiswahili Courses' />
+
     <p className="text-lg text-gray-600 max-w-3xl mx-auto">
       Choose from our selection of high-quality language programs tailored to different learning preferences and schedules.
     </p>

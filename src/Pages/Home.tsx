@@ -100,7 +100,31 @@ const Home = () => {
       />
       
     </div>
+    
     <div className="min-h-screen bg-gray-50">
+      {/* June Intake Video Section */}
+      <div className="bg-white py-16 px-6 sm:px-12 md:px-20 lg:px-32 text-center">
+  <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-6 font-serif">
+    🎓 June Intake 2025 Now Open
+  </h2>
+  <p className="text-lg sm:text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+    Get a glimpse of our vibrant international community and world-class programs. Apply now to join our June 2025 cohort!
+  </p>
+  <div className="max-w-4xl mx-auto aspect-video rounded-lg overflow-hidden shadow-lg">
+    <video
+      autoPlay
+      muted
+      loop
+      controls
+      className="w-full h-full object-cover"
+      src="/juneIntake.mp4"
+    >
+      <source  type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+      
       <ProgramsSection />
       <AboutSection />
       <WhyChooseSection />
