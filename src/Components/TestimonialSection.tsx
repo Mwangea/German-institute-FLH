@@ -65,89 +65,90 @@ const testimonials: Testimonial[] = [
   }
 ];
 
-const TestimonialSection: React.FC = () => {
-  return (
-    <section className="py-24 bg-gradient-to-b from-white to-gray-50">
-      <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">
-            Success Stories from Our Alumni
-          </h2>
-        <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div>
+const TestimonialSection: React.FC = () => (
+  <section className="py-24 bg-gradient-to-b from-white to-gray-50">
+    <div className="container mx-auto px-4">
+      <div className="max-w-3xl mx-auto text-center mb-16">
+        {/* <h2 className="text-4xl font-bold text-gray-900 mb-6">
+          Success Stories from Our Alumni
+        </h2>
+        <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div> */}
+        <div className="inline-block text-center py-6">
+  <h2 className="text-4xl font-bold text-gray-900 mb-4">Success Stories from Our Alumni</h2>
+  <div className="h-1 bg-button-50 w-full"></div>
+</div>
 
-          <p className="text-lg text-gray-700">
-            Discover how our programs have helped shape successful careers in the hospitality industry worldwide.
-          </p>
-        </div>
 
-        <div className="max-w-7xl mx-auto">
-          <Swiper
-            modules={[Pagination, Autoplay]}
-            spaceBetween={32}
-            slidesPerView={1}
-            pagination={{ clickable: true }}
-            autoplay={{ delay: 5000, disableOnInteraction: false }}
-            breakpoints={{
-              640: {
-                slidesPerView: 2,
-              },
-              1024: {
-                slidesPerView: 3,
-              },
-            }}
-            className="pb-12"
-          >
-            {testimonials.map((testimonial) => (
-              <SwiperSlide key={testimonial.id}>
-                <div className="relative bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 h-full">
-                  <div className="absolute top-0 right-0 transform translate-x-4 -translate-y-4">
-                    <Quote className="w-12 h-12 text-primary-100" />
-                  </div>
-                  
-                  <div className="flex items-center gap-4 mb-6">
-                    <div className="relative">
-                      <img
-                        src={testimonial.image}
-                        alt={testimonial.name}
-                        className="w-16 h-16 rounded-full object-cover"
-                      />
-                      <div className="absolute -bottom-2 -right-2 bg-primary-500 rounded-full p-1">
-                        <Quote className="w-4 h-4 text-white" />
-                      </div>
-                    </div>
-                    <div>
-                      <h3 className="text-lg font-semibold text-gray-900">{testimonial.name}</h3>
-                      <p className="text-sm text-gray-600">{testimonial.role}</p>
-                    </div>
-                  </div>
-
-                  <div className="flex gap-1 mb-4">
-                    {[...Array(testimonial.rating)].map((_, index) => (
-                      <Star
-                        key={index}
-                        className="w-5 h-5 text-yellow-400 fill-current"
-                      />
-                    ))}
-                  </div>
-
-                  <p className="text-gray-700 italic">"{testimonial.content}"</p>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
-
-        <div className="mt-16 text-center">
-          <p className="text-lg text-gray-700 mb-8">
-            Join our community of successful graduates and start your journey towards a rewarding career in hospitality.
-          </p>
-          <button className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium text-white bg-button-50 rounded-full hover:bg-orange-600 transition-colors duration-300">
-            Begin Your Success Story
-          </button>
-        </div>
+        <p className="text-lg text-gray-700">
+          Discover how our programs have helped shape successful careers in the hospitality industry worldwide.
+        </p>
       </div>
-    </section>
-  );
-};
+
+      <div className="max-w-7xl mx-auto">
+        <Swiper
+          modules={[Pagination, Autoplay]}
+          spaceBetween={32}
+          slidesPerView={1}
+          pagination={{ clickable: true }}
+          autoplay={{ delay: 5000, disableOnInteraction: false }}
+          breakpoints={{
+            640: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          }}
+          className="pb-12"
+        >
+          {testimonials.map((testimonial) => (
+            <SwiperSlide key={testimonial.id}>
+              <div className="relative bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 h-full">
+                <div className="absolute top-0 right-0 transform translate-x-4 -translate-y-4">
+                  <Quote className="w-12 h-12 text-primary-100" />
+                </div>
+
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="relative">
+                    <img
+                      src={testimonial.image}
+                      alt={testimonial.name}
+                      className="w-16 h-16 rounded-full object-cover" />
+                    <div className="absolute -bottom-2 -right-2 bg-primary-500 rounded-full p-1">
+                      <Quote className="w-4 h-4 text-white" />
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900">{testimonial.name}</h3>
+                    <p className="text-sm text-gray-600">{testimonial.role}</p>
+                  </div>
+                </div>
+
+                <div className="flex gap-1 mb-4">
+                  {[...Array(testimonial.rating)].map((_, index) => (
+                    <Star
+                      key={index}
+                      className="w-5 h-5 text-yellow-400 fill-current" />
+                  ))}
+                </div>
+
+                <p className="text-gray-700 italic">"{testimonial.content}"</p>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+
+      <div className="mt-16 text-center">
+        <p className="text-lg text-gray-700 mb-8">
+          Join our community of successful graduates and start your journey towards a rewarding career in hospitality.
+        </p>
+        <button className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium text-white bg-button-50 rounded-full hover:bg-orange-600 transition-colors duration-300">
+          Begin Your Success Story
+        </button>
+      </div>
+    </div>
+  </section>
+);
 
 export default TestimonialSection;
