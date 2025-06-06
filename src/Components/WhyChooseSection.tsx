@@ -39,10 +39,15 @@ const WhyChooseSection: React.FC = () => {
     <section className="relative py-24 bg-accent-100">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto  mb-16">
-          <h2 className="text-4xl font-bold text-center text-gray-900 mb-6">
+          {/* <h2 className="text-4xl font-bold text-center text-gray-900 mb-6">
             Why Choose Our Institution?
           </h2>
-        <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div>
+        <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div> */}
+        <div className="inline-block justify-center text-center py-6">
+  <h2 className="text-4xl font-bold text-center justify-center text-gray-900 mb-4">Why Choose Our Institution?</h2>
+  <div className="h-1 bg-button-50 w-full"></div>
+</div>
+
 
           <p className="text-lg text-left text-gray-700 mb-8">
             With over two decades of excellence in hospitality and language education, we've established ourselves as a leading institution that transforms passionate learners into industry-ready professionals. Our comprehensive approach combines academic excellence with practical experience, preparing you for a successful global career.

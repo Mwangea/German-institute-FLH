@@ -115,8 +115,12 @@ const ProgramsSection: React.FC = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-20">
-        <h2 className="text-4xl font-bold text-gray-900 mb-2">Our Programmes</h2>
-        <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div>
+        <div className="inline-block text-center py-6">
+  <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Programs</h2>
+  <div className="h-1 bg-button-50 w-full"></div>
+</div>
+
+
           <p className="text-lg text-gray-700 max-w-2xl mx-auto">
             Discover our comprehensive range of professional programs designed to help you excel in your career.
           </p>

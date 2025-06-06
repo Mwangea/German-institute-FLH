@@ -42,11 +42,17 @@ const AboutSection: React.FC = () => {
           {/* Right side - Content */}
           <div className="w-full lg:w-1/2">
             <div className="max-w-xl">
-              <h2 className="text-4xl justify-center text-center font-bold text-primary mb-6">
+              {/* <h2 className="text-4xl justify-center text-center font-bold text-primary mb-6">
                 Empowering Future Leaders in
                  Hospitality
               </h2>
-        <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div>
+        <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div> */}
+        <div className="inline-block text-center py-6">
+  <h2 className="text-4xl font-bold text-gray-900 mb-4">Empowering Future Leaders in
+  Hospitality</h2>
+  <div className="h-1 bg-button-50 w-full"></div>
+</div>
+
 
 
               <p className="text-lg text-secondary mb-8">

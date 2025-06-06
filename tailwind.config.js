@@ -54,8 +54,11 @@ export default {
           100: "#e9eaeb",
           50: "#f4f4f5",
         },
+        // button: {
+        //   50: "#eb3a36",
+        // },
         button: {
-          50: "#eb3a36",
+          50: "#264760",
         },
         boxShadow: {
           text: "0 1px 2px rgba(0, 0, 0, 0.85)",
