@@ -60,13 +60,18 @@ const FAQSection: React.FC = () => {
     : faqs.filter(faq => faq.category === activeCategory);
 
   return (
-    <section className="py-24 bg-gray-900/100">
+    <section className="py-24 bg-blue-100">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-4xl font-bold text-black-900 mb-6">
+          {/* <h2 className="text-4xl font-bold text-black-900 mb-6">
             Frequently Asked Questions
           </h2>
-        <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div>
+        <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div> */}
+        <div className="inline-block text-center py-6">
+  <h2 className="text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+  <div className="h-1 bg-button-50 w-full"></div>
+</div>
+
 
           <p className="text-lg text-black-700">
             Find answers to common questions about our programs, admissions process, and student life.
