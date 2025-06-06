@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Play, Quote, ChevronRight, X } from "lucide-react";
+import SectionTitle from "../Components/SectionTitle";
 
 interface StudentTestimonial {
   id: number;
@@ -109,10 +110,11 @@ const StudentVoicesPage: React.FC = () => {
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">
+            {/* <h2 className="text-4xl font-bold text-gray-900 mb-6">
               Voices of Success
             </h2>
-            <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div>
+            <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div> */}
+            <SectionTitle title="Voices of Success" />
 
             <p className="text-lg text-gray-700">
               Our students come from diverse backgrounds and pursue various

@@ -1,3 +1,5 @@
+import SectionTitle from "./SectionTitle";
+
 function Faculty() {
     return (
       <div className="min-h-screen bg-gray-50">
@@ -40,11 +42,12 @@ function Faculty() {
   
         {/* Faculty Section */}
         <section className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
+          <div className="container text-center  mx-auto px-4">
+            {/* <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
               Our Expert Faculty
             </h2>
-            <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div>
+            <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div> */}
+            <SectionTitle title="Our Expert Faculty" />
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Institute Administrator */}

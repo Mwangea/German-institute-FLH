@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import CountUp from "react-countup";
 import Faculty from "../Components/Facaulty";
+import SectionTitle from "../Components/SectionTitle";
 
 // interface Instructor {
 //   id: number;
@@ -346,10 +347,11 @@ const AboutPage: React.FC = () => {
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">
+            {/* <h2 className="text-4xl font-bold text-gray-900 mb-6">
               Our Core Values
             </h2>
-            <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div>
+            <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div> */}
+            <SectionTitle title="Our Core Values" />
 
             <p className="text-lg text-gray-700">
               These principles guide everything we do, from curriculum
@@ -403,10 +405,11 @@ const AboutPage: React.FC = () => {
       <section className="py-24 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">
+            {/* <h2 className="text-4xl font-bold text-gray-900 mb-6">
               World-Class Facilities
             </h2>
-            <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div>
+            <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div> */}
+            <SectionTitle title="World class Facilities" />
 
             <p className="text-lg text-gray-700">
               Our campus features modern facilities designed to provide hands-on

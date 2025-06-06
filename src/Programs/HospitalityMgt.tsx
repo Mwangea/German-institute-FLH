@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Award, Play, Users, Briefcase, Globe } from "lucide-react";
 import HospitalityPrograms from "../Components/HospitalityPrograms";
+import SectionTitle from "../Components/SectionTitle";
 
 
 const HospitalityMgt = () => {
@@ -58,10 +59,11 @@ const HospitalityMgt = () => {
       <div className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-primary-500 mb-4">
+            {/* <h2 className="text-4xl font-bold text-primary-500 mb-4">
               Why Choose Our Programs?
             </h2>
-        <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div>
+        <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div> */}
+        <SectionTitle title="Why Choose Our Programs ?"/>
 
             <p className="text-xl text-gray-600">
               Industry-recognized training with practical experience
