@@ -36,7 +36,7 @@ const WhyChooseSection: React.FC = () => {
   ];
 
   return (
-    <section className="relative py-24 bg-accent-100">
+    <section className="relative py-24 bg-blue-100">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto  mb-16">
           {/* <h2 className="text-4xl font-bold text-center text-gray-900 mb-6">
