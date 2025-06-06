@@ -199,12 +199,12 @@ const EnglishLanguage = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold mb-4">Ready to Learn English?</h2>
           <p className="text-lg mb-6">Join our next intake and become fluent with our expert-led English courses.</p>
-          <Link
-            to="/enroll"
+          <button
+            
             className="inline-block px-8 py-3 bg-white text-primary-600 font-medium rounded-full hover:bg-gray-100 transition"
           >
             Enroll Today
-          </Link>
+          </button>
         </div>
       </section>
     </div>

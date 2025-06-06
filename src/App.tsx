@@ -95,6 +95,40 @@ import ItalianLevelC1 from "./languages/Italian/C1"
 import ItalianLevelA2 from "./languages/Italian/A2"
 import ItalianLevelC2 from "./languages/Italian/C2"
 import ItalyLanguage from "./languages/Italian/ItalyLanguage"
+import PortugueseLanguage from "./languages/Portuguese/PortugueseLanguage"
+import JapaneseLanguage from "./languages/Janapanese/JapaneseLanguage"
+import RussianLanguage from "./languages/Russian/RussianLanguage"
+import TurkishLanguage from "./languages/Turkish/TurkishLanguage"
+import SomaliLanguage from "./languages/Somali/SomaliLanguage"
+import JapaneseLevelN1 from "./languages/Janapanese/N1"
+import JapaneseLevelN2 from "./languages/Janapanese/N2"
+import JapaneseLevelN3 from "./languages/Janapanese/N3"
+import JapaneseLevelN4 from "./languages/Janapanese/N4"
+import JapaneseLevelN5 from "./languages/Janapanese/N5"
+import PortugueseA1 from "./languages/Portuguese/A1"
+import PortugueseA2 from "./languages/Portuguese/A2"
+import PortugueseB1 from "./languages/Portuguese/B1"
+import PortugueseB2 from "./languages/Portuguese/B2"
+import PortugueseC1 from "./languages/Portuguese/C1"
+import PortugueseC2 from "./languages/Portuguese/C2"
+import RussianA1 from "./languages/Russian/A1"
+import RussianA2 from "./languages/Russian/A2"
+import RussianB1 from "./languages/Russian/B1"
+import RussianB2 from "./languages/Russian/B2"
+import RussianC1 from "./languages/Russian/C1"
+import RussianC2 from "./languages/Russian/C2"
+import SomaliA1 from "./languages/Somali/A1"
+import SomaliA2 from "./languages/Somali/A2"
+import SomaliB1 from "./languages/Somali/B1"
+import SomaliB2 from "./languages/Somali/B2"
+import SomaliC1 from "./languages/Somali/C1"
+import SomaliC2 from "./languages/Somali/C2"
+import TurkishA1 from "./languages/Turkish/A1"
+import TurkishA2 from "./languages/Turkish/A2"
+import TurkishB1 from "./languages/Turkish/B1"
+import TurkishB2 from "./languages/Turkish/B2"
+import TurkishC1 from "./languages/Turkish/C1"
+import TurkishC2 from "./languages/Turkish/C2"
 
 const App = () => {
   return (
@@ -142,13 +176,13 @@ const App = () => {
           <Route path="/courses/mandarin" element={<MandarinLanguage />} />
           <Route path="/courses/dutch" element={<DutchLanguage />} />
           <Route path="/courses/italian" element={<ItalyLanguage />} />
-          <Route path="/courses/mandarin" element={<MandarinLanguage />} />
+          <Route path="/courses/russian" element={<RussianLanguage />} />
+          <Route path="/courses/japanese" element={<JapaneseLanguage />} />
+           <Route path="/courses/portuguese" element={<PortugueseLanguage />} />
+          <Route path="/courses/turkish" element={<TurkishLanguage />} />
+          <Route path="/courses/somalia" element={<SomaliLanguage />} />
           {/* <Route path="/courses/mandarin" element={<MandarinLanguage />} />
-          <Route path="/courses/mandarin" element={<MandarinLanguage />} />
-          <Route path="/courses/mandarin" element={<MandarinLanguage />} />
-          <Route path="/courses/mandarin" element={<MandarinLanguage />} />
-          <Route path="/courses/mandarin" element={<MandarinLanguage />} />
-          <Route path="/courses/mandarin" element={<MandarinLanguage />} /> */}
+          <Route path="/courses/mandarin" element={<MandarinLanguage />} />   */}
 
 
 
@@ -202,7 +236,7 @@ const App = () => {
           <Route path="/french-levels/c2" element={<FrenchLevelC2 />} />
 
           {/* DUTCH LANGUAGE */}
-          <Route path="dutch-levels/a1" element={<DutchLevelA1 />} />
+          <Route path="/dutch-levels/a1" element={<DutchLevelA1 />} />
           <Route path="/dutch-levels/b2" element={<DutchLevelB2 />} />
           <Route path="/dutch-levels/b1" element={<DutchLevelB1 />} />
           <Route path="/dutch-levels/c1" element={<DutchLevelC1 />} />
@@ -210,12 +244,54 @@ const App = () => {
           <Route path="/dutch-levels/c2" element={<DutchLevelC2 />} />
 
           {/* ITALY LANGUAGE */}
-          <Route path="italian-levels/a1" element={<ItalianLevelA1 />} />
+          <Route path="/italian-levels/a1" element={<ItalianLevelA1 />} />
           <Route path="/italian-levels/b2" element={<ItalianLevelB1 />} />
           <Route path="/italian-levels/b1" element={<ItalianLevelB2 />} />
           <Route path="/italian-levels/c1" element={<ItalianLevelC1 />} />
           <Route path="/italian-levels/a2" element={<ItalianLevelA2 />} />
           <Route path="/italian-levels/c2" element={<ItalianLevelC2 />} />
+
+          {/* JAPANESE LANGUAGE */}
+          <Route path="/japanese-levels/n1" element={<JapaneseLevelN1 />} />
+          <Route path="/japanese-levels/n2" element={<JapaneseLevelN2 />} />
+          <Route path="/japanese-levels/n3" element={<JapaneseLevelN3 />} />
+          <Route path="/japanese-levels/n4" element={<JapaneseLevelN4 />} />
+          <Route path="/japanese-levels/n5" element={<JapaneseLevelN5 />} />
+
+          {/* PORTUGUESE LANGUAGE */}
+          <Route path="/portuguese-levels/a1" element={<PortugueseA1 />} />
+          <Route path="/portuguese-levels/a2" element={<PortugueseA2 />} />
+          <Route path="/portuguese-levels/b1" element={<PortugueseB1 />} />
+          <Route path="/portuguese-levels/b2" element={<PortugueseB2 />} />
+          <Route path="/portuguese-levels/c1" element={<PortugueseC1 />} />
+          <Route path="/portuguese-levels/c2" element={<PortugueseC2 />} />
+
+          {/* RUSSIAN LANGUAGE */}
+          <Route path="/russian-levels/a1" element={<RussianA1 />} />
+          <Route path="/russian-levels/a2" element={<RussianA2 />} />
+          <Route path="/russian-levels/b1" element={<RussianB1 />} />
+          <Route path="/russian-levels/b2" element={<RussianB2 />} />
+          <Route path="/russian-levels/c1" element={<RussianC1 />} />
+          <Route path="/russian-levels/c2" element={<RussianC2 />} />
+
+          {/* SOMALI LANGUAGE */}
+          <Route path="/somali-levels/a1" element={<SomaliA1 />} />
+          <Route path="/somali-levels/a2" element={<SomaliA2 />} />
+          <Route path="/somali-levels/b1" element={<SomaliB1 />} />
+          <Route path="/somali-levels/b2" element={<SomaliB2 />} />
+          <Route path="/somali-levels/c1" element={<SomaliC1 />} />
+          <Route path="/somali-levels/c2" element={<SomaliC2 />} />
+
+          {/* TURKISH LANGUAGE */}
+          <Route path="/turkish-levels/a1" element={<TurkishA1 />} />
+          <Route path="/turkish-levels/a2" element={<TurkishA2 />} />
+          <Route path="/turkish-levels/b1" element={<TurkishB1 />} />
+          <Route path="/turkish-levels/b2" element={<TurkishB2 />} />
+          <Route path="/turkish-levels/c1" element={<TurkishC1 />} />
+          <Route path="/turkish-levels/c2" element={<TurkishC2 />} />
+
+       
+
           
            
 
