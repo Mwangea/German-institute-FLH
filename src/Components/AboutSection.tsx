@@ -1,5 +1,5 @@
 import React from "react";
-import { Target, Eye, Users } from "lucide-react";
+import { Target, Eye } from "lucide-react";
 
 const AboutSection: React.FC = () => {
   return (
@@ -18,7 +18,7 @@ const AboutSection: React.FC = () => {
             </div>
 
             {/* Floating achievement cards */}
-            <div className="absolute -right-8 top-1/4 transform translate-y-8 bg-white p-4 rounded-xl shadow-lg">
+            {/* <div className="absolute -right-8 top-1/4 transform translate-y-8 bg-white p-4 rounded-xl shadow-lg">
               <div className="flex items-center gap-3">
                 <Users className="text-accent-500" size={24} />
                 <div>
@@ -26,9 +26,9 @@ const AboutSection: React.FC = () => {
                   <p className="text-sm text-gray-600">Students Enrolled</p>
                 </div>
               </div>
-            </div>
+            </div> */}
 
-            <div className="absolute -left-8 bottom-1/4 bg-white p-4 rounded-xl shadow-lg">
+            {/* <div className="absolute -left-8 bottom-1/4 bg-white p-4 rounded-xl shadow-lg">
               <div className="flex items-center gap-3">
                 <Target className="text-accent-500" size={24} />
                 <div>
@@ -36,7 +36,7 @@ const AboutSection: React.FC = () => {
                   <p className="text-sm text-gray-600">Success Rate</p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Right side - Content */}
