@@ -16,22 +16,44 @@ function Faculty() {
               </div>
               <div className="space-y-6">
                 <h2 className="text-3xl font-bold text-gray-900">
-                  Welcome to the International Institute of Foreign Languages and Hospitality Management
+                 Meet the Founder
                 </h2>
+                <blockquote className="text-base italic border-l-4 border-primary-500 pl-4 py-2 text-gray-700">
+                  "Language skills can open doors to new countries, cultures, careers, and a future you never thought possible."
+                </blockquote>
                 <div className="space-y-4 text-gray-700">
-                  <p className="text-lg">
-                    I'm Soila Lasoi, the Founder and CEO of this institution, driven by a passion for education, cultural exchange, and professional excellence. With a background in international studies and hands-on experience both in Kenya and abroad, especially in Germany, I established this institute with the vision of opening global doors for our students.
+                  <p className="">
+                    Welcome! I'm Soila Lasoi, Founder and CEO of the International Institute of Foreign Languages and Hospitality Management.
                   </p>
-                  <p className="text-lg">
-                    Our goal is to equip learners with the language skills and hospitality knowledge they need to thrive in a competitive, interconnected world. Whether you're preparing to work abroad, study internationally, or build a career in the hospitality industry, we are here to support your journey every step of the way.
+                  <p className="">
+                    With a background in International Studies and hands on professional experience in both Kenya and Germany, I established this institute to bridge the gap between local talent and international opportunity.
                   </p>
-                  <p className="text-lg">
-                    Thank you for choosing to grow with us.
+                  <p className="">
+                    While currently working in Germany, I've had the privilege of working closely with the German government, helping young refugees integrate into society. Many of these young people arrived after surviving extremely difficult journeys across the Sahara Desert and the Mediterranean Sea. I've supported them in learning the language, applying for education and employment, and finding their place in a new world.
+                  </p>
+                  <p className="">
+                    That experience inspired the mission behind this institute: to help African youth starting here in Kenya access the right tools, training, and guidance to pursue safe, legal, and meaningful pathways abroad.
+                  </p>
+                  <p className="text-lg font-semibold">
+                    We focus on three core areas:
+                  </p>
+                  <ul className="list-disc pl-6 space-y-2">
+                    <li>Language Training</li>
+                    <li>Hospitality Education</li>
+                    <li>Nursing Career Preparation</li>
+                  </ul>
+                  <p className="">
+                    These fields offer powerful, high demand pathways into global job markets especially in countries like Germany, Austria, and Switzerland.
+                  </p>
+                  <p className="">
+                    At the heart of our work is a belief that language skills can open doors. Whether you're preparing to work abroad, study internationally, or begin your journey in the hospitality or healthcare industries, we're here to walk that journey with you.
+                  </p>
+                  <p className="text-lg font-semibold">
+                    Together, we're not just building careers we're building futures.
                   </p>
                 </div>
                 <div className="pt-4">
-                  <p className="text-lg font-semibold text-gray-900">Warm regards,</p>
-                  <p className="text-lg text-gray-900">Soila Lasoi</p>
+                  <p className="text-lg font-semibold text-gray-900">Soila Lasoi</p>
                   <p className="text-gray-600">Founder & CEO</p>
                   <p className="text-gray-600">International Institute of Foreign Languages and Hospitality Management</p>
                 </div>
@@ -43,10 +65,6 @@ function Faculty() {
         {/* Faculty Section */}
         <section className="py-16 bg-gray-50">
           <div className="container text-center  mx-auto px-4">
-            {/* <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
-              Our Expert Faculty
-            </h2>
-            <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div> */}
             <SectionTitle title="Our Expert Faculty" />
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
