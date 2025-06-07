@@ -9,7 +9,7 @@ import {
   Target,
   ChevronRight,
 } from "lucide-react";
-import CountUp from "react-countup";
+//import CountUp from "react-countup";
 import Faculty from "../Components/Facaulty";
 import SectionTitle from "../Components/SectionTitle";
 
@@ -244,11 +244,11 @@ const AboutPage: React.FC = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-12 sm:py-16 bg-white">
+      {/* <section className="py-12 sm:py-16 bg-white">
   <div className="container mx-auto px-4">
-    {/* Horizontal layout on all screen sizes */}
+  
     <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-8">
-      {/* Years of Excellence */}
+    
       <div className="text-center p-2 sm:p-0">
         <CountUp 
           end={25} 
@@ -258,7 +258,7 @@ const AboutPage: React.FC = () => {
         <div className="text-xs sm:text-sm md:text-base text-gray-600">Years of Excellence</div>
       </div>
       
-      {/* Expert Instructors */}
+      
       <div className="text-center p-2 sm:p-0">
         <CountUp 
           end={50} 
@@ -268,7 +268,7 @@ const AboutPage: React.FC = () => {
         <div className="text-xs sm:text-sm md:text-base text-gray-600">Expert Instructors</div>
       </div>
       
-      {/* Alumni Worldwide */}
+  
       <div className="text-center p-2 sm:p-0">
         <CountUp 
           end={2000} 
@@ -278,7 +278,7 @@ const AboutPage: React.FC = () => {
         <div className="text-xs sm:text-sm md:text-base text-gray-600">Alumni Worldwide</div>
       </div>
       
-      {/* Employment Rate */}
+    
       <div className="text-center p-2 sm:p-0">
         <CountUp 
           end={95} 
@@ -290,7 +290,7 @@ const AboutPage: React.FC = () => {
       </div>
     </div>
   </div>
-</section>
+</section> */}
 
       {/* Mission & Vision Section */}
       <section className="py-24 bg-gradient-to-b from-white to-gray-50">
