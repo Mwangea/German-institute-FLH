@@ -42,7 +42,7 @@ const testimonials: Testimonial[] = [
   {
     id: 4,
     name: "Kasaine",
-    role: "Business Man",
+    role: " Student",
     image: "user4.png",
     content: "Kasaine, a native of Kilgoris, relocated to Germany as an international student to pursue his master's degree. His academic journey was facilitated by the International Institute of Foreign Languages and Hospitality Management, whose support played a pivotal role in enabling his studies abroad.",
     rating: 5
@@ -50,7 +50,7 @@ const testimonials: Testimonial[] = [
   {
     id: 5,
     name: "Damaris",
-    role: "Luxury Resort Manager",
+    role: "Student",
     image: "user5.png",
     content: "Damaris, from Narok South, is currently studying at Flensburg University in Germany. Her journey was made possible through the support of the International Institute of Foreign Languages and Hospitality Management, which provided her with essential German language training required for university admission. This foundation enabled her to pursue her dream of earning a master’s degree and continuing on her path toward a successful career.",
     rating: 5
