@@ -6,11 +6,11 @@ const MandarinLevelHSK6 = () => {
     title: "Mandarin Chinese Course: HSK 6 Level (Mastery)",
     tagline: "Attain complete mastery of the Mandarin language",
     duration: {
-      regular: "3-6 months",
-      intensive: "2-3 months",
-      accelerated: "1-2 months"
+      regular: "3 months",
+      intensive: "3 months",
+      accelerated: "3 months"
     },
-    price: "Kes 20,000",
+    price: "Kes 30,000",
     overview: "The HSK 6 course represents the highest level of Mandarin proficiency. This comprehensive program is designed for students who want to achieve complete mastery of the language, enabling them to understand virtually everything heard or read, and express themselves spontaneously, very fluently, and precisely. The course prepares students for the HSK Level 6 examination while building expert-level skills for professional, academic, and cultural contexts.",
     format: "Mastery-level language training focusing on perfecting all aspects of language use. Emphasis on cultural nuances, sophisticated expression, and professional expertise. Regular practice sessions, research projects, and personalized feedback to ensure comprehensive progress.",
     objectives: [

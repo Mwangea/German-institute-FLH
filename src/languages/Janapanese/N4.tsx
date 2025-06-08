@@ -98,17 +98,17 @@ const JapaneseLevelN4 = () => {
     studyPlans: [
       {
         name: "Regular Plan",
-        duration: "6 months",
+        duration: "3 months",
         hours: "1 hour per day",
       },
       {
         name: "Intensive Plan",
-        duration: "3 months",
+        duration: "2 months",
         hours: "2 hours per day",
       },
       {
         name: "Super-Intensive Plan",
-        duration: "2 months",
+        duration: "1.5 months",
         hours: "3 hours per day",
       },
       {
@@ -118,10 +118,10 @@ const JapaneseLevelN4 = () => {
       },
     ],
     targetAudience: "Students who have completed N5 or have equivalent knowledge",
-    duration: "1-6 months (flexible)",
+    duration: "3 months",
     certification: "JLPT N4 Certificate",
     focusAreas: "Intermediate Japanese • Enhanced Communication • Cultural Understanding",
-    price: "Kes 20,000",
+    price: "Kes 30,000",
     ctaText: "Take your Japanese skills to the next level. Build on your foundation and prepare for the JLPT N4 examination.",
   };
 

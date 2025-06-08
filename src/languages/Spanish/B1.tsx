@@ -6,12 +6,12 @@ const SpanishLevelB1 = () => {
     title: "Spanish Course: B1 Level (Intermediate)",
     tagline: "Develop your Spanish skills for independent communication",
     duration: {
-      regular: "6 months (1 hour per day)",
-      intensive: "3 months (2 hours per day)",
-      superIntensive: "2 months (3 hours per day)",
-      accelerated: "1 month (6 hours per day)"
+      regular: "3 months",
+      intensive: "3 months",
+      superIntensive: "3 months",
+      accelerated: "3 months"
     },
-    price: "Kes 20,000",
+    price: "Kes 30,000",
     overview: "The Spanish B1 course focuses on developing independent language use. Students will learn to handle most situations likely to arise while traveling in Spanish-speaking countries and express themselves on familiar topics with reasonable fluency. The course prepares students for the DELE B1 examination while building practical communication skills.",
     format: "Combined approach of structured learning and practical application. Emphasis on developing fluency and accuracy in real-world contexts. Regular practice sessions, cultural activities, and personalized feedback to ensure comprehensive progress.",
     objectives: [

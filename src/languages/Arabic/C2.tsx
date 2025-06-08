@@ -26,10 +26,10 @@ const ArabicLevelC2 = () => {
     format: "Authentic media, literature, and academic journals. Advanced debates, critical reflections, and rhetorical writing with expert evaluations.",
     
     targetAudience: "Completion of C1 or native-like proficiency required",
-    duration: "3-6 months",
+    duration: "3 months",
     certification: "Arabic Language Certificate – Level C2",
     focusAreas: "Literature • Rhetoric • Cross-Cultural Nuance",
-    price: "Kes 20,000",
+    price: "Kes 30,000",
     ctaText: "Achieve linguistic finesse indistinguishable from native speakers."
   };
 

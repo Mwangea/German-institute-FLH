@@ -6,11 +6,11 @@ const MandarinLevelHSK2 = () => {
     title: "Mandarin Chinese Course: HSK 2 Level (Elementary)",
     tagline: "Expand your basic Mandarin skills for everyday communication",
     duration: {
-      regular: "3-6 months",
-      intensive: "2-3 months",
-      accelerated: "1-2 months"
+      regular: "2 months",
+      intensive: "2 months",
+      accelerated: "2 months"
     },
-    price: "Kes 20,000",
+    price: "20,000",
     overview: "The HSK 2 course builds upon the foundation established in HSK 1, focusing on expanding vocabulary and grammar for more complex everyday situations. Students will develop greater confidence in using Mandarin for routine tasks and social interactions, while preparing for the HSK Level 2 examination.",
     format: "Interactive lessons combining theory and practice. Emphasis on expanding vocabulary, more complex grammar structures, and practical communication scenarios. Regular practice sessions and personalized feedback to ensure steady progress.",
     objectives: [

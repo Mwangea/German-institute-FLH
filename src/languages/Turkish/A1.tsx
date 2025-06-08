@@ -6,7 +6,7 @@ const TurkishA1 = () => {
     level: 'A1',
     title: 'Beginner Turkish',
     tagline: 'Start your Turkish journey with essential vocabulary and basic communication skills.',
-    duration: '3-6 months',
+    duration: '2 months',
     price: 'Kes 20,000',
     overview: 'Welcome to the A1 level of the Turkish Language Course. This beginner course is designed for students with no prior knowledge of Turkish, providing a foundation in basic language skills. By the end of this course, you will be able to understand and use familiar everyday expressions and very basic phrases aimed at satisfying concrete needs.',
     format: 'Online and in-person classes available',
@@ -61,12 +61,12 @@ const TurkishA1 = () => {
     studyPlans: [
       {
         name: 'Regular Plan',
-        duration: '6 months',
+        duration: '2 months',
         hours: '1 hour/day'
       },
       {
         name: 'Intensive Plan',
-        duration: '3 months',
+        duration: '2 months',
         hours: '2 hours/day'
       },
       {
@@ -76,7 +76,7 @@ const TurkishA1 = () => {
       },
       {
         name: 'Accelerated Plan',
-        duration: '1 month',
+        duration: '2 months',
         hours: '6 hours/day'
       }
     ]

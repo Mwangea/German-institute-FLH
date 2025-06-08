@@ -8,7 +8,7 @@ const RussianC2 = () => {
     tagline: 'Achieve native-like proficiency in Russian and master the language at its highest level.',
     description: 'Achieve native-like proficiency in Russian and master the language at its highest level.',
     duration: '3 months',
-    price: 'Kes 20,000',
+    price: 'Kes 30,000',
     overview: 'Our C2 Russian course is designed for students who have completed C1 or have near-native proficiency in Russian. You will develop your ability to understand with ease virtually everything heard or read, summarize information from different spoken and written sources, reconstructing arguments and accounts in a coherent presentation, and express yourself spontaneously, very fluently and precisely, differentiating finer shades of meaning even in the most complex situations.',
     format: 'Online and in-person classes available',
     objectives: [
@@ -67,17 +67,17 @@ const RussianC2 = () => {
       },
       {
         name: 'Intensive Plan',
-        duration: '2 months',
+        duration: '3 months',
         hours: '180 hours'
       },
       {
         name: 'Flexible Plan',
-        duration: '4 months',
+        duration: '3 months',
         hours: '90 hours'
       },
       {
         name: 'Weekend Plan',
-        duration: '6 months',
+        duration: '3 months',
         hours: '60 hours'
       }
     ]

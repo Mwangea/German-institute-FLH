@@ -7,7 +7,7 @@ const RussianA2 = () => {
     title: 'Elementary Russian',
     tagline: 'Build on your basic Russian skills and expand your ability to communicate in everyday situations.',
     description: 'Build on your basic Russian skills and expand your ability to communicate in everyday situations.',
-    duration: '3 months',
+    duration: '2 months',
     price: 'Kes 20,000',
     overview: 'Our A2 Russian course is designed for students who have completed A1 or have basic knowledge of Russian. You will expand your vocabulary, learn more complex grammar structures, and develop your ability to communicate in a wider range of everyday situations. By the end of this course, you will be able to handle most common social interactions and express yourself on familiar topics.',
     format: 'Online and in-person classes available',
@@ -62,7 +62,7 @@ const RussianA2 = () => {
     studyPlans: [
       {
         name: 'Standard Plan',
-        duration: '3 months',
+        duration: '2 months',
         hours: '120 hours'
       },
       {
@@ -72,12 +72,12 @@ const RussianA2 = () => {
       },
       {
         name: 'Flexible Plan',
-        duration: '4 months',
+        duration: '2 months',
         hours: '90 hours'
       },
       {
         name: 'Weekend Plan',
-        duration: '6 months',
+        duration: '2 months',
         hours: '60 hours'
       }
     ]

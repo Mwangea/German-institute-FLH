@@ -79,12 +79,12 @@ const FrenchLevelA2 = () => {
     studyPlans: [
       {
         name: "Regular Plan",
-        duration: "6 months",
+        duration: "2 months",
         hours: "1 hour per day",
       },
       {
         name: "Intensive Plan",
-        duration: "3 months",
+        duration: "2 months",
         hours: "2 hours per day",
       },
       {
@@ -94,12 +94,12 @@ const FrenchLevelA2 = () => {
       },
       {
         name: "Accelerated Plan",
-        duration: "1 month",
+        duration: "2 months",
         hours: "6 hours per day",
       },
     ],
     targetAudience: "Students who have completed A1 or have basic French knowledge",
-    duration: "1-6 months (flexible)",
+    duration: "2 months",
     certification: "French A2 Proficiency Certificate",
     focusAreas: "Enhanced Communication • Daily Life • Travel • Social Skills",
     price: "Kes 20,000",

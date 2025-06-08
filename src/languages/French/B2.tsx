@@ -79,17 +79,17 @@ const FrenchLevelB2 = () => {
     studyPlans: [
       {
         name: "Regular Plan",
-        duration: "6 months",
+        duration: "3 months",
         hours: "1 hour per day",
       },
       {
         name: "Intensive Plan",
-        duration: "3 months",
+        duration: "2 months",
         hours: "2 hours per day",
       },
       {
         name: "Super-Intensive Plan",
-        duration: "2 months",
+        duration: "1.5 months",
         hours: "3 hours per day",
       },
       {
@@ -99,10 +99,10 @@ const FrenchLevelB2 = () => {
       },
     ],
     targetAudience: "Students who have completed B1 or have strong intermediate French skills",
-    duration: "1-6 months (flexible)",
+    duration: "3 months",
     certification: "French B2 Proficiency Certificate",
     focusAreas: "Professional Excellence • Academic French • Cultural Mastery",
-    price: "Kes 20,000",
+    price: "Kes 30,000",
     ctaText: "Achieve professional-level French proficiency. Master sophisticated language skills for career advancement and academic success.",
   };
 

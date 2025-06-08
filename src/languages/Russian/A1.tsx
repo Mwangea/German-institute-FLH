@@ -7,7 +7,7 @@ const RussianA1 = () => {
     title: 'Beginner Russian',
     tagline: 'Start your Russian journey with essential vocabulary and basic communication skills.',
     description: 'Start your Russian journey with essential vocabulary and basic communication skills.',
-    duration: '3 months',
+    duration: '2 months',
     price: 'Kes 20,000',
     overview: 'The Russian A1 Beginner Course is designed for learners with no prior experience in the language. It focuses on developing basic communication skills through foundational vocabulary, grammar, and cultural exposure. Students will learn to understand and use everyday expressions and simple phrases to meet basic communication needs.',
     format: 'Online and in-person classes available',
@@ -62,7 +62,7 @@ const RussianA1 = () => {
     studyPlans: [
       {
         name: 'Standard Plan',
-        duration: '3 months',
+        duration: '2 months',
         hours: '120 hours'
       },
       {
@@ -72,12 +72,12 @@ const RussianA1 = () => {
       },
       {
         name: 'Flexible Plan',
-        duration: '4 months',
+        duration: '2 months',
         hours: '90 hours'
       },
       {
         name: 'Weekend Plan',
-        duration: '6 months',
+        duration: '2 months',
         hours: '60 hours'
       }
     ]

@@ -8,7 +8,7 @@ const GermanLevelB1 = () => {
       title: 'Independent language use',
       fullDescription: 'At the B1 level, you will develop the ability to understand the main points of clear standard input on familiar matters regularly encountered in work, school, leisure, etc. You will be able to deal with most situations likely to arise while traveling in an area where the language is spoken. You can produce simple connected text on topics that are familiar or of personal interest, and describe experiences, events, dreams, hopes and ambitions with brief explanations.',
       duration: '3 months',
-      price: 'Kes 20,000',
+      price: 'Kes 30,000',
       outcomes: [
         'Understand main points of clear standard speech',
         'Handle travel situations in German-speaking areas',

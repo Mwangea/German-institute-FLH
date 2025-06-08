@@ -16,7 +16,7 @@ const languageLevels: LanguageLevel[] = [
     level: 'A1',
     title: 'Beginner English',
     description: 'Understand and use familiar English expressions and very basic phrases aimed at satisfying simple needs.',
-    duration: '3 months',
+    duration: '2 months',
     price: 'Kes 20,000',
     url: '/english-levels/a1',
   },
@@ -24,7 +24,7 @@ const languageLevels: LanguageLevel[] = [
     level: 'A2',
     title: 'Elementary English',
     description: 'Understand frequently used expressions related to areas of most immediate relevance (e.g., personal info, shopping).',
-    duration: '3 months',
+    duration: '2 months',
     price: 'Kes 20,000',
     url: '/english-levels/a2',
   },
@@ -33,7 +33,7 @@ const languageLevels: LanguageLevel[] = [
     title: 'Intermediate English',
     description: 'Understand the main points of clear standard input on familiar matters regularly encountered in work, school, etc.',
     duration: '3 months',
-    price: 'Kes 20,000',
+    price: 'Kes 30,000',
     url: '/english-levels/b1',
   },
   {
@@ -41,7 +41,7 @@ const languageLevels: LanguageLevel[] = [
     title: 'Upper Intermediate English',
     description: 'Understand the main ideas of complex text on both concrete and abstract topics including technical discussions.',
     duration: '3 months',
-    price: 'Kes 20,000',
+    price: 'Kes 30,000',
     url: '/english-levels/b2',
   },
   {
@@ -49,7 +49,7 @@ const languageLevels: LanguageLevel[] = [
     title: 'Advanced English',
     description: 'Understand a wide range of demanding, longer texts, and recognize implicit meaning.',
     duration: '3 months',
-    price: 'Kes 20,000',
+    price: 'Kes 30,000',
     url: '/english-levels/c1',
   },
   {
@@ -57,7 +57,7 @@ const languageLevels: LanguageLevel[] = [
     title: 'Mastery English',
     description: 'Express yourself spontaneously, very fluently and precisely, even in more complex situations.',
     duration: '3 months',
-    price: 'Kes 20,000',
+    price: 'Kes 30,000',
     url: '/english-levels/c2',
   },
 ];
@@ -88,7 +88,7 @@ const EnglishLanguage = () => {
                 English Language Courses
               </h1>
               <p className="text-lg md:text-xl text-gray-300 mb-8">
-                Master English from beginner to fluent speaker. Internationally recognized certification after each 3-month level.
+              Master the English language from beginner (A1–A2) to advanced levels (B1–C2). A1 and A2 take 2 months each at Kes 20,000. B1 to C2 take 3 months each at Kes 30,000. Courses are available for all languages with certified instructors and international recognition.
               </p>
               <div className="flex flex-row justify-center gap-4">
                 <button className="px-6 py-3 bg-button-50 text-white rounded-full hover:bg-orange-600 transition">

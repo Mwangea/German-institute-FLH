@@ -26,10 +26,10 @@ const ArabicLevelC1 = () => {
     format: "News articles, documentaries, literary extracts. Analytical discussions, formal presentations, and academic writing with personalized feedback.",
     
     targetAudience: "Completion of B2 or equivalent mastery required",
-    duration: "3-6 months",
+    duration: "3 months",
     certification: "Level C1 Arabic Language Certificate",
     focusAreas: "Academic Arabic • Journalism • Diplomatic Language",
-    price: "Kes 20,000",
+    price: "Kes 30,000",
     ctaText: "Excel in high-level Arabic for media, diplomacy, or academia."
   };
 

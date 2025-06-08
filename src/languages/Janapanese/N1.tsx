@@ -99,27 +99,27 @@ const JapaneseLevelN1 = () => {
     studyPlans: [
       {
         name: "Regular Plan",
-        duration: "12 months",
+        duration: "2 months",
         hours: "2.5 hours per day",
       },
       {
         name: "Intensive Plan",
-        duration: "6 months",
+        duration: "2 months",
         hours: "5 hours per day",
       },
       {
         name: "Super-Intensive Plan",
-        duration: "5 months",
+        duration: "2 months",
         hours: "6 hours per day",
       },
       {
         name: "Accelerated Plan",
-        duration: "4 months",
+        duration: "2 months",
         hours: "8 hours per day",
       },
     ],
     targetAudience: "Students who have completed N2 or have equivalent knowledge",
-    duration: "4-12 months (flexible)",
+    duration: "2 months",
     certification: "JLPT N1 Certificate",
     focusAreas: "Native-Level Japanese • Professional Mastery • Cultural Leadership",
     price: "Kes 20,000",

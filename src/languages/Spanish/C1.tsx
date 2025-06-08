@@ -6,12 +6,12 @@ const SpanishLevelC1 = () => {
     title: "Spanish Course: C1 Level (Advanced)",
     tagline: "Achieve near-native proficiency in Spanish",
     duration: {
-      regular: "6 months (1 hour per day)",
-      intensive: "3 months (2 hours per day)",
-      superIntensive: "2 months (3 hours per day)",
-      accelerated: "1 month (6 hours per day)"
+      regular: "3 months",
+      intensive: "3 months",
+      superIntensive: "3 months",
+      accelerated: "3 months"
     },
-    price: "Kes 20,000",
+    price: "Kes 30,000",
     overview: "The Spanish C1 course represents an advanced level of proficiency, focusing on sophisticated language use and cultural understanding. Students will learn to express themselves fluently and spontaneously, understand complex texts, and use language flexibly and effectively for social, academic, and professional purposes. The course prepares students for the DELE C1 examination while building expert-level skills.",
     format: "Expert-level language training focusing on sophisticated expression and cultural nuances. Emphasis on perfecting all aspects of language use, including subtle meanings and cultural references. Regular practice sessions, research projects, and personalized feedback to ensure comprehensive progress.",
     objectives: [

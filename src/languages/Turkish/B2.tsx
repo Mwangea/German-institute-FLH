@@ -6,8 +6,8 @@ const TurkishB2 = () => {
     level: 'B2',
     title: 'Upper Intermediate Turkish',
     tagline: 'Master complex Turkish language skills and express yourself fluently on a wide range of topics.',
-    duration: '3-6 months',
-    price: 'Kes 20,000',
+    duration: '3 months',
+    price: 'Kes 30,000',
     overview: 'Our B2 Turkish course is designed for students who have completed B1 or have a strong intermediate level in Turkish. You will develop your ability to understand the main ideas of complex text on both concrete and abstract topics, interact with a degree of fluency and spontaneity that makes regular interaction with native speakers quite possible without strain for either party, and produce clear, detailed text on a wide range of subjects.',
     format: 'Online and in-person classes available',
     objectives: [
@@ -61,7 +61,7 @@ const TurkishB2 = () => {
     studyPlans: [
       {
         name: 'Regular Plan',
-        duration: '6 months',
+        duration: '3 months',
         hours: '1 hour/day'
       },
       {
@@ -71,12 +71,12 @@ const TurkishB2 = () => {
       },
       {
         name: 'Super-Intensive Plan',
-        duration: '2 months',
+        duration: '3 months',
         hours: '3 hours/day'
       },
       {
         name: 'Accelerated Plan',
-        duration: '1 month',
+        duration: '3 months',
         hours: '6 hours/day'
       }
     ]

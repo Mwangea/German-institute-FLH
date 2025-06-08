@@ -24,10 +24,10 @@ const ArabicLevelB2 = () => {
     format: "Debates, scenario-based dialogues, collaborative projects, and analytical reading. Includes essay writing with consistent feedback.",
     
     targetAudience: "Completion of B1 or equivalent proficiency required",
-    duration: "3-6 months",
+    duration: "3 months",
     certification: "Level B2 Arabic Language Certificate",
     focusAreas: "Professional Arabic • Media Analysis • Formal Correspondence",
-    price: "Kes 20,000",
+    price: "Kes 30,000",
     ctaText: "Elevate your skills for academic, career, or advanced cultural engagement."
   };
 

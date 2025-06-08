@@ -10,7 +10,7 @@ const EnglishLevelB1 = () => {
       intensive: "3 months",
       accelerated: "1.5 months"
     },
-    price: "Kes 20,000",
+    price: "Kes 30,000",
     overview: "The B1 level focuses on developing independent language use. Students will learn to handle most situations likely to arise while traveling in English-speaking countries and express themselves on familiar topics with reasonable fluency.",
     format: "Combined approach of structured learning and practical application. Emphasis on developing fluency and accuracy in real-world contexts.",
     objectives: [

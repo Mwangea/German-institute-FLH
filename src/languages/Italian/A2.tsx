@@ -85,12 +85,12 @@ const ItalianLevelA2 = () => {
     studyPlans: [
       {
         name: "Regular Plan",
-        duration: "6 months",
+        duration: "2 months",
         hours: "1 hour per day",
       },
       {
         name: "Intensive Plan",
-        duration: "3 months",
+        duration: "2 months",
         hours: "2 hours per day",
       },
       {
@@ -100,15 +100,15 @@ const ItalianLevelA2 = () => {
       },
       {
         name: "Accelerated Plan",
-        duration: "1 month",
+        duration: "2 months",
         hours: "6 hours per day",
       },
     ],
     targetAudience: "Students who have completed A1 or have basic Italian knowledge",
-    duration: "1-6 months (flexible)",
+    duration: "2 months",
     certification: "Italian A2 Proficiency Certificate",
     focusAreas: "Enhanced Communication • Daily Life • Travel • Social Skills",
-    price: "Kes 20,000",
+    price: "20,000",
     ctaText: "Take your Italian skills to the next level. Build confidence in everyday communication and prepare for more advanced language learning.",
   };
 
