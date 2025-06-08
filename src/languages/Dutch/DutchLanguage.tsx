@@ -15,7 +15,7 @@ const languageLevels: LanguageLevel[] = [
     level: 'A1',
     title: 'Beginner Dutch',
     description: 'Understand and use familiar Dutch expressions and very basic phrases aimed at satisfying simple needs.',
-    duration: '3 months',
+    duration: '2 months',
     price: 'Kes 20,000',
     url: '/dutch-levels/a1',
   },
@@ -23,7 +23,7 @@ const languageLevels: LanguageLevel[] = [
     level: 'A2',
     title: 'Elementary Dutch',
     description: 'Understand frequently used expressions related to areas of most immediate relevance (e.g., personal info, shopping).',
-    duration: '3 months',
+    duration: '2 months',
     price: 'Kes 20,000',
     url: '/dutch-levels/a2',
   },
@@ -32,7 +32,7 @@ const languageLevels: LanguageLevel[] = [
     title: 'Intermediate Dutch',
     description: 'Understand the main points of clear standard input on familiar matters regularly encountered in work, school, etc.',
     duration: '3 months',
-    price: 'Kes 20,000',
+    price: 'Kes 30,000',
     url: '/dutch-levels/b1',
   },
   {
@@ -40,7 +40,7 @@ const languageLevels: LanguageLevel[] = [
     title: 'Upper Intermediate Dutch',
     description: 'Understand the main ideas of complex text on both concrete and abstract topics including technical discussions.',
     duration: '3 months',
-    price: 'Kes 20,000',
+    price: 'Kes 30,000',
     url: '/dutch-levels/b2',
   },
   {
@@ -48,7 +48,7 @@ const languageLevels: LanguageLevel[] = [
     title: 'Advanced Dutch',
     description: 'Understand a wide range of demanding, longer texts, and recognize implicit meaning.',
     duration: '3 months',
-    price: 'Kes 20,000',
+    price: 'Kes 30,000',
     url: '/dutch-levels/c1',
   },
   {
@@ -56,7 +56,7 @@ const languageLevels: LanguageLevel[] = [
     title: 'Mastery Dutch',
     description: 'Express yourself spontaneously, very fluently and precisely, even in more complex situations.',
     duration: '3 months',
-    price: 'Kes 20,000',
+    price: 'Kes 30,000',
     url: '/dutch-levels/c2',
   },
 ];

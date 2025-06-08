@@ -7,7 +7,7 @@ const GermanLevelA2 = () => {
       level: 'A2',
       title: 'Elementary use of language',
       fullDescription: 'At the A2 level, you will expand your basic knowledge of German. You will learn to understand sentences and frequently used expressions related to areas of most immediate relevance (e.g. very basic personal and family information, shopping, local geography, employment). You will be able to communicate in simple and routine tasks requiring a simple and direct exchange of information on familiar and routine matters.',
-      duration: '3 months',
+      duration: '2 months',
       price: 'Kes 20,000',
       outcomes: [
         'Understand sentences and common expressions',

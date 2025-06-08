@@ -6,12 +6,12 @@ const SpanishLevelC2 = () => {
     title: "Spanish Course: C2 Level (Mastery)",
     tagline: "Attain complete mastery of the Spanish language",
     duration: {
-      regular: "6 months (1 hour per day)",
-      intensive: "3 months (2 hours per day)",
-      superIntensive: "2 months (3 hours per day)",
-      accelerated: "1 month (6 hours per day)"
+      regular: "3 months",
+      intensive: "3 months",
+      superIntensive: "3 months",
+      accelerated: "3 months"
     },
-    price: "Kes 20,000",
+    price: "Kes 30,000",
     overview: "The Spanish C2 course represents the highest level of Spanish proficiency. This comprehensive program is designed for students who want to achieve complete mastery of the language, enabling them to understand virtually everything heard or read, and express themselves spontaneously, very fluently, and precisely. The course prepares students for the DELE C2 examination while building expert-level skills for professional, academic, and cultural contexts.",
     format: "Mastery-level language training focusing on perfecting all aspects of language use. Emphasis on cultural nuances, sophisticated expression, and professional expertise. Regular practice sessions, research projects, and personalized feedback to ensure comprehensive progress.",
     objectives: [

@@ -6,7 +6,7 @@ const TurkishA2 = () => {
     level: 'A2',
     title: 'Elementary Turkish',
     tagline: 'Build on your basic Turkish skills and expand your ability to communicate in everyday situations.',
-    duration: '3-6 months',
+    duration: '2 months',
     price: 'Kes 20,000',
     overview: 'Our A2 Turkish course is designed for students who have completed A1 or have basic knowledge of Turkish. You will expand your vocabulary, learn more complex grammar structures, and develop your ability to communicate in a wider range of everyday situations. By the end of this course, you will be able to handle most common social interactions and express yourself on familiar topics.',
     format: 'Online and in-person classes available',
@@ -61,12 +61,12 @@ const TurkishA2 = () => {
     studyPlans: [
       {
         name: 'Regular Plan',
-        duration: '6 months',
+        duration: '2 months',
         hours: '1 hour/day'
       },
       {
         name: 'Intensive Plan',
-        duration: '3 months',
+        duration: '2 months',
         hours: '2 hours/day'
       },
       {
@@ -76,7 +76,7 @@ const TurkishA2 = () => {
       },
       {
         name: 'Accelerated Plan',
-        duration: '1 month',
+        duration: '2 months',
         hours: '6 hours/day'
       }
     ]

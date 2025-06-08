@@ -8,7 +8,7 @@ const GermanLevelC1 = () => {
       title: 'Proficient language use',
       fullDescription: 'At the C1 level, you will be able to understand a wide range of demanding, longer texts, and recognize implicit meaning. You can express yourself fluently and spontaneously without much obvious searching for expressions. You can use language flexibly and effectively for social, academic and professional purposes. You can produce clear, well-structured, detailed text on complex subjects, showing controlled use of organizational patterns, connectors and cohesive devices.',
       duration: '3 months',
-      price: 'Kes 20,000',
+      price: 'Kes 30,000',
       outcomes: [
         'Understand demanding, longer texts and implicit meaning',
         'Express ideas fluently and spontaneously',

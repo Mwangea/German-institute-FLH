@@ -27,7 +27,7 @@ const ArabicBasic1 = () => {
     format: "The course features interactive lessons, guided exercises, and multimedia content. Learners will practice language skills through role-plays, conversations, and group activities. Regular feedback and assessments will support continuous improvement and skill development.",
     
     targetAudience: "No prior knowledge needed  this course is designed for absolute beginners.",
-    duration: "3-6 months (flexible schedule)",
+    duration: "2 months (flexible schedule)",
     certification: "Arabic A1 Proficiency Certificate",
     focusAreas: "Alphabet • Greetings • Daily Life Vocabulary",
     price: "Kes 20,000",

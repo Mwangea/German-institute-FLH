@@ -79,12 +79,12 @@ const ItalianLevelA1 = () => {
     studyPlans: [
       {
         name: "Regular Plan",
-        duration: "6 months",
+        duration: "2 months",
         hours: "1 hour per day",
       },
       {
         name: "Intensive Plan",
-        duration: "3 months",
+        duration: "2 months",
         hours: "2 hours per day",
       },
       {
@@ -94,12 +94,12 @@ const ItalianLevelA1 = () => {
       },
       {
         name: "Accelerated Plan",
-        duration: "1 month",
+        duration: "2 months",
         hours: "6 hours per day",
       },
     ],
     targetAudience: "Ideal for learners with little to no prior experience in Italian",
-    duration: "1-6 months (flexible)",
+    duration: "2 months",
     certification: "Italian A1 Proficiency Certificate",
     focusAreas: "Basic Communication • Daily Life • Travel • Family",
     price: "Kes 20,000",

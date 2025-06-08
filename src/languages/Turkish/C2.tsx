@@ -6,8 +6,8 @@ const TurkishC2 = () => {
     level: 'C2',
     title: 'Mastery Turkish',
     tagline: 'Achieve native-like proficiency in Turkish and master the language at its highest level.',
-    duration: '3-6 months',
-    price: 'Kes 20,000',
+    duration: '3 months',
+    price: 'Kes 30,000',
     overview: 'Our C2 Turkish course is designed for students who have completed C1 or have near-native proficiency in Turkish. You will develop your ability to understand with ease virtually everything heard or read, summarize information from different spoken and written sources, reconstructing arguments and accounts in a coherent presentation, and express yourself spontaneously, very fluently and precisely, differentiating finer shades of meaning even in the most complex situations.',
     format: 'Online and in-person classes available',
     objectives: [
@@ -61,7 +61,7 @@ const TurkishC2 = () => {
     studyPlans: [
       {
         name: 'Regular Plan',
-        duration: '6 months',
+        duration: '3 months',
         hours: '1 hour/day'
       },
       {
@@ -71,12 +71,12 @@ const TurkishC2 = () => {
       },
       {
         name: 'Super-Intensive Plan',
-        duration: '2 months',
+        duration: '3 months',
         hours: '3 hours/day'
       },
       {
         name: 'Accelerated Plan',
-        duration: '1 month',
+        duration: '3 months',
         hours: '6 hours/day'
       }
     ]

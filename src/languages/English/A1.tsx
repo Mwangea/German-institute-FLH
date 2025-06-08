@@ -6,9 +6,9 @@ const EnglishLevelA1 = () => {
     title: "English Language Course: A1 Level (Beginner)",
     tagline: "Build your foundation in English with essential communication skills",
     duration: {
-      regular: "3 months",
-      intensive: "3 months",
-      accelerated: "1.5 months"
+      regular: "2 months",
+      intensive: "2 months",
+      accelerated: "2 months"
     },
     price: "Kes 20,000",
     overview: "The A1 level of the CEFRL framework is designed for absolute beginners in the English language. This level focuses on the basics of English, providing a strong foundation for further study. The course aims to help students develop basic communication skills for everyday situations.",

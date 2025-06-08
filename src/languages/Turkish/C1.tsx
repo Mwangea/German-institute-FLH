@@ -6,8 +6,8 @@ const TurkishC1 = () => {
     level: 'C1',
     title: 'Advanced Turkish',
     tagline: 'Achieve near-native proficiency in Turkish and master complex language structures.',
-    duration: '3-6 months',
-    price: 'Kes 20,000',
+    duration: '3 months',
+    price: 'Kes 30,000',
     overview: 'Our C1 Turkish course is designed for students who have completed B2 or have an advanced level in Turkish. You will develop your ability to understand a wide range of demanding, longer texts, and recognize implicit meaning. You will express yourself fluently and spontaneously without much obvious searching for expressions, use language flexibly and effectively for social, academic, and professional purposes, and produce clear, well-structured, detailed text on complex subjects.',
     format: 'Online and in-person classes available',
     objectives: [
@@ -61,7 +61,7 @@ const TurkishC1 = () => {
     studyPlans: [
       {
         name: 'Regular Plan',
-        duration: '6 months',
+        duration: '3 months',
         hours: '1 hour/day'
       },
       {
@@ -71,12 +71,12 @@ const TurkishC1 = () => {
       },
       {
         name: 'Super-Intensive Plan',
-        duration: '2 months',
+        duration: '3 months',
         hours: '3 hours/day'
       },
       {
         name: 'Accelerated Plan',
-        duration: '1 month',
+        duration: '3 months',
         hours: '6 hours/day'
       }
     ]

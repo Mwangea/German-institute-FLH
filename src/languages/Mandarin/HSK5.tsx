@@ -6,11 +6,11 @@ const MandarinLevelHSK5 = () => {
     title: "Mandarin Chinese Course: HSK 5 Level (Advanced)",
     tagline: "Achieve near-native proficiency in Mandarin",
     duration: {
-      regular: "3-6 months",
-      intensive: "2-3 months",
-      accelerated: "1-2 months"
+      regular: "3 months",
+      intensive: "3 months",
+      accelerated: "3 months"
     },
-    price: "Kes 20,000",
+    price: "Kes 30,000",
     overview: "The HSK 5 course is designed for advanced learners who want to achieve near-native proficiency in Mandarin. This level focuses on developing sophisticated language skills, including complex grammar structures, extensive vocabulary, and nuanced communication abilities. The course prepares students for the HSK Level 5 examination while building advanced skills for professional, academic, and cultural contexts.",
     format: "Advanced language training with emphasis on sophisticated language use, cultural nuances, and professional expertise. Focus on developing native-like fluency and accuracy. Regular practice sessions, research projects, and personalized feedback to ensure comprehensive progress.",
     objectives: [

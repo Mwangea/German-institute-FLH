@@ -7,7 +7,7 @@ const PortugueseA1 = () => {
     title: 'Beginner Portuguese',
     tagline: 'Start your Portuguese journey with essential vocabulary and basic communication skills.',
     description: 'Start your Portuguese journey with essential vocabulary and basic communication skills.',
-    duration: '3 months',
+    duration: '2 months',
     price: 'Kes 20,000',
     overview: 'Our A1 Portuguese course is designed for complete beginners. You will learn fundamental Portuguese vocabulary, basic grammar structures, and essential phrases for everyday situations. By the end of this course, you will be able to introduce yourself, ask and answer simple questions, and handle basic social interactions in Portuguese.',
     format: 'Online and in-person classes available',
@@ -62,22 +62,22 @@ const PortugueseA1 = () => {
     studyPlans: [
       {
         name: 'Standard Plan',
-        duration: '3 months',
+        duration: '2 months',
         hours: '120 hours'
       },
       {
         name: 'Intensive Plan',
-        duration: '2 months',
+        duration: '1.5 months',
         hours: '180 hours'
       },
       {
         name: 'Flexible Plan',
-        duration: '4 months',
+        duration: '3 months',
         hours: '90 hours'
       },
       {
         name: 'Weekend Plan',
-        duration: '6 months',
+        duration: '4 months',
         hours: '60 hours'
       }
     ]

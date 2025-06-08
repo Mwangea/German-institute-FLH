@@ -16,7 +16,7 @@ const languageLevels: LanguageLevel[] = [
     level: 'A1',
     title: 'Beginner Arabic',
     description: 'Understand and use familiar Arabic expressions and very basic phrases aimed at satisfying simple needs.',
-    duration: '3 months',
+    duration: '2 months',
     price: 'Kes 20,000',
     url: '/arabic-levels/a1',
   },
@@ -24,7 +24,7 @@ const languageLevels: LanguageLevel[] = [
     level: 'A2',
     title: 'Elementary Arabic',
     description: 'Understand frequently used expressions related to areas of most immediate relevance (e.g., personal info, shopping).',
-    duration: '3 months',
+    duration: '2 months',
     price: 'Kes 20,000',
     url: '/arabic-levels/a2',
   },
@@ -33,7 +33,7 @@ const languageLevels: LanguageLevel[] = [
     title: 'Intermediate Arabic',
     description: 'Understand the main points of clear standard input on familiar matters regularly encountered in work, school, etc.',
     duration: '3 months',
-    price: 'Kes 20,000',
+    price: 'Kes 30,000',
     url: '/arabic-levels/b1',
   },
   {
@@ -41,7 +41,7 @@ const languageLevels: LanguageLevel[] = [
     title: 'Upper Intermediate Arabic',
     description: 'Understand the main ideas of complex text on both concrete and abstract topics including technical discussions.',
     duration: '3 months',
-    price: 'Kes 20,000',
+    price: 'Kes 30,000',
     url: '/arabic-levels/b2',
   },
   {
@@ -49,7 +49,7 @@ const languageLevels: LanguageLevel[] = [
     title: 'Advanced Arabic',
     description: 'Understand a wide range of demanding, longer texts, and recognize implicit meaning.',
     duration: '3 months',
-    price: 'Kes 20,000',
+    price: 'Kes 30,000',
     url: '/arabic-levels/c1',
   },
   {
@@ -57,7 +57,7 @@ const languageLevels: LanguageLevel[] = [
     title: 'Mastery Arabic',
     description: 'Express yourself spontaneously, very fluently and precisely, even in more complex situations.',
     duration: '3 months',
-    price: 'Kes 20,000',
+    price: 'Kes 30,000',
     url: '/arabic-levels/c2',
   },
 ];

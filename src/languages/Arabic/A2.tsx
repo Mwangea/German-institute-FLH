@@ -24,7 +24,7 @@ const ArabicLevelA2 = () => {
     format: "Dynamic lessons with discussions, role-plays, and group tasks. Includes targeted reading/writing exercises with regular assessments.",
     
     targetAudience: "Completion of Basic 1 (A1) or equivalent required",
-    duration: "3-6 months",
+    duration: "2 months",
     certification: "Level A2 Certificate in Arabic",
     focusAreas: "Daily Life • Shopping • Health",
     price: "Kes 20,000",

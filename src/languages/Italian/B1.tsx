@@ -79,17 +79,17 @@ const ItalianLevelB1 = () => {
     studyPlans: [
       {
         name: "Regular Plan",
-        duration: "6 months",
+        duration: "3 months",
         hours: "1 hour per day",
       },
       {
         name: "Intensive Plan",
-        duration: "3 months",
+        duration: "2 months",
         hours: "2 hours per day",
       },
       {
         name: "Super-Intensive Plan",
-        duration: "2 months",
+        duration: "1.5 months",
         hours: "3 hours per day",
       },
       {
@@ -99,10 +99,10 @@ const ItalianLevelB1 = () => {
       },
     ],
     targetAudience: "Students who have completed A2 or have intermediate Italian knowledge",
-    duration: "1-6 months (flexible)",
+    duration: "3 months",
     certification: "Italian B1 Proficiency Certificate",
     focusAreas: "Professional Communication • Academic Skills • Cultural Understanding",
-    price: "Kes 20,000",
+    price: "Kes 30,000",
     ctaText: "Achieve intermediate proficiency in Italian. Develop the skills needed for professional and academic success.",
   };
 

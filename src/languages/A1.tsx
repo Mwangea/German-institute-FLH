@@ -16,7 +16,7 @@ const GermanLevelA1 = () => {
     title: "Elementary use of language",
     fullDescription:
       "At the A1 level, you will learn to understand and use familiar, everyday expressions and very simple sentences, which relate to the satisfying of concrete needs. You will be able to introduce yourself and others as well as ask others about themselves – for example, where they live, who they know and what they own – and can respond to questions of this nature. You will be able to communicate in a simple manner if the person you are speaking to speaks slowly and clearly and is willing to help.",
-    duration: "3 months",
+    duration: "2 months",
     price: "Kes 20,000",
     outcomes: [
       "Understand and use familiar everyday expressions",

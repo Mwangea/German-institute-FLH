@@ -97,7 +97,7 @@ const JapaneseLevelN5 = () => {
     studyPlans: [
       {
         name: "Regular Plan",
-        duration: "6 months",
+        duration: "3 months",
         hours: "1 hour per day",
       },
       {
@@ -107,20 +107,20 @@ const JapaneseLevelN5 = () => {
       },
       {
         name: "Super-Intensive Plan",
-        duration: "2 months",
+        duration: "3 months",
         hours: "3 hours per day",
       },
       {
         name: "Accelerated Plan",
-        duration: "1 month",
+        duration: "3 months",
         hours: "6 hours per day",
       },
     ],
     targetAudience: "Complete beginners with no prior knowledge of Japanese",
-    duration: "1-6 months (flexible)",
+    duration: "3 months",
     certification: "JLPT N5 Certificate",
     focusAreas: "Basic Japanese • Writing Systems • Daily Communication",
-    price: "Kes 20,000",
+    price: "Kes 30,000",
     ctaText: "Start your Japanese language journey. Build a strong foundation in Japanese and prepare for the JLPT N5 examination.",
   };
 

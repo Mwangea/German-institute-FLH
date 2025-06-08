@@ -6,12 +6,12 @@ const SpanishLevelB2 = () => {
     title: "Spanish Course: B2 Level (Upper Intermediate)",
     tagline: "Master complex topics and express opinions with confidence",
     duration: {
-      regular: "6 months (1 hour per day)",
-      intensive: "3 months (2 hours per day)",
-      superIntensive: "2 months (3 hours per day)",
-      accelerated: "1 month (6 hours per day)"
+      regular: "3 months",
+      intensive: "3 months",
+      superIntensive: "3 months",
+      accelerated: "3 months"
     },
-    price: "Kes 20,000",
+    price: "Kes 30,000",
     overview: "The Spanish B2 course focuses on developing advanced language skills for professional and academic contexts. Students will learn to understand complex ideas, express themselves fluently and spontaneously, and interact with native speakers with a high degree of fluency. The course prepares students for the DELE B2 examination while building sophisticated communication skills.",
     format: "Advanced language training focusing on complex topics and professional communication. Emphasis on developing sophisticated language use, cultural understanding, and academic skills. Regular practice sessions, research projects, and personalized feedback to ensure comprehensive progress.",
     objectives: [

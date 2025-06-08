@@ -10,7 +10,7 @@ const EnglishLevelB2 = () => {
       intensive: "3 months",
       accelerated: "1.5 months"
     },
-    price: "Kes 20,000",
+    price: "Kes 30,000",
     overview: "The B2 level focuses on developing advanced language skills for professional and academic contexts. Students will learn to interact with a degree of fluency and spontaneity, and produce clear, detailed text on a wide range of subjects.",
     format: "Advanced language training with emphasis on professional and academic contexts. Focus on developing sophisticated language use and critical thinking skills.",
     objectives: [

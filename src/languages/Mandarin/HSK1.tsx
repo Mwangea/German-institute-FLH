@@ -6,11 +6,11 @@ const MandarinLevelHSK1 = () => {
     title: "Mandarin Chinese Course: HSK 1 Level (Beginner)",
     tagline: "Build your foundation in Mandarin Chinese with essential communication skills",
     duration: {
-      regular: "3-6 months",
-      intensive: "2-3 months",
-      accelerated: "1-2 months"
+      regular: "2 months",
+      intensive: "2 months",
+      accelerated: "2 months"
     },
-    price: "Kes 20,000",
+    price: "20,000",
     overview: "The HSK 1 Preparation Course at KIFLAPS is designed for absolute beginners with little or no background in Chinese. This foundational program focuses on building essential language skills—listening, speaking, reading, and writing—while aligning closely with the requirements of the HSK Level 1 exam. It serves as an ideal starting point for learners aiming to gain confidence in Mandarin and work toward an internationally recognized certification.",
     format: "Interactive lessons combining theory and practice. Emphasis on Pinyin system, basic vocabulary, and essential grammar structures. Regular practice sessions, group activities, and personalized feedback to ensure steady progress.",
     objectives: [

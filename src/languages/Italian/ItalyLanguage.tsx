@@ -15,7 +15,7 @@ const languageLevels: LanguageLevel[] = [
     level: 'A1',
     title: 'Beginner Italian',
     description: 'Understand and use familiar Italian expressions and very basic phrases aimed at satisfying simple needs.',
-    duration: '3 months',
+    duration: '2 months',
     price: 'Kes 20,000',
     url: '/italian-levels/a1',
   },
@@ -23,7 +23,7 @@ const languageLevels: LanguageLevel[] = [
     level: 'A2',
     title: 'Elementary Italian',
     description: 'Understand frequently used expressions related to areas of most immediate relevance (e.g., personal info, shopping).',
-    duration: '3 months',
+    duration: '2 months',
     price: 'Kes 20,000',
     url: '/italian-levels/a2',
   },
@@ -32,7 +32,7 @@ const languageLevels: LanguageLevel[] = [
     title: 'Intermediate Italian',
     description: 'Understand the main points of clear standard input on familiar matters regularly encountered in work, school, etc.',
     duration: '3 months',
-    price: 'Kes 20,000',
+    price: 'Kes 30,000',
     url: '/italian-levels/b1',
   },
   {
@@ -40,7 +40,7 @@ const languageLevels: LanguageLevel[] = [
     title: 'Upper Intermediate Italian',
     description: 'Understand the main ideas of complex text on both concrete and abstract topics including technical discussions.',
     duration: '3 months',
-    price: 'Kes 20,000',
+    price: 'Kes 30,000',
     url: '/italian-levels/b2',
   },
   {
@@ -48,7 +48,7 @@ const languageLevels: LanguageLevel[] = [
     title: 'Advanced Italian',
     description: 'Understand a wide range of demanding, longer texts, and recognize implicit meaning.',
     duration: '3 months',
-    price: 'Kes 20,000',
+    price: 'Kes 30,000',
     url: '/italian-levels/c1',
   },
   {
@@ -56,7 +56,7 @@ const languageLevels: LanguageLevel[] = [
     title: 'Mastery Italian',
     description: 'Express yourself spontaneously, very fluently and precisely, even in more complex situations.',
     duration: '3 months',
-    price: 'Kes 20,000',
+    price: 'Kes 30,000',
     url: '/italian-levels/c2',
   },
 ];
@@ -87,7 +87,7 @@ const ItalyLanguage = () => {
                 Italian Language Courses
               </h1>
               <p className="text-lg md:text-xl text-gray-300 mb-8">
-                Master Italian from beginner to fluent speaker. Internationally recognized certification after each 3-month level.
+                Master Italian from beginner to fluent speaker. Internationally recognized certification after each 2-3 month level.
               </p>
               <div className="flex flex-row justify-center gap-4">
                 <button className="px-6 py-3 bg-button-50 text-white rounded-full hover:bg-orange-600 transition">

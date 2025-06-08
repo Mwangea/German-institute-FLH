@@ -120,14 +120,14 @@ const ForeignLanguages: React.FC = () => {
       isAvailable: true,
       category: "middle-eastern"
     },
-    { 
-      id: 14, 
-      title: "Somali Language Course", 
-      level: "Beginner to Advanced",
-      link: "/courses/somalia",
-      isAvailable: true,
-      category: "african"
-    },
+    // { 
+    //   id: 14, 
+    //   title: "Somali Language Course", 
+    //   level: "Beginner to Advanced",
+    //   link: "/courses/somalia",
+    //   isAvailable: true,
+    //   category: "african"
+    // },
   ];
 
   const comingSoonCourses = modules.filter(module => !module.isAvailable);

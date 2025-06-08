@@ -97,12 +97,12 @@ const JapaneseLevelN3 = () => {
     studyPlans: [
       {
         name: "Regular Plan",
-        duration: "8 months",
+        duration: "3 months",
         hours: "1.5 hours per day",
       },
       {
         name: "Intensive Plan",
-        duration: "4 months",
+        duration: "3 months",
         hours: "3 hours per day",
       },
       {
@@ -112,15 +112,15 @@ const JapaneseLevelN3 = () => {
       },
       {
         name: "Accelerated Plan",
-        duration: "2 months",
+        duration: "3 months",
         hours: "6 hours per day",
       },
     ],
     targetAudience: "Students who have completed N4 or have equivalent knowledge",
-    duration: "2-8 months (flexible)",
+    duration: "3 months",
     certification: "JLPT N3 Certificate",
     focusAreas: "Intermediate-Advanced Japanese • Business Basics • Cultural Fluency",
-    price: "Kes 20,000",
+    price: "Kes 30,000",
     ctaText: "Advance your Japanese proficiency. Master intermediate-advanced skills and prepare for the JLPT N3 examination.",
   };
 

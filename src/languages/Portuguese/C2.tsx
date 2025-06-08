@@ -8,7 +8,7 @@ const PortugueseC2 = () => {
     tagline: 'Achieve native-like proficiency in Portuguese',
     description: 'Achieve native-like proficiency in Portuguese and master the language at its highest level.',
     duration: '3 months',
-    price: 'Kes 20,000',
+    price: 'Kes 30,000',
     overview: 'Our C2 Portuguese course is designed for students who have completed C1 or have near-native proficiency in Portuguese. You will develop your ability to understand with ease virtually everything heard or read, summarize information from different spoken and written sources, reconstructing arguments and accounts in a coherent presentation, and express yourself spontaneously, very fluently and precisely, differentiating finer shades of meaning even in the most complex situations.',
     format: 'Online and in-person classes available',
     objectives: [
@@ -124,7 +124,7 @@ const PortugueseC2 = () => {
       },
       {
         name: 'Intensive Plan',
-        duration: '2 months',
+        duration: '3 months',
         hours: '180 hours'
       }
     ]

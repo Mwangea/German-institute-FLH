@@ -6,11 +6,11 @@ const MandarinLevelHSK4 = () => {
     title: "Mandarin Chinese Course: HSK 4 Level (Upper-Intermediate)",
     tagline: "Master Mandarin for professional and academic purposes",
     duration: {
-      regular: "3-6 months",
-      intensive: "2-3 months",
-      accelerated: "1-2 months"
+      regular: "3 months",
+      intensive: "3 months",
+      accelerated: "3 months"
     },
-    price: "Kes 20,000",
+    price: "Kes 30,000",
     overview: "The HSK 4 course is designed for students who want to achieve a higher level of Mandarin proficiency for professional and academic purposes. This level focuses on developing advanced language skills, including complex grammar structures, extensive vocabulary, and sophisticated communication abilities. The course prepares students for the HSK Level 4 examination while building practical skills for professional and academic contexts.",
     format: "Advanced language training with emphasis on professional and academic language use. Focus on developing sophisticated communication skills, cultural understanding, and practical application in various contexts. Regular practice sessions, research projects, and personalized feedback to ensure comprehensive progress.",
     objectives: [

@@ -16,7 +16,7 @@ const languageLevels: LanguageLevel[] = [
     level: 'A1',
     title: 'Elementary use of language',
     description: 'Can understand and use familiar, everyday expressions and very simple sentences...',
-    duration: '3 months',
+    duration: '2 months',
     price: 'Kes 20,000',
     url: '/german-levels/a1'
   },
@@ -24,7 +24,7 @@ const languageLevels: LanguageLevel[] = [
     level: 'A2',
     title: 'Elementary use of language',
     description: 'Can understand sentences and commonly used expressions associated with topics...',
-    duration: '3 months',
+    duration: '2 months',
     price: 'Kes 20,000',
     url: '/german-levels/a2'
   },
@@ -33,7 +33,7 @@ const languageLevels: LanguageLevel[] = [
     title: 'Independent language use',
     description: 'Can understand the main points when clear, standard language is used...',
     duration: '3 months',
-    price: 'Kes 20,000',
+    price: 'Kes 30,000',
     url: '/german-levels/b1'
   },
   {
@@ -41,7 +41,7 @@ const languageLevels: LanguageLevel[] = [
     title: 'Independent language use',
     description: 'Can understand the main contents of complex texts on concrete and abstract topics...',
     duration: '3 months',
-    price: 'Kes 20,000',
+    price: 'Kes 30,000',
     url: '/german-levels/b2'
   },
   {
@@ -49,7 +49,7 @@ const languageLevels: LanguageLevel[] = [
     title: 'Autonomous language ability',
     description: 'Can understand a wide range of challenging, longer texts and also grasp implicit meanings...',
     duration: '3 months',
-    price: 'Kes 20,000',
+    price: 'Kes 30,000',
     url: '/german-levels/c1'
   },
   {
@@ -57,10 +57,11 @@ const languageLevels: LanguageLevel[] = [
     title: 'Autonomous language ability',
     description: 'Can effortlessly understand practically everything which he/she reads or hears...',
     duration: '3 months',
-    price: 'Kes 20,000',
+    price: 'Kes 30,000',
     url: '/german-levels/c2'
   }
 ];
+
 
 const GermanLanguage = () => {
   return (
@@ -89,8 +90,7 @@ const GermanLanguage = () => {
                 German Language Courses
               </h1>
               <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-6 md:mb-8">
-                Comprehensive German language courses from beginner (A1) to mastery (C2) level.
-                Each module lasts 3 months and costs Kes 20,000 with internationally recognized certification.
+              Master the German language from beginner (A1–A2) to advanced levels (B1–C2). A1 and A2 take 2 months each at Kes 20,000. B1 to C2 take 3 months each at Kes 30,000. Courses are available for all languages with certified instructors and international recognition.
               </p>
               <div className="flex flex-row justify-between gap-4 w-full max-w-md mx-auto">
                 <button className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 sm:px-6 sm:py-3 bg-button-50 text-white rounded-full hover:bg-orange-600 transition-colors duration-300 text-sm sm:text-base">

@@ -26,7 +26,7 @@ const DutchLevelA2 = () => {
     format: "Interactive lessons with practical exercises, role-plays, and group activities. Regular feedback and assessments to track progress.",
     
     targetAudience: "Students who have completed A1 or have basic Dutch knowledge",
-    duration: "Flexible duration based on study plan",
+    duration: "2 Months",
     certification: "Dutch A2 Level Certificate (CEFR)",
     focusAreas: "Social Interaction • Daily Life • Practical Communication",
     price: "Kes 20,000",
@@ -35,12 +35,12 @@ const DutchLevelA2 = () => {
     studyPlans: [
       {
         name: "Regular Study Plan",
-        duration: "6 months",
+        duration: "2 months",
         hoursPerDay: "1 hour/day"
       },
       {
         name: "Intensive Study Plan",
-        duration: "3 months",
+        duration: "2 months",
         hoursPerDay: "2 hours/day"
       },
       {
@@ -50,7 +50,7 @@ const DutchLevelA2 = () => {
       },
       {
         name: "Accelerated Study Plan",
-        duration: "1 month",
+        duration: "2 months",
         hoursPerDay: "6 hours/day"
       }
     ],

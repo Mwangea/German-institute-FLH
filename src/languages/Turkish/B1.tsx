@@ -6,8 +6,8 @@ const TurkishB1 = () => {
     level: 'B1',
     title: 'Intermediate Turkish',
     tagline: 'Develop your Turkish skills to handle most situations and express yourself on familiar topics.',
-    duration: '3-6 months',
-    price: 'Kes 20,000',
+    duration: '3 months',
+    price: 'Kes 30,000',
     overview: 'Our B1 Turkish course is designed for students who have completed A2 or have a solid foundation in Turkish. You will develop your ability to handle most situations that may arise while traveling in Turkish-speaking regions, express yourself on familiar topics, and understand the main points of clear standard input on familiar matters regularly encountered in work, school, and leisure.',
     format: 'Online and in-person classes available',
     objectives: [
@@ -61,7 +61,7 @@ const TurkishB1 = () => {
     studyPlans: [
       {
         name: 'Regular Plan',
-        duration: '6 months',
+        duration: '3 months',
         hours: '1 hour/day'
       },
       {
@@ -71,12 +71,12 @@ const TurkishB1 = () => {
       },
       {
         name: 'Super-Intensive Plan',
-        duration: '2 months',
+        duration: '3 months',
         hours: '3 hours/day'
       },
       {
         name: 'Accelerated Plan',
-        duration: '1 month',
+        duration: '3 months',
         hours: '6 hours/day'
       }
     ]

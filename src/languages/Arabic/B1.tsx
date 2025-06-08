@@ -24,10 +24,10 @@ const ArabicLevelB1 = () => {
     format: "Task-based lessons with debates, group discussions, role-plays, and listening comprehension. Includes reading tasks and compositions with personalized feedback.",
     
     targetAudience: "Students who completed A2 or equivalent. Requires confidence in basic communication.",
-    duration: "3-6 months",
+    duration: "3 months",
     certification: "Arabic Language Level B1 Certificate",
     focusAreas: "Debates • Current Events • Formal Writing",
-    price: "Kes 20,000",
+    price: "Kes 30,000",
     ctaText: "Advance your fluency for academic, work, or personal goals with sophisticated conversation skills."
   };
 

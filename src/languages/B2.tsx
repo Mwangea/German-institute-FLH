@@ -8,7 +8,7 @@ const GermanLevelB2 = () => {
       title: 'Independent language use',
       fullDescription: 'At the B2 level, you will achieve a degree of independence that allows you to understand the main ideas of complex text on both concrete and abstract topics, including technical discussions in your field of specialization. You can interact with a degree of fluency and spontaneity that makes regular interaction with native speakers quite possible without strain for either party. You can produce clear, detailed text on a wide range of subjects and explain a viewpoint on a topical issue.',
       duration: '3 months',
-      price: 'Kes 20,000',
+      price: 'Kes 30,000',
       outcomes: [
         'Understand complex texts on concrete/abstract topics',
         'Interact fluently and spontaneously with native speakers',

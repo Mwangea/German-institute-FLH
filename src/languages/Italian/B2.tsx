@@ -79,7 +79,7 @@ const ItalianLevelB2 = () => {
     studyPlans: [
       {
         name: "Regular Plan",
-        duration: "6 months",
+        duration: "3 months",
         hours: "1 hour per day",
       },
       {
@@ -89,20 +89,20 @@ const ItalianLevelB2 = () => {
       },
       {
         name: "Super-Intensive Plan",
-        duration: "2 months",
+        duration: "3 months",
         hours: "3 hours per day",
       },
       {
         name: "Accelerated Plan",
-        duration: "1 month",
+        duration: "3 months",
         hours: "6 hours per day",
       },
     ],
     targetAudience: "Students who have completed B1 or have strong intermediate Italian skills",
-    duration: "1-6 months (flexible)",
+    duration: "3 months",
     certification: "Italian B2 Proficiency Certificate",
     focusAreas: "Professional Excellence • Academic Italian • Cultural Mastery",
-    price: "Kes 20,000",
+    price: "Kes 30,000",
     ctaText: "Achieve professional-level Italian proficiency. Master sophisticated language skills for career advancement and academic success.",
   };
 

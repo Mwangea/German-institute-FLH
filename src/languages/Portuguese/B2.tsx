@@ -8,7 +8,7 @@ const PortugueseB2 = () => {
     tagline: 'Master complex Portuguese language skills and express yourself fluently on a wide range of topics.',
     description: 'Master complex Portuguese language skills and express yourself fluently on a wide range of topics.',
     duration: '3 months',
-    price: 'Kes 20,000',
+    price: 'Kes 30,000',
     overview: 'Our B2 Portuguese course is designed for students who have completed B1 or have a strong intermediate level in Portuguese. You will develop your ability to understand the main ideas of complex text on both concrete and abstract topics, interact with a degree of fluency and spontaneity that makes regular interaction with native speakers quite possible without strain for either party, and produce clear, detailed text on a wide range of subjects.',
     format: 'Online and in-person classes available',
     objectives: [
@@ -67,17 +67,17 @@ const PortugueseB2 = () => {
       },
       {
         name: 'Intensive Plan',
-        duration: '2 months',
+        duration: '3 months',
         hours: '180 hours'
       },
       {
         name: 'Flexible Plan',
-        duration: '4 months',
+        duration: '3 months',
         hours: '90 hours'
       },
       {
         name: 'Weekend Plan',
-        duration: '6 months',
+        duration: '3 months',
         hours: '60 hours'
       }
     ]

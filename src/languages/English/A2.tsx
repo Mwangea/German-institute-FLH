@@ -6,9 +6,9 @@ const EnglishLevelA2 = () => {
     title: "English Language Course: A2 Level (Elementary)",
     tagline: "Expand your basic English skills for everyday communication",
     duration: {
-      regular: "3 months",
-      intensive: "3 months",
-      accelerated: "1.5 months"
+      regular: "2 months",
+      intensive: "2 months",
+      accelerated: "2 months"
     },
     price: "Kes 20,000",
     overview: "The A2 level builds upon the foundation established in A1, focusing on expanding vocabulary and grammar for more complex everyday situations. Students will develop greater confidence in using English for routine tasks and social interactions.",

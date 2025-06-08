@@ -10,7 +10,7 @@ const EnglishLevelC1 = () => {
       intensive: "3 months",
       accelerated: "1.5 months"
     },
-    price: "Kes 20,000",
+    price: "Kes 30,000",
     overview: "The C1 level focuses on developing near-native proficiency in English. Students will learn to express themselves fluently and spontaneously, use language flexibly and effectively for social, academic, and professional purposes.",
     format: "Advanced language training with emphasis on sophisticated language use, cultural nuances, and professional expertise. Focus on developing native-like fluency and accuracy.",
     objectives: [

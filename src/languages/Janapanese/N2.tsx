@@ -99,27 +99,27 @@ const JapaneseLevelN2 = () => {
     studyPlans: [
       {
         name: "Regular Plan",
-        duration: "10 months",
-        hours: "2 hours per day",
+        duration: "2 months",
+        hours: "3 hours per day",
       },
       {
         name: "Intensive Plan",
-        duration: "5 months",
-        hours: "4 hours per day",
-      },
-      {
-        name: "Super-Intensive Plan",
-        duration: "4 months",
+        duration: "2 months",
         hours: "5 hours per day",
       },
       {
+        name: "Super-Intensive Plan",
+        duration: "2 months",
+        hours: "7 hours per day",
+      },
+      {
         name: "Accelerated Plan",
-        duration: "3 months",
-        hours: "6 hours per day",
+        duration: "2 months",
+        hours: "8 hours per day",
       },
     ],
     targetAudience: "Students who have completed N3 or have equivalent knowledge",
-    duration: "3-10 months (flexible)",
+    duration: "2 months",
     certification: "JLPT N2 Certificate",
     focusAreas: "Advanced Japanese • Professional Mastery • Cultural Expertise",
     price: "Kes 20,000",

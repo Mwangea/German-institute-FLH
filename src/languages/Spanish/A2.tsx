@@ -6,10 +6,10 @@ const SpanishLevelA2 = () => {
     title: "Spanish Course: A2 Level (Elementary)",
     tagline: "Expand your basic Spanish skills for everyday communication",
     duration: {
-      regular: "6 months (1 hour per day)",
-      intensive: "3 months (2 hours per day)",
-      superIntensive: "2 months (3 hours per day)",
-      accelerated: "1 month (6 hours per day)"
+      regular: "2 months",
+      intensive: "2 months",
+      superIntensive: "2 months",
+      accelerated: "2 months"
     },
     price: "Kes 20,000",
     overview: "The Spanish A2 course builds upon the foundation established in A1, focusing on expanding vocabulary and grammar for more complex everyday situations. Students will develop greater confidence in using Spanish for routine tasks and social interactions, while preparing for the DELE A2 examination.",

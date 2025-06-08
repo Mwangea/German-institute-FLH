@@ -6,7 +6,7 @@ const portugueseLevels = [
     level: 'A1',
     title: 'Beginner Portuguese',
     description: 'Build essential Portuguese vocabulary and learn basic sentence structures for everyday situations.',
-    duration: '3 months',
+    duration: '2 months',
     price: 'Kes 20,000',
     url: '/portuguese-levels/a1',
   },
@@ -14,7 +14,7 @@ const portugueseLevels = [
     level: 'A2',
     title: 'Elementary Portuguese',
     description: 'Expand your knowledge to communicate in common social settings like shopping or eating out.',
-    duration: '3 months',
+    duration: '2 months',
     price: 'Kes 20,000',
     url: '/portuguese-levels/a2',
   },
@@ -23,7 +23,7 @@ const portugueseLevels = [
     title: 'Intermediate Portuguese',
     description: 'Converse effectively in Portuguese about work, travel, and personal topics.',
     duration: '3 months',
-    price: 'Kes 20,000',
+    price: 'Kes 30,000',
     url: '/portuguese-levels/b1',
   },
   {
@@ -31,7 +31,7 @@ const portugueseLevels = [
     title: 'Upper Intermediate Portuguese',
     description: 'Handle a wide range of Portuguese conversations and texts, including abstract topics.',
     duration: '3 months',
-    price: 'Kes 20,000',
+    price: 'Kes 30,000',
     url: '/portuguese-levels/b2',
   },
   {
@@ -39,7 +39,7 @@ const portugueseLevels = [
     title: 'Advanced Portuguese',
     description: 'Engage in complex discussions and understand nuanced Portuguese in academic or professional settings.',
     duration: '3 months',
-    price: 'Kes 20,000',
+    price: 'Kes 30,000',
     url: '/portuguese-levels/c1',
   },
   {
@@ -47,7 +47,7 @@ const portugueseLevels = [
     title: 'Mastery Portuguese',
     description: 'Achieve near-native fluency in Portuguese with full command of tone, style, and nuance.',
     duration: '3 months',
-    price: 'Kes 20,000',
+    price: 'Kes 30,000',
     url: '/portuguese-levels/c2',
   },
 ];
@@ -76,7 +76,7 @@ const PortugueseLanguage = () => (
               Portuguese Language Courses
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-8">
-              Learn Portuguese from beginner to advanced levels. Gain international certification every 3 months.
+              Learn Portuguese from beginner to advanced levels. Gain international certification every 2 - 3 months.
             </p>
             <div className="flex flex-row justify-center gap-4">
               <button className="px-6 py-3 bg-button-50 text-white rounded-full hover:bg-orange-600 transition">

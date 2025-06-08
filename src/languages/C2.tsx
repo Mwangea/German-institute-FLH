@@ -8,7 +8,7 @@ const GermanLevelC2 = () => {
       title: 'Mastery of language',
       fullDescription: 'At the C2 level, you will have mastered German with precision. You can effortlessly understand virtually everything heard or read. You can summarize information from different spoken and written sources, reconstructing arguments and accounts in a coherent presentation. You can express yourself spontaneously, very fluently and precisely, differentiating finer shades of meaning even in more complex situations.',
       duration: '3 months',
-      price: 'Kes 20,000',
+      price: 'Kes 30,000',
       outcomes: [
         'Understand virtually everything heard or read',
         'Summarize information from various sources',

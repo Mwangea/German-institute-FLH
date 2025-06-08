@@ -24,16 +24,16 @@ const DutchLevelC2 = () => {
     format: "Authentic media, literature, and academic journals. Advanced debates, critical reflections, and rhetorical writing with expert evaluations.",
     
     targetAudience: "Completion of C1 or native-like proficiency required",
-    duration: "3-6 months",
+    duration: "3 months",
     certification: "Dutch Language Certificate – Level C2",
     focusAreas: "Literature • Rhetoric • Cross-Cultural Nuance",
-    price: "Kes 20,000",
+    price: "Kes 30,000",
     ctaText: "Achieve linguistic finesse indistinguishable from native speakers.",
     
     studyPlans: [
       {
         name: "Regular Study Plan",
-        duration: "6 months",
+        duration: "3 months",
         hoursPerDay: "1 hour/day"
       },
       {
@@ -43,12 +43,12 @@ const DutchLevelC2 = () => {
       },
       {
         name: "Super-Intensive Study Plan",
-        duration: "2 months",
+        duration: "3 months",
         hoursPerDay: "3 hours/day"
       },
       {
         name: "Accelerated Study Plan",
-        duration: "1 month",
+        duration: "3 months",
         hoursPerDay: "6 hours/day"
       }
     ],

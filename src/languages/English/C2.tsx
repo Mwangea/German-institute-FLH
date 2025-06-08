@@ -10,7 +10,7 @@ const EnglishLevelC2 = () => {
       intensive: "3 months",
       accelerated: "1.5 months"
     },
-    price: "Kes 20,000",
+    price: "Kes 30,000",
     overview: "The C2 level represents the highest level of English proficiency. Students will develop complete mastery of the language, enabling them to understand virtually everything heard or read, and express themselves spontaneously, very fluently, and precisely.",
     format: "Mastery-level language training focusing on perfecting all aspects of language use. Emphasis on cultural nuances, sophisticated expression, and professional expertise.",
     objectives: [

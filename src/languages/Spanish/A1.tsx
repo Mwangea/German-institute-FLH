@@ -6,10 +6,10 @@ const SpanishLevelA1 = () => {
     title: "Spanish Course: A1 Level (Beginner)",
     tagline: "Build your foundation in Spanish with essential communication skills",
     duration: {
-      regular: "6 months (1 hour per day)",
-      intensive: "3 months (2 hours per day)",
-      superIntensive: "2 months (3 hours per day)",
-      accelerated: "1 month (6 hours per day)"
+      regular: "2 months",
+      intensive: "2 months",
+      superIntensive: "2 months",
+      accelerated: "2 months"
     },
     price: "Kes 20,000",
     overview: "The Spanish A1 course is ideal for absolute beginners or learners with minimal prior exposure to the language. This foundational program introduces essential vocabulary, basic grammar structures, and practical communication skills to help you navigate simple everyday interactions in Spanish. By the end of the course, you'll be able to introduce yourself, ask and answer basic questions, and understand and express common ideas in both spoken and written forms.",

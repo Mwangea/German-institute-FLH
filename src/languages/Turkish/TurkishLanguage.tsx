@@ -7,7 +7,7 @@ const turkishLevels = [
     level: 'A1',
     title: 'Beginner Turkish',
     description: 'Learn to greet, introduce yourself, and hold simple conversations in Turkish.',
-    duration: '3 months',
+    duration: '2 months',
     price: 'Kes 20,000',
     url: '/turkish-levels/a1',
   },
@@ -15,7 +15,7 @@ const turkishLevels = [
     level: 'A2',
     title: 'Elementary Turkish',
     description: 'Understand basic sentences and frequently used expressions related to personal and family information.',
-    duration: '3 months',
+    duration: '2 months',
     price: 'Kes 20,000',
     url: '/turkish-levels/a2',
   },
@@ -24,7 +24,7 @@ const turkishLevels = [
     title: 'Intermediate Turkish',
     description: 'Talk about familiar topics, give reasons and explanations for opinions and plans.',
     duration: '3 months',
-    price: 'Kes 20,000',
+    price: 'Kes 30,000',
     url: '/turkish-levels/b1',
   },
   {
@@ -32,7 +32,7 @@ const turkishLevels = [
     title: 'Upper Intermediate Turkish',
     description: 'Interact fluently and understand complex texts on both concrete and abstract topics.',
     duration: '3 months',
-    price: 'Kes 20,000',
+    price: 'Kes 30,000',
     url: '/turkish-levels/b2',
   },
   {
@@ -40,7 +40,7 @@ const turkishLevels = [
     title: 'Advanced Turkish',
     description: 'Use Turkish effectively in social, academic, and professional settings.',
     duration: '3 months',
-    price: 'Kes 20,000',
+    price: 'Kes 30,000',
     url: '/turkish-levels/c1',
   },
   {
@@ -48,7 +48,7 @@ const turkishLevels = [
     title: 'Mastery Turkish',
     description: 'Understand virtually everything heard or read in Turkish with ease.',
     duration: '3 months',
-    price: 'Kes 20,000',
+    price: 'Kes 30,000',
     url: '/turkish-levels/c2',
   },
 ];

@@ -6,11 +6,11 @@ const MandarinLevelHSK3 = () => {
     title: "Mandarin Chinese Course: HSK 3 Level (Intermediate)",
     tagline: "Develop your Mandarin skills for independent communication",
     duration: {
-      regular: "3-6 months",
-      intensive: "2-3 months",
-      accelerated: "1-2 months"
+      regular: "3 months",
+      intensive: "3 months",
+      accelerated: "3 months"
     },
-    price: "Kes 20,000",
+    price: "Kes 30,000",
     overview: "The HSK 3 course focuses on developing independent language use. Students will learn to handle most situations likely to arise while traveling in Chinese-speaking countries and express themselves on familiar topics with reasonable fluency. The course prepares students for the HSK Level 3 examination while building practical communication skills.",
     format: "Combined approach of structured learning and practical application. Emphasis on developing fluency and accuracy in real-world contexts. Regular practice sessions, cultural activities, and personalized feedback to ensure comprehensive progress.",
     objectives: [

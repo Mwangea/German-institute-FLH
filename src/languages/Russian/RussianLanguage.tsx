@@ -7,7 +7,7 @@ const russianLevels = [
     level: 'A1',
     title: 'Beginner Russian',
     description: 'Learn the Cyrillic alphabet and basic Russian expressions to handle simple interactions.',
-    duration: '3 months',
+    duration: '2 months',
     price: 'Kes 20,000',
     url: '/russian-levels/a1',
   },
@@ -15,7 +15,7 @@ const russianLevels = [
     level: 'A2',
     title: 'Elementary Russian',
     description: 'Expand your vocabulary and learn to communicate in daily life situations using Russian.',
-    duration: '3 months',
+    duration: '2 months',
     price: 'Kes 20,000',
     url: '/russian-levels/a2',
   },
@@ -24,7 +24,7 @@ const russianLevels = [
     title: 'Intermediate Russian',
     description: 'Gain confidence in discussing everyday topics and understanding routine texts.',
     duration: '3 months',
-    price: 'Kes 20,000',
+    price: 'Kes 30,000',
     url: '/russian-levels/b1',
   },
   {
@@ -32,7 +32,7 @@ const russianLevels = [
     title: 'Upper Intermediate Russian',
     description: 'Understand complex discussions and express opinions clearly in Russian.',
     duration: '3 months',
-    price: 'Kes 20,000',
+    price: 'Kes 30,000',
     url: '/russian-levels/b2',
   },
   {
@@ -40,7 +40,7 @@ const russianLevels = [
     title: 'Advanced Russian',
     description: 'Communicate fluently and effectively in professional and academic settings.',
     duration: '3 months',
-    price: 'Kes 20,000',
+    price: 'Kes 30,000',
     url: '/russian-levels/c1',
   },
   {
@@ -48,7 +48,7 @@ const russianLevels = [
     title: 'Mastery Russian',
     description: 'Demonstrate complete command of the Russian language in any context.',
     duration: '3 months',
-    price: 'Kes 20,000',
+    price: 'Kes 30,000',
     url: '/russian-levels/c2',
   },
 ];

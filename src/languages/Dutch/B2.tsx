@@ -26,16 +26,16 @@ const DutchLevelB2 = () => {
     format: "Interactive lessons with practical exercises, role-plays, and group activities. Regular feedback and assessments to track progress.",
     
     targetAudience: "Students who have completed B1 or have upper-intermediate Dutch knowledge",
-    duration: "Flexible duration based on study plan",
+    duration: "3 Months",
     certification: "Dutch B2 Level Certificate (CEFR)",
     focusAreas: "Professional Excellence • Academic Dutch • Advanced Communication",
-    price: "Kes 20,000",
+    price: "Kes 30,000",
     ctaText: "Achieve professional-level Dutch proficiency and open new career opportunities!",
     
     studyPlans: [
       {
         name: "Regular Study Plan",
-        duration: "6 months",
+        duration: "3 months",
         hoursPerDay: "1 hour/day"
       },
       {
@@ -45,12 +45,12 @@ const DutchLevelB2 = () => {
       },
       {
         name: "Super-Intensive Study Plan",
-        duration: "2 months",
+        duration: "3 months",
         hoursPerDay: "3 hours/day"
       },
       {
         name: "Accelerated Study Plan",
-        duration: "1 month",
+        duration: "3 months",
         hoursPerDay: "6 hours/day"
       }
     ],
