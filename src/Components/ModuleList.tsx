@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 interface Module {
   id: number;
   title: string;
-  level: string;
+  level?: string;
   link: string;
 }
 

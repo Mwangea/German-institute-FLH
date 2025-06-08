@@ -130,6 +130,39 @@ import TurkishB2 from "./languages/Turkish/B2"
 import TurkishC1 from "./languages/Turkish/C1"
 import TurkishC2 from "./languages/Turkish/C2"
 
+// Import all hospitality course components
+//import DiplomaTravelTourism from "./Hospitality/DiplomaTravelTourism"
+//import CertificateFoodProduction from "./Hospitality/CertificateFoodProduction"
+//import CertificateFBService from "./Hospitality/CertificateFBService"
+//import CertificateHousekeeping from "./Hospitality/CertificateHousekeeping"
+//import CertificateTravelOps from "./Hospitality/CertificateTravelOps"
+import CertificateTourGuiding from "./Hospitality/CertificateTourGuiding"
+
+// Import short course components
+import ShortFrontDesk from "./Hospitality/ShortFrontDesk"
+import ShortOpera from "./Hospitality/ShortOpera"
+import ShortFBControl from "./Hospitality/ShortFBControl"
+import ShortCakeMaking from "./Hospitality/ShortCakeMaking"
+import ShortKitchenOps from "./Hospitality/ShortKitchenOps"
+import ShortPastryBakery from "./Hospitality/ShortPastryBakery"
+import ShortFBSupervision from "./Hospitality/ShortFBSupervision"
+import ShortSupervisoryMgmt from "./Hospitality/ShortSupervisoryMgmt"
+import ShortBarista from "./Hospitality/ShortBarista"
+import ShortBanqueting from "./Hospitality/ShortBanqueting"
+import ShortHousekeeping from "./Hospitality/ShortHousekeeping"
+import ShortHomecare from "./Hospitality/ShortHomecare"
+import ShortLaundry from "./Hospitality/ShortLaundry"
+import ShortCustomerCare from "./Hospitality/ShortCustomerCare"
+import ShortTravelFoundation from "./Hospitality/ShortTravelFoundation"
+import ShortTravelConsultancy from "./Hospitality/ShortTravelConsultancy"
+import ShortCabinCrew from "./Hospitality/ShortCabinCrew"
+import ShortTourGuideCert from "./Hospitality/ShortTourGuideCert"
+import DiplomaTravelTourism from "./Hospitality/DiplomaTravelTourism"
+import CertificateFoodProduction from "./Hospitality/CertificateFoodProduction"
+import CertificateFBService from "./Hospitality/CertificateFBService"
+import CertificateHousekeeping from "./Hospitality/CertificateHouseKeeping"
+import CertificateTravelOps from "./Hospitality/CertificateTravelOps"
+
 const App = () => {
   return (
     <>
@@ -306,6 +339,35 @@ const App = () => {
             {/* <Route path="/certificate-food-beverage" element={<CertificateFoodBeverage />} /> */}
             {/* <Route path="/certificate-housekeeping" element={<CertificateHouseKeeping />} /> */}
 
+          {/* HOSPITALITY DIPLOMA COURSES */}
+          <Route path="/diploma-travel-tourism" element={<DiplomaTravelTourism />} />
+
+          {/* HOSPITALITY CERTIFICATE COURSES */}
+          <Route path="/certificate-food-production" element={<CertificateFoodProduction />} />
+          <Route path="/certificate-fb-service" element={<CertificateFBService />} />
+          <Route path="/certificate-housekeeping" element={<CertificateHousekeeping />} />
+          <Route path="/certificate-travel-ops" element={<CertificateTravelOps />} />
+          <Route path="/certificate-tour-guiding" element={<CertificateTourGuiding />} />
+
+          {/* HOSPITALITY SHORT COURSES */}
+          <Route path="/short-front-desk" element={<ShortFrontDesk />} />
+          <Route path="/short-opera" element={<ShortOpera />} />
+          <Route path="/short-fb-control" element={<ShortFBControl />} />
+          <Route path="/short-cake-making" element={<ShortCakeMaking />} />
+          <Route path="/short-kitchen-ops" element={<ShortKitchenOps />} />
+          <Route path="/short-pastry-bakery" element={<ShortPastryBakery />} />
+          <Route path="/short-fb-supervision" element={<ShortFBSupervision />} />
+          <Route path="/short-supervisory-mgmt" element={<ShortSupervisoryMgmt />} />
+          <Route path="/short-barista" element={<ShortBarista />} />
+          <Route path="/short-banqueting" element={<ShortBanqueting />} />
+          <Route path="/short-housekeeping" element={<ShortHousekeeping />} />
+          <Route path="/short-homecare" element={<ShortHomecare />} />
+          <Route path="/short-laundry" element={<ShortLaundry />} />
+          <Route path="/short-customer-care" element={<ShortCustomerCare />} />
+          <Route path="/short-travel-foundation" element={<ShortTravelFoundation />} />
+          <Route path="/short-travel-consultancy" element={<ShortTravelConsultancy />} />
+          <Route path="/short-cabin-crew" element={<ShortCabinCrew />} />
+          <Route path="/short-tour-guide-cert" element={<ShortTourGuideCert />} />
 
  
          {/* <Route path="/apply" element={<InterviewDesign />} /> */}

@@ -36,7 +36,7 @@ const OpportunityHub: React.FC = () => {
               Your Gateway to <span className="text-accent-400">Germany</span>
             </h1>
             <p className="text-xl text-gray-200 mb-10 max-w-3xl mx-auto">
-              For High School Graduates, College Students, and Alumni
+              For High School Graduates, University Graduates, and Alumni
             </p>
               <div className="flex flex-row justify-between gap-4 w-full max-w-md mx-auto">
                 <Link to="/apprenticeships" className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 sm:px-6 sm:py-3 bg-button-50 text-white rounded-full hover:bg-orange-600 transition-colors duration-300 text-sm sm:text-base">

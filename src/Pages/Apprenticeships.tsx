@@ -297,7 +297,7 @@ const HealthcareApprenticeships: React.FC = () => {
             </div>
           </div>
         </section> */}
-        <section className="py-20 bg-white">
+        {/* <section className="py-20 bg-white">
   <div className="max-w-5xl mx-auto px-6">
     <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
       End-to-End Support for Your Journey
@@ -349,7 +349,7 @@ const HealthcareApprenticeships: React.FC = () => {
       </div>
     </div>
   </div>
-</section>
+</section> */}
 
         {/* Final CTA */}
         <section className="py-16 bg-primary-500 rounded-xl">
