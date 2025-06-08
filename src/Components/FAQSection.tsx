@@ -43,11 +43,7 @@ const faqs: FAQItem[] = [
     answer: "Yes, our programs are accredited by leading international hospitality education bodies. Our qualifications are recognized by major hotel chains, restaurants, and tourism organizations worldwide.",
     category: "Programs"
   },
-  {
-    question: "What accommodation options are available?",
-    answer: "We assist students in finding suitable accommodation through our housing office. Options include on-campus dormitories, shared apartments, homestays, and private rentals. All accommodations are carefully vetted to ensure quality and safety.",
-    category: "Student Life"
-  }
+  
 ];
 
 const FAQSection: React.FC = () => {
