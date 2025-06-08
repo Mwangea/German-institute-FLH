@@ -7,7 +7,7 @@ import Icon from './Icon';
 interface Module {
   id: number;
   title: string;
-  level: string;
+  level?: string;
   link: string;
 }
 

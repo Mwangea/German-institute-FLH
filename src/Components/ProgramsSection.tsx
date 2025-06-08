@@ -50,7 +50,7 @@ const programsData = [
       { 
         id: 6, 
         title: "Mandarin Chinese Course", 
-        level: "Beginner",
+        level: "Beginner to advanced",
         link: "/courses/mandarin",
         isAvailable: false
       }
@@ -66,31 +66,31 @@ const programsData = [
       { 
         id: 1, 
         title: "Diploma in Hospitality Management", 
-        level: "Advanced",
+      //  level: "Advanced",
         link: "/diploma-hospitality" 
       },
       { 
         id: 2, 
         title: "Diploma in Front Office Operations & Administration", 
-        level: "Intermediate",
+      //  level: "Intermediate",
         link: "/diploma-front-office" 
       },
       { 
         id: 3, 
         title: "Diploma in Food & Beverage Management", 
-        level: "Advanced",
+       // level: "Advanced",
         link: "/diploma-food-beverage" 
       },
       { 
         id: 4, 
         title: "Diploma in House Keeping & Laundry Operation", 
-        level: "Intermediate",
+       // level: "Intermediate",
         link: "/diploma-housekeeping" 
       },
       { 
         id: 5, 
         title: "Certificate in Front Office Operations", 
-        level: "Beginner",
+        //level: "Beginner",
         link: "/certificate-front-office" 
       },
       // { 

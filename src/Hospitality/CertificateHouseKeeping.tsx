@@ -3,78 +3,73 @@
 import { Clock, Award, BookOpen, Users,  MapPin, Calendar } from 'lucide-react';
 import HospitalityCourseTemplate from './HospitalityCourseTemplate';
 
-const CertificateHouseKeeping = () => {
+const CertificateHousekeeping = () => {
   const courseData = {
-    title: "Certificate in Housekeeping Operations",
-    type: 'Certificate' as const,
-    duration: "6 Months (3 months theory + 3 months internship)",
-    price: "KES 22,000",
-    fullDescription: "This practical certificate program provides foundational skills for entry-level positions in housekeeping departments. Students learn cleaning techniques, room preparation, and basic supervisory skills for various hospitality and healthcare environments.",
+    title: "Certificate in Housekeeping and Laundry",
+    type: "Certificate",
+    duration: "1 year",
+    price: "KES 30,000 per semester (4 semesters total)",
+    fullDescription: "This one-year program provides training in managing housekeeping and laundry operations in the hospitality industry. Students learn cleaning techniques, linen management, laundry operations, room inspection, inventory control, and supervisory skills.",
     outcomes: [
-      "Learn professional cleaning techniques",
-      "Understand room preparation standards",
-      "Develop time management skills",
-      "Gain knowledge of cleaning chemicals and equipment",
-      "Acquire basic supervisory skills"
+      "Master cleaning techniques and procedures",
+      "Develop linen management skills",
+      "Learn laundry operations",
+      "Conduct effective room inspections",
+      "Implement inventory control",
+      "Apply supervisory skills"
     ],
-    certification: "Certificate in Housekeeping Operations (Includes Chemical Handling Certificate)",
-    targetAudience: "Beginners seeking entry-level positions in hotels, hospitals, or commercial cleaning services.",
+    goals: [
+      "To provide comprehensive training in housekeeping operations",
+      "To develop professional cleaning skills",
+      "To enhance laundry management abilities",
+      "To master inventory control",
+      "To prepare students for supervisory roles"
+    ],
+    certification: "Certificate in Housekeeping and Laundry",
+    targetAudience: "This program is designed for aspiring housekeeping staff, room attendants, laundry operators, and individuals seeking to enter the hospitality housekeeping industry.",
     keyFeatures: [
       {
-        icon: <Clock className="w-8 h-8 text-primary-600" />,
+        icon: <Clock className="w-6 h-6 text-primary-600" />,
         title: "Duration",
-        description: "6 Months (3 months theory + 3 months internship)"
+        description: "1 year (4 semesters)"
       },
       {
-        icon: <Award className="w-8 h-8 text-primary-600" />,
+        icon: <Award className="w-6 h-6 text-primary-600" />,
         title: "Certification",
-        description: "Certificate in Housekeeping Operations"
+        description: "Certificate in Housekeeping and Laundry"
       },
       {
-        icon: <BookOpen className="w-8 h-8 text-primary-600" />,
-        title: "Study Mode",
-        description: "Full-time (Weekdays) with practical sessions"
-      },
-      {
-        icon: <Users className="w-8 h-8 text-primary-600" />,
+        icon: <Users className="w-6 h-6 text-primary-600" />,
         title: "Class Size",
-        description: "Limited to 20 students per class"
+        description: "Small groups for practical training"
       },
       {
-        icon: <MapPin className="w-8 h-8 text-primary-600" />,
-        title: "Location",
-        description: "Nairobi Campus or Online"
-      },
-      {
-        icon: <Calendar className="w-8 h-8 text-primary-600" />,
-        title: "Intakes",
-        description: "Monthly intakes available"
+        icon: <BookOpen className="w-6 h-6 text-primary-600" />,
+        title: "Learning Method",
+        description: "Theory and practical training"
       }
     ],
     careerOpportunities: [
       "Room Attendant",
-      "Housekeeping Assistant",
-      "Hospital Cleaner",
-      "Commercial Cleaning Supervisor",
-      "Laundry Attendant",
-      "Camp Housekeeping Staff"
+      "Housekeeping Supervisor",
+      "Laundry Operator",
+      "Floor Supervisor",
+      "Housekeeping Manager",
+      "Laundry Manager"
     ],
     modules: [
-      "Introduction to Housekeeping",
-      "Cleaning Techniques and Procedures",
-      "Room Preparation Standards",
-      "Cleaning Chemicals and Equipment",
-      "Laundry Basics",
-      "Waste Management",
-      "Safety Procedures",
-      "Customer Service in Housekeeping",
-      "Basic Supervision Skills"
+      "Cleaning Techniques",
+      "Linen Management",
+      "Laundry Operations",
+      "Room Inspection",
+      "Inventory Control",
+      "Supervisory Skills"
     ],
-    internship: "3-month practical training in partner hotels or facilities with job placement assistance.",
-    imageUrl: "https://images.pexels.com/photos/4108714/pexels-photo-4108714.jpeg"
+    internship: "3-month industrial attachment included",
+    imageUrl: "/housekeeping1.jpg"
   };
 
   return <HospitalityCourseTemplate courseData={courseData} />;
 };
 
-export default CertificateHouseKeeping;
+export default CertificateHousekeeping;
