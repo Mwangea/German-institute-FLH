@@ -123,10 +123,10 @@ const ContactSection: React.FC = () => {
                         +254723104680
                       </a>
                       <a
-                        href="tel:+49 15781271260"
+                        href="tel:+254 705 704554"
                         className="text-sm sm:text-base text-gray-600 hover:text-primary-500 hover:underline block"
                       >
-                        +49 15781271260
+                        +254 705 704554
                       </a>
                     </div>
                   </div>
