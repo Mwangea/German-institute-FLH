@@ -63,6 +63,10 @@ const Footer: React.FC = () => {
                 <span className="text-gray-400">+254723104680</span>
               </li>
               <li className="flex items-center">
+                <Phone className="h-5 w-5 mr-3 text-accent-500 flex-shrink-0" />
+                <span className="text-gray-400">+254 705 704554</span>
+              </li>
+              <li className="flex items-center">
                 <Mail className="h-5 w-5 mr-3 text-accent-500 flex-shrink-0" />
                 <a href="mailto:info@foreignlanguagesandhospitality.com" className="text-gray-400 hover:text-white transition-colors duration-200">
                 info@foreignlanguagesandhospitality.com 
@@ -101,13 +105,13 @@ const Footer: React.FC = () => {
               &copy; {new Date().getFullYear()} EduExcel. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#privacy-policy" className="text-gray-400 hover:text-white text-sm transition-colors duration-200">
+              <a href="" className="text-gray-400 hover:text-white text-sm transition-colors duration-200">
                 Privacy Policy
               </a>
-              <a href="#terms-of-service" className="text-gray-400 hover:text-white text-sm transition-colors duration-200">
+              <a href="" className="text-gray-400 hover:text-white text-sm transition-colors duration-200">
                 Terms of Service
               </a>
-              <a href="#accessibility" className="text-gray-400 hover:text-white text-sm transition-colors duration-200">
+              <a href="" className="text-gray-400 hover:text-white text-sm transition-colors duration-200">
                 Accessibility
               </a>
             </div>
