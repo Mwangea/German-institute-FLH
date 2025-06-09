@@ -51,7 +51,7 @@ const ForeignLanguages: React.FC = () => {
     { 
       id: 5, 
       title: "Mandarin Chinese Course", 
-      level: "Beginner",
+      level: "Beginner to advanced",
       link: "/courses/mandarin",
       isAvailable: true,
       category: "asian"

@@ -50,10 +50,10 @@ const WhyChooseSection: React.FC = () => {
 
 
           <p className="text-lg text-left text-gray-700 mb-8">
-            With over two decades of excellence in hospitality and language education, we've established ourselves as a leading institution that transforms passionate learners into industry-ready professionals. Our comprehensive approach combines academic excellence with practical experience, preparing you for a successful global career.
+          We combine modern hospitality management standards with cutting-edge technology to deliver industry-focused education.By blending language skills with hospitality training, we provide a high-quality, well-rounded learning experience that prepares you for a global career.
           </p>
           <p className="text-lg text-left text-gray-700">
-            We pride ourselves on maintaining a perfect balance between traditional educational values and modern industry requirements, ensuring our graduates are well-equipped to meet the challenges of the evolving hospitality sector.
+          Our approach balances traditional values with modern demands, ensuring you're ready for today’s competitive hospitality industry.
           </p>
         </div>
 
