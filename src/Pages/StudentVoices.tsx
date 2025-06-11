@@ -6,7 +6,7 @@ interface StudentTestimonial {
   id: number;
   name: string;
   program: string;
-  quote: string;
+  quote?: string;
   videoUrl: string;
   thumbnail: string;
 }
@@ -42,6 +42,7 @@ const testimonials: StudentTestimonial[] = [
     videoUrl: "chef.mp4",
     thumbnail: "chef.png",
   },
+  
 ];
 
 const StudentVoicesPage: React.FC = () => {
@@ -58,6 +59,14 @@ const StudentVoicesPage: React.FC = () => {
   const closeVideo = () => {
     setSelectedVideo(null);
     setIsPlaying(false);
+  };
+
+  const chefVideo = {
+    id: 100,
+    name: "Master Chef",
+    program: "Culinary Arts Graduate",
+    videoUrl: "new-chef.mp4",
+    thumbnail: "new-chef.png"
   };
 
   return (
@@ -100,6 +109,41 @@ const StudentVoicesPage: React.FC = () => {
                 <button className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 sm:px-6 sm:py-3 bg-white text-gray-900 rounded-full hover:bg-gray-100 transition-colors duration-300 text-sm sm:text-base">
                   Share Your Story
                 </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="py-16 bg-gradient-to-r from-orange-50 to-amber-50">
+        <div className="container mx-auto px-4">
+          <SectionTitle 
+          className="text-center justify-center"
+            title="Chef Spotlight" 
+            icon="👨‍🍳"
+          />
+          <p className="text-center text-gray-600 mb-8 max-w-2xl mx-auto">
+            Watch our professional chefs in action at our state-of-the-art culinary facilities
+          </p>
+          
+          <div className="max-w-4xl mx-auto">
+            <div 
+              className="relative aspect-video rounded-xl overflow-hidden cursor-pointer group shadow-lg"
+              onClick={() => handleVideoClick(chefVideo)}
+            >
+              <img
+                src={chefVideo.thumbnail}
+                alt="Professional Chef Demonstration"
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
+                <div className="transform -translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                  <div className="w-20 h-20 rounded-full bg-white/30 backdrop-blur-sm flex items-center justify-center border-2 border-white">
+                    <Play className="w-10 h-10 text-white fill-current" />
+                  </div>
+                </div>
+              </div>
+              <div className="absolute bottom-4 left-4 text-white text-lg font-medium bg-black/40 px-3 py-1 rounded">
+                {chefVideo.name}
               </div>
             </div>
           </div>
