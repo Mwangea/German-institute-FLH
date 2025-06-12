@@ -162,6 +162,7 @@ import CertificateFoodProduction from "./Hospitality/CertificateFoodProduction"
 import CertificateFBService from "./Hospitality/CertificateFBService"
 import CertificateHousekeeping from "./Hospitality/CertificateHouseKeeping"
 import CertificateTravelOps from "./Hospitality/CertificateTravelOps"
+import NewsPage from "./Pages/NewsPage"
 
 const App = () => {
   return (
@@ -179,6 +180,7 @@ const App = () => {
           <Route path="/apprenticeships" element={<Apprenticeships />} />
           <Route path="/undergraduate" element={<UndergraduatePrograms />} />
           <Route path="/master-programs" element={<MasterProgrammes />} />
+          <Route path="/news-page" element={<NewsPage />} />
 
           {/* PROGRAMS PAGE */}
           <Route path="/programs/german-exams" element={<GermanExams />} />

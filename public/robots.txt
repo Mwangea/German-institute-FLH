@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://foreignlanguagesandhospitality.com/sitemap.xml

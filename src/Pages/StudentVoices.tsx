@@ -119,7 +119,7 @@ const StudentVoicesPage: React.FC = () => {
           <SectionTitle 
           className="text-center justify-center"
             title="Chef Spotlight" 
-            icon="👨‍🍳"
+           // icon="👨‍🍳"
           />
           <p className="text-center text-gray-600 mb-8 max-w-2xl mx-auto">
             Watch our professional chefs in action at our state-of-the-art culinary facilities

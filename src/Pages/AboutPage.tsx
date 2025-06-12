@@ -13,49 +13,6 @@ import {
 import Faculty from "../Components/Facaulty";
 import SectionTitle from "../Components/SectionTitle";
 
-// interface Instructor {
-//   id: number;
-//   name: string;
-//   role: string;
-//   image: string;
-//   bio: string;
-//   expertise: string[];
-//   education: string[];
-//   achievements: string[];
-//   socialLinks?: {
-//     linkedin?: string;
-//     twitter?: string;
-//     website?: string;
-//   };
-// }
-
-// interface Accreditation {
-//   id: number;
-//   name: string;
-//   logo: string;
-//   description: string;
-// }
-
-// const accreditations: Accreditation[] = [
-//   {
-//     id: 1,
-//     name: "International Hospitality Council",
-//     logo: "https://images.pexels.com/photos/327540/pexels-photo-327540.jpeg",
-//     description: "Recognized for excellence in hospitality education worldwide",
-//   },
-//   {
-//     id: 2,
-//     name: "World Tourism Organization",
-//     logo: "https://images.pexels.com/photos/327541/pexels-photo-327541.jpeg",
-//     description: "Certified provider of tourism and hospitality education",
-//   },
-//   {
-//     id: 3,
-//     name: "Global Education Standards Board",
-//     logo: "https://images.pexels.com/photos/327542/pexels-photo-327542.jpeg",
-//     description: "Meeting highest standards in educational excellence",
-//   },
-// ];
 
 const facilities = [
   {
@@ -79,88 +36,6 @@ const facilities = [
     image: "https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg",
   },
 ];
-
-// const instructors: Instructor[] = [
-//   {
-//     id: 1,
-//     name: "Dr. Sarah Anderson",
-//     role: "Head of Hospitality Management",
-//     image: "https://images.pexels.com/photos/3727464/pexels-photo-3727464.jpeg",
-//     bio: "Dr. Anderson brings over 15 years of experience in luxury hotel management and hospitality education. Her research focuses on sustainable tourism and innovative hospitality practices.",
-//     expertise: [
-//       "Luxury Hotel Management",
-//       "Sustainable Tourism",
-//       "Strategic Planning",
-//     ],
-//     education: [
-//       "Ph.D. in Hospitality Management, Cornell University",
-//       "MBA in International Business, INSEAD",
-//       "BS in Hotel Administration, École hôtelière de Lausanne",
-//     ],
-//     achievements: [
-//       "Best Educator Award 2024",
-//       "Published author of 'Future of Luxury Hospitality'",
-//       "Consultant for leading international hotel chains",
-//     ],
-//     socialLinks: {
-//       linkedin: "https://linkedin.com",
-//       twitter: "https://twitter.com",
-//       website: "https://example.com",
-//     },
-//   },
-//   {
-//     id: 2,
-//     name: "Prof. Michael Chen",
-//     role: "Director of Culinary Arts",
-//     image: "https://images.pexels.com/photos/3814446/pexels-photo-3814446.jpeg",
-//     bio: "Prof. Chen is a globally recognized culinary expert with experience in Michelin-starred restaurants. He specializes in fusion cuisine and modern cooking techniques.",
-//     expertise: [
-//       "Advanced Culinary Techniques",
-//       "Restaurant Management",
-//       "Menu Development",
-//     ],
-//     education: [
-//       "Master in Culinary Arts, Le Cordon Bleu",
-//       "BA in Restaurant Management, CIA",
-//       "Advanced Wine Certification, Court of Master Sommeliers",
-//     ],
-//     achievements: [
-//       "Former Executive Chef at 3-Michelin Star Restaurant",
-//       "James Beard Award Winner",
-//       "Host of 'Modern Cuisine Masterclass' Series",
-//     ],
-//     socialLinks: {
-//       linkedin: "https://linkedin.com",
-//       twitter: "https://twitter.com",
-//     },
-//   },
-//   {
-//     id: 3,
-//     name: "Dr. Emma Rodriguez",
-//     role: "Head of Language Department",
-//     image: "https://images.pexels.com/photos/5212324/pexels-photo-5212324.jpeg",
-//     bio: "Dr. Rodriguez specializes in innovative language teaching methodologies and cross-cultural communication. She has developed several successful language programs for hospitality professionals.",
-//     expertise: [
-//       "Language Teaching Methodology",
-//       "Cross-Cultural Communication",
-//       "Curriculum Development",
-//     ],
-//     education: [
-//       "Ph.D. in Applied Linguistics, Stanford University",
-//       "MA in TESOL, Columbia University",
-//       "BA in Modern Languages, Universidad de Barcelona",
-//     ],
-//     achievements: [
-//       "Developer of 'Hospitality Language Training Program'",
-//       "Author of bestselling language textbooks",
-//       "International Education Innovation Award 2023",
-//     ],
-//     socialLinks: {
-//       linkedin: "https://linkedin.com",
-//       website: "https://example.com",
-//     },
-//   },
-// ];
 
 const videos = [
   {
@@ -243,54 +118,7 @@ const AboutPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Stats Section */}
-      {/* <section className="py-12 sm:py-16 bg-white">
-  <div className="container mx-auto px-4">
-  
-    <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-8">
-    
-      <div className="text-center p-2 sm:p-0">
-        <CountUp 
-          end={25} 
-          duration={3} 
-          className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary-500 mb-1 sm:mb-2" 
-        />
-        <div className="text-xs sm:text-sm md:text-base text-gray-600">Years of Excellence</div>
-      </div>
       
-      
-      <div className="text-center p-2 sm:p-0">
-        <CountUp 
-          end={50} 
-          duration={3} 
-          className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary-500 mb-1 sm:mb-2" 
-        />
-        <div className="text-xs sm:text-sm md:text-base text-gray-600">Expert Instructors</div>
-      </div>
-      
-  
-      <div className="text-center p-2 sm:p-0">
-        <CountUp 
-          end={2000} 
-          duration={3} 
-          className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary-500 mb-1 sm:mb-2" 
-        />
-        <div className="text-xs sm:text-sm md:text-base text-gray-600">Alumni Worldwide</div>
-      </div>
-      
-    
-      <div className="text-center p-2 sm:p-0">
-        <CountUp 
-          end={95} 
-          duration={3} 
-          suffix="%" 
-          className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary-500 mb-1 sm:mb-2" 
-        />
-        <div className="text-xs sm:text-sm md:text-base text-gray-600">Employment Rate</div>
-      </div>
-    </div>
-  </div>
-</section> */}
 
       {/* Mission & Vision Section */}
       <section className="py-24 bg-gradient-to-b from-white to-gray-50">
@@ -347,10 +175,7 @@ const AboutPage: React.FC = () => {
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            {/* <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              Our Core Values
-            </h2>
-            <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div> */}
+            
             <SectionTitle title="Our Core Values" />
 
             <p className="text-lg text-gray-700">
@@ -405,10 +230,7 @@ const AboutPage: React.FC = () => {
       <section className="py-24 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            {/* <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              World-Class Facilities
-            </h2>
-            <div className="w-24 h-1 bg-button-50 mx-auto mb-6"></div> */}
+            
             <SectionTitle title="World class Facilities" />
 
             <p className="text-lg text-gray-700">
@@ -446,39 +268,6 @@ const AboutPage: React.FC = () => {
       {/* Faculty Section */}
       <Faculty />
 
-      {/* Accreditations Section */}
-      {/* <section className="py-24 bg-gradient-to-b from-white to-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              Our Accreditations
-            </h2>
-            <p className="text-lg text-gray-700">
-              Recognized and accredited by leading international education
-              bodies.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {accreditations.map((accreditation) => (
-              <div
-                key={accreditation.id}
-                className="bg-white p-6 rounded-xl shadow-sm"
-              >
-                <img
-                  src={accreditation.logo}
-                  alt={accreditation.name}
-                  className="w-24 h-24 object-contain mb-4"
-                />
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  {accreditation.name}
-                </h3>
-                <p className="text-gray-700">{accreditation.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section> */}
 
       {/* CTA Section */}
       <section className="py-24 bg-primary-500">
