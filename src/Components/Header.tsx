@@ -271,7 +271,7 @@ const Header: React.FC = () => {
               {/* CTA Button with proper contrast */}
               <a
                 href="/apply"
-                className="ml-4 xl:ml-6 bg-orange-500 hover:bg-orange-600 text-white px-4 xl:px-6 py-2 xl:py-3 rounded-lg font-semibold text-sm xl:text-base transition-all duration-300 transform hover:scale-105 hover:shadow-lg focus:ring-2 focus:ring-orange-400 focus:ring-offset-2"
+                className="ml-4 xl:ml-6 bg-primary-500 hover:bg-orange-600 text-white px-4 xl:px-6 py-2 xl:py-3 rounded-lg font-semibold text-sm xl:text-base transition-all duration-300 transform hover:scale-105 hover:shadow-lg focus:ring-2 focus:ring-orange-400 focus:ring-offset-2"
                 onClick={() => handleNavClick('/apply')}
                 aria-label="Apply now"
               >
