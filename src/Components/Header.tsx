@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { Menu, X, ChevronDown, Mail, Facebook, Instagram, Twitter, User, GraduationCap } from 'lucide-react';
 import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
 //import Head from 'next/head';
 
 const NAV_ITEMS = [
@@ -112,8 +113,8 @@ const Header: React.FC = () => {
             <div className="flex items-center space-x-2 sm:space-x-4">
               {/* Login Buttons with proper ARIA labels */}
               <div className="hidden md:flex items-center space-x-2">
-                <a
-                  href="/student-login"
+                <Link
+                  to="/student-login"
                   className="flex items-center px-2 lg:px-3 py-1 text-xs bg-blue-600 hover:bg-blue-700 text-white rounded-md font-medium transition-all duration-300 transform hover:scale-105"
                   onClick={() => handleNavClick('/student-login')}
                   aria-label="Student login"
@@ -121,9 +122,9 @@ const Header: React.FC = () => {
                   <GraduationCap className="h-3 w-3 mr-1" aria-hidden="true" />
                   <span className="hidden lg:inline">Student Login</span>
                   <span className="lg:hidden">Student</span>
-                </a>
-                <a
-                  href="/teacher-login"
+                </Link>
+                <Link
+                  to="/teacher-login"
                   className="flex items-center px-2 lg:px-3 py-1 text-xs bg-green-600 hover:bg-green-700 text-white rounded-md font-medium transition-all duration-300 transform hover:scale-105"
                   onClick={() => handleNavClick('/teacher-login')}
                   aria-label="Teacher login"
@@ -131,7 +132,7 @@ const Header: React.FC = () => {
                   <User className="h-3 w-3 mr-1" aria-hidden="true" />
                   <span className="hidden lg:inline">Teacher Login</span>
                   <span className="lg:hidden">Teacher</span>
-                </a>
+                </Link>
               </div>
               
               {/* Social Media with proper labels */}
@@ -184,7 +185,7 @@ const Header: React.FC = () => {
         <div className="container mx-auto px-2 sm:px-4 lg:px-6">
           <div className="flex justify-between items-center">
             {/* Logo with proper alt text and semantic HTML */}
-            <a href="/" className="flex items-center group flex-1 min-w-0" aria-label="Home">
+            <Link to="/" className="flex items-center group flex-1 min-w-0" aria-label="Home">
               <div className="relative flex-shrink-0">
                 <img 
                   src="/photo.png" 
@@ -207,7 +208,7 @@ const Header: React.FC = () => {
                   <span className="lg:hidden">Global Careers from Narok</span>
                 </p>
               </div>
-            </a>
+            </Link>
 
             {/* Desktop Navigation with proper ARIA attributes */}
             <nav aria-label="Main navigation" className="hidden xl:flex items-center space-x-1">
@@ -243,41 +244,41 @@ const Header: React.FC = () => {
                         aria-labelledby={`dropdown-button-${index}`}
                       >
                         {item.dropdownItems?.map((dropItem) => (
-                          <a
+                          <Link
                             key={dropItem.label}
-                            href={dropItem.path}
+                            to={dropItem.path}
                             className="block px-4 py-3 text-gray-600 hover:bg-primary-50 hover:text-primary-700 transition-all duration-200 font-medium border-b-2 border-transparent hover:border-primary-600"
                             onClick={() => handleNavClick(dropItem.path)}
                             role="menuitem"
                           >
                             {dropItem.label}
-                          </a>
+                          </Link>
                         ))}
                       </div>
                     </>
                   ) : (
-                    <a
-                      href={item.path}
+                    <Link
+                      to={item.path}
                       className="px-3 xl:px-4 py-2 font-medium text-sm xl:text-base text-gray-700 hover:text-primary-600 transition-all duration-300 border-b-2 border-transparent hover:border-primary-600"
                       onClick={() => handleNavClick(item.path)}
                       aria-current={item.path === window.location.pathname ? 'page' : undefined}
                     >
                       <span>{item.label}</span>
-                    </a>
+                    </Link>
                   )}
                 </div>
               ))}
               
               {/* CTA Button with proper contrast */}
-              <a
-                href="/apply"
+              <Link
+                to="/apply"
                 className="ml-4 xl:ml-6 bg-primary-500 hover:bg-orange-600 text-white px-4 xl:px-6 py-2 xl:py-3 rounded-lg font-semibold text-sm xl:text-base transition-all duration-300 transform hover:scale-105 hover:shadow-lg focus:ring-2 focus:ring-orange-400 focus:ring-offset-2"
                 onClick={() => handleNavClick('/apply')}
                 aria-label="Apply now"
               >
                 <span className="hidden lg:inline">Apply Now</span>
                 <span className="lg:hidden">Apply</span>
-              </a>
+              </Link>
             </nav>
 
             {/* Mobile Menu Button with proper ARIA */}
@@ -322,24 +323,24 @@ const Header: React.FC = () => {
             <div className="px-3 sm:px-4 py-4 sm:py-6">
               {/* Login Buttons in Mobile Menu */}
               <div className="mb-4 sm:mb-6 flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-3">
-                <a
-                  href="/student-login"
+                <Link
+                  to="/student-login"
                   className="flex items-center justify-center flex-1 px-3 sm:px-4 py-2 sm:py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold text-sm sm:text-base transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
                   onClick={() => handleNavClick('/student-login')}
                   aria-label="Student login"
                 >
                   <GraduationCap className="h-4 w-4 sm:h-5 sm:w-5 mr-2" aria-hidden="true" />
                   Student Login
-                </a>
-                <a
-                  href="/teacher-login"
+                </Link>
+                <Link
+                  to="/teacher-login"
                   className="flex items-center justify-center flex-1 px-3 sm:px-4 py-2 sm:py-3 bg-green-600 hover:bg-green-700 text-white rounded-lg font-semibold text-sm sm:text-base transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
                   onClick={() => handleNavClick('/teacher-login')}
                   aria-label="Teacher login"
                 >
                   <User className="h-4 w-4 sm:h-5 sm:w-5 mr-2" aria-hidden="true" />
                   Teacher Login
-                </a>
+                </Link>
               </div>
 
               {/* Navigation Items with proper focus states */}
@@ -367,41 +368,41 @@ const Header: React.FC = () => {
                           role="region"
                         >
                           {item.dropdownItems?.map((dropItem) => (
-                            <a
+                            <Link
                               key={dropItem.label}
-                              href={dropItem.path}
+                              to={dropItem.path}
                               className="block py-2 sm:py-3 px-3 sm:px-4 text-gray-600 hover:text-primary-600 hover:bg-primary-50 rounded-lg font-medium text-sm sm:text-base transition-all duration-200 border-b-2 border-transparent hover:border-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
                               onClick={() => handleNavClick(dropItem.path)}
                               aria-current={dropItem.path === window.location.pathname ? 'page' : undefined}
                             >
                               {dropItem.label}
-                            </a>
+                            </Link>
                           ))}
                         </div>
                       </>
                     ) : (
-                      <a
-                        href={item.path}
+                      <Link
+                        to={item.path}
                         className="block py-3 sm:py-4 px-3 sm:px-4 text-gray-700 hover:bg-primary-50 hover:text-primary-600 rounded-xl font-medium text-base sm:text-lg transition-all duration-200 border-b-2 border-transparent hover:border-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
                         onClick={() => handleNavClick(item.path)}
                         aria-current={item.path === window.location.pathname ? 'page' : undefined}
                       >
                         {item.label}
-                      </a>
+                      </Link>
                     )}
                   </div>
                 ))}
               </nav>
               
               {/* CTA Button in Mobile with focus ring */}
-              <a
-                href="/apply"
+              <Link
+                to="/apply"
                 className="block w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white text-center py-3 sm:py-4 px-4 rounded-xl font-bold text-base sm:text-lg mt-4 sm:mt-6 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-orange-400 focus:ring-offset-2"
                 onClick={() => handleNavClick('/apply')}
                 aria-label="Apply now"
               >
                 Apply Now
-              </a>
+              </Link>
 
               {/* Social Media in Mobile Menu */}
               <nav aria-label="Social media links" className="flex justify-center items-center space-x-4 mt-4 sm:mt-6 pt-4 border-t border-gray-200">
