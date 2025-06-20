@@ -18,6 +18,7 @@ const routes = [
   '/apprenticeships',
   '/undergraduate',
   '/master-programs',
+  '/news-page',
 
   // Programs
   '/programs/german-exams',

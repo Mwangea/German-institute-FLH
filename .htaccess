@@ -1,28 +1,43 @@
-Options -MultiViews
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^ index.html [QSA,L]
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
 
-# Enable CORS
-Header set Access-Control-Allow-Origin "*"
+  # ========================
+  # 1. PROXY CONFIGURATION
+  # ========================
+  
+  # Proxy API requests
+  RewriteCond %{REQUEST_URI} ^/api/ [NC]
+  RewriteRule ^api/(.*)$ https://api.foreignlanguagesandhospitality.com/api/$1 [P,L,QSA]
 
-# Cache Control
-<FilesMatch "\.(html|htm)$">
-    Header set Cache-Control "no-cache, no-store, must-revalidate"
-    Header set Pragma "no-cache"
-    Header set Expires 0
-</FilesMatch>
+  # Proxy uploads (IMAGES)
+  RewriteCond %{REQUEST_URI} ^/uploads/ [NC]
+  RewriteRule ^uploads/(.*)$ https://api.foreignlanguagesandhospitality.com/uploads/$1 [P,L,QSA]
 
-# Compress text files
-<IfModule mod_deflate.c>
-    AddOutputFilterByType DEFLATE text/plain
-    AddOutputFilterByType DEFLATE text/html
-    AddOutputFilterByType DEFLATE text/xml
-    AddOutputFilterByType DEFLATE text/css
-    AddOutputFilterByType DEFLATE application/xml
-    AddOutputFilterByType DEFLATE application/xhtml+xml
-    AddOutputFilterByType DEFLATE application/rss+xml
-    AddOutputFilterByType DEFLATE application/javascript
-    AddOutputFilterByType DEFLATE application/x-javascript
-</IfModule> 
+  # ========================
+  # 2. REACT ROUTING
+  # ========================
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteRule . /index.html [L]
+
+  # ========================
+  # 3. SECURITY & PERFORMANCE
+  # ========================
+  # Force HTTPS
+  RewriteCond %{HTTPS} off
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# ========================
+# 4. HEADERS FOR PROXY
+# ========================
+<IfModule mod_headers.c>
+  # CORS for proxied images
+  <FilesMatch "\.(jpg|jpeg|png|gif|webp|avif)$">
+    Header set Access-Control-Allow-Origin "*"
+    Header set Access-Control-Allow-Methods "GET"
+    Header set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
+</IfModule>

@@ -6,6 +6,7 @@ import AboutPage from "./Pages/AboutPage"
 import StudentVoices from "./Pages/StudentVoices"
 import ApplyPage from "./Pages/ApplyPage"
 import GermanExams from "./Pages/GermanExams"
+//import NotFound from "./Pages/NotFound"
 
 import ScrollToTopButton from "./Components/ScrollToTopActionButton"
 import A1YoungExam from "./Exams/A1YoungExam"
@@ -163,6 +164,7 @@ import CertificateFBService from "./Hospitality/CertificateFBService"
 import CertificateHousekeeping from "./Hospitality/CertificateHouseKeeping"
 import CertificateTravelOps from "./Hospitality/CertificateTravelOps"
 import NewsPage from "./Pages/NewsPage"
+import NotFound from "./Pages/NotFound"
 
 const App = () => {
   return (
@@ -373,6 +375,9 @@ const App = () => {
 
  
          {/* <Route path="/apply" element={<InterviewDesign />} /> */}
+
+         {/* Add catch-all route for 404 */}
+         <Route path="*" element={<NotFound />} />
 
         </Route>
       </Routes>
