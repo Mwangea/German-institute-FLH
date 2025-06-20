@@ -7,7 +7,11 @@ import AboutSection from "../Components/AboutSection";
 import WhyChooseSection from "../Components/WhyChooseSection";
 import TestimonialSection from "../Components/TestimonialSection";
 import FAQSection from "../Components/FAQSection";
+<<<<<<< HEAD
 import SEO from '../Components/SEO';
+=======
+import { Helmet } from "react-helmet";
+>>>>>>> 060b1ce7abdc06bd39dde140897ff81cbd322821
 
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -42,11 +46,28 @@ const Home = () => {
 
   return (
     <>
+<<<<<<< HEAD
       <SEO 
         title="World-Class Education Programs"
         description="Discover our international education programs with June 2025 intake now open. World-class faculty, diverse community, and exceptional learning opportunities."
         ogImage={carouselData[0].image}
       />
+=======
+      {/* SEO and meta tags using react-helmet */}
+      <Helmet>
+        <title>World-Class Education Programs | June Intake 2025 Open</title>
+        <meta 
+          name="description" 
+          content="Discover our international education programs with June 2025 intake now open. World-class faculty, diverse community, and exceptional learning opportunities." 
+        />
+        <meta property="og:title" content="World-Class Education Programs" />
+        <meta property="og:description" content="June Intake 2025 now open for applications. Join our international learning community." />
+        <meta property="og:image" content={carouselData[0].image} />
+        <meta property="og:type" content="website" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href={window.location.href} />
+      </Helmet>
+>>>>>>> 060b1ce7abdc06bd39dde140897ff81cbd322821
 
       <div className="relative h-screen w-full overflow-hidden" role="banner" aria-label="Main carousel">
         {/* Carousel with aria attributes */}

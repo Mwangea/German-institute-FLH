@@ -62,7 +62,11 @@ const Header: React.FC = () => {
     setMobileMenuOpen(false);
     setActiveDropdown(null);
   }, []);
+<<<<<<< HEAD
                                                 
+=======
+
+>>>>>>> 060b1ce7abdc06bd39dde140897ff81cbd322821
   // Preload hover states for better perceived performance
   useEffect(() => {
     const link = document.createElement('link');

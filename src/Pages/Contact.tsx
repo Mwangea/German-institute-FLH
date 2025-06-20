@@ -136,6 +136,7 @@ const Contact: React.FC = () => {
                         </a>
                       </div>
                     </div>
+<<<<<<< HEAD
 
                     {/* Address Card */}
                     <div className="flex items-start gap-4">
@@ -154,16 +155,174 @@ const Contact: React.FC = () => {
                           Kenya
                         </p>
                       </div>
+=======
+                    <div>
+                      <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-1">
+                        Call Us
+                      </h3>
+                      <a
+                        href="tel:+254723104680"
+                        className="text-sm sm:text-base text-gray-600 hover:text-primary-500 hover:underline block mb-1"
+                      >
+                        +254723104680
+                      </a>
+                      <a
+                        href="tel:+254 705 704554"
+                        className="text-sm sm:text-base text-gray-600 hover:text-primary-500 hover:underline block"
+                      >
+                        +254 705 704554
+                      </a>
+                    </div>
+                  </div>
+
+                  {/* Address Card */}
+                  <div className="flex items-start gap-4">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-primary-100 flex items-center justify-center flex-shrink-0">
+                      <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-primary-600" />
+                    </div>
+                    <div>
+                      <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-1">
+                        Visit Us
+                      </h3>
+                      <p className="text-sm sm:text-base text-gray-600">
+                        Newline Building
+                        <br />
+                        Narok, Kenya
+                        <br />
+                        Kenya
+                      </p>
+>>>>>>> 060b1ce7abdc06bd39dde140897ff81cbd322821
                     </div>
                   </div>
                 </div>
               </div>
 
+<<<<<<< HEAD
               {/* Contact Form */}
               <div className="lg:col-span-2">
                 <form
                   onSubmit={handleSubmit}
                   className="bg-white p-6 sm:p-8 rounded-xl shadow-sm border border-gray-100"
+=======
+            {/* Contact Form */}
+            <div className="lg:col-span-2">
+              <form
+                onSubmit={handleSubmit}
+                className="bg-white p-6 sm:p-8 rounded-xl shadow-sm border border-gray-100"
+              >
+                {submitStatus && (
+                  <div
+                    className={`mb-6 p-4 rounded-lg ${
+                      submitStatus.success
+                        ? "bg-green-100 text-green-800"
+                        : "bg-red-100 text-red-800"
+                    }`}
+                  >
+                    {submitStatus.message}
+                  </div>
+                )}
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-6">
+                  <div>
+                    <label
+                      htmlFor="name"
+                      className="block text-sm font-medium text-gray-700 mb-2"
+                    >
+                      Full Name
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      className="w-full px-3 sm:px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-sm sm:text-base"
+                      required
+                    />
+                  </div>
+
+                  <div>
+                    <label
+                      htmlFor="email"
+                      className="block text-sm font-medium text-gray-700 mb-2"
+                    >
+                      Email Address
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      className="w-full px-3 sm:px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-sm sm:text-base"
+                      required
+                    />
+                  </div>
+
+                  <div>
+                    <label
+                      htmlFor="phone"
+                      className="block text-sm font-medium text-gray-700 mb-2"
+                    >
+                      Phone Number
+                    </label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleChange}
+                      className="w-full px-3 sm:px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-sm sm:text-base"
+                    />
+                  </div>
+
+                  <div>
+                    <label
+                      htmlFor="subject"
+                      className="block text-sm font-medium text-gray-700 mb-2"
+                    >
+                      Subject
+                    </label>
+                    <select
+                      id="subject"
+                      name="subject"
+                      value={formData.subject}
+                      onChange={handleChange}
+                      className="w-full px-3 sm:px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-sm sm:text-base"
+                      required
+                    >
+                      <option value="">Select a subject</option>
+                      <option value="admission">Admission Inquiry</option>
+                      <option value="program">Program Information</option>
+                      <option value="financial">Financial Aid</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div className="mb-6">
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium text-gray-700 mb-2"
+                  >
+                    Message
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    rows={5}
+                    className="w-full px-3 sm:px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-sm sm:text-base"
+                    required
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-button-50 text-white font-medium rounded-lg hover:bg-orange-600 transition-colors duration-300 disabled:bg-primary-300 disabled:cursor-not-allowed text-sm sm:text-base"
+>>>>>>> 060b1ce7abdc06bd39dde140897ff81cbd322821
                 >
                   {submitStatus && (
                     <div
